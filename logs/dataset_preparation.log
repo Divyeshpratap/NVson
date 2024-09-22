@@ -1,0 +1,654 @@
+2024-09-22 00:04:18,568 [INFO] Starting Dataset Preparation Pipeline
+2024-09-22 00:04:18,569 [INFO] Output directory is set to: data\final_pos
+2024-09-22 00:04:18,570 [INFO] Loading spaCy blank English model.
+2024-09-22 00:04:20,699 [INFO] spaCy model loaded successfully.
+2024-09-22 00:04:20,700 [INFO] 
+Processing File Number: 1
+2024-09-22 00:04:20,702 [INFO] Loading POS-tagged data from: data\pos_tagged\document_1.pickle
+2024-09-22 00:04:20,712 [INFO] Loaded POS-tagged data from data\pos_tagged\document_1.pickle
+2024-09-22 00:04:20,713 [INFO] Loading GPT-tagged data from: data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-22 00:04:20,721 [INFO] Loaded GPT-tagged data from data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-22 00:04:20,723 [INFO] Merging SpaCy POS tags with GPT-generated noun classifications.
+2024-09-22 00:04:20,725 [INFO] Merging of POS tags completed.
+2024-09-22 00:04:20,729 [INFO] Saved merged POS tags to data\final_pos\book_part_1_shape.txt
+2024-09-22 00:04:20,729 [INFO] Successfully merged and saved POS tags for File Number: 1
+2024-09-22 00:04:20,730 [INFO] 
+Processing File Number: 2
+2024-09-22 00:04:20,730 [INFO] Loading POS-tagged data from: data\pos_tagged\document_2.pickle
+2024-09-22 00:04:20,743 [INFO] Loaded POS-tagged data from data\pos_tagged\document_2.pickle
+2024-09-22 00:04:20,743 [INFO] Loading GPT-tagged data from: data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-22 00:04:20,750 [INFO] Loaded GPT-tagged data from data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-22 00:04:20,751 [INFO] Merging SpaCy POS tags with GPT-generated noun classifications.
+2024-09-22 00:04:20,753 [INFO] Merging of POS tags completed.
+2024-09-22 00:04:20,757 [INFO] Saved merged POS tags to data\final_pos\book_part_2_shape.txt
+2024-09-22 00:04:20,758 [INFO] Successfully merged and saved POS tags for File Number: 2
+2024-09-22 00:04:20,758 [INFO] Starting dataset validation and preparation.
+2024-09-22 00:04:20,759 [INFO] Processing merged POS-tagged file: data\final_pos\book_part_1_shape.txt
+2024-09-22 00:04:20,774 [WARNING] Encountered invalid tag 'NNP' for word 'parson' in line 1. Mapped to 'X'.
+2024-09-22 00:04:20,774 [WARNING] Encountered invalid tag 'NNP' for word 'everett' in line 2. Mapped to 'X'.
+2024-09-22 00:04:20,775 [WARNING] Encountered invalid tag 'NNP' for word 'litchfield' in line 9. Mapped to 'X'.
+2024-09-22 00:04:20,775 [WARNING] Encountered invalid tag 'NN' for word 'summer' in line 12. Mapped to 'X'.
+2024-09-22 00:04:20,776 [WARNING] Encountered invalid tag 'NNP' for word 'sylvia' in line 15. Mapped to 'X'.
+2024-09-22 00:04:20,776 [WARNING] Encountered invalid tag 'NN' for word 'comfort' in line 19. Mapped to 'X'.
+2024-09-22 00:04:20,776 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 21. Mapped to 'X'.
+2024-09-22 00:04:20,777 [WARNING] Encountered invalid tag 'NN' for word 'gentleman' in line 30. Mapped to 'X'.
+2024-09-22 00:04:20,777 [WARNING] Encountered invalid tag 'NN' for word 'wren' in line 35. Mapped to 'X'.
+2024-09-22 00:04:20,778 [WARNING] Encountered invalid tag 'NNS' for word 'wrens' in line 42. Mapped to 'X'.
+2024-09-22 00:04:20,778 [WARNING] Encountered invalid tag 'NN' for word 'way' in line 50. Mapped to 'X'.
+2024-09-22 00:04:20,779 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 57. Mapped to 'X'.
+2024-09-22 00:04:20,779 [WARNING] Encountered invalid tag 'NN' for word 'sister' in line 62. Mapped to 'X'.
+2024-09-22 00:04:20,780 [WARNING] Encountered invalid tag 'NNS' for word 'possessions' in line 68. Mapped to 'X'.
+2024-09-22 00:04:20,780 [WARNING] Encountered invalid tag 'NNP' for word 'parson' in line 70. Mapped to 'X'.
+2024-09-22 00:04:20,781 [WARNING] Encountered invalid tag 'NNP' for word 'everett' in line 71. Mapped to 'X'.
+2024-09-22 00:04:20,781 [WARNING] Encountered invalid tag 'NN' for word 'chair' in line 78. Mapped to 'X'.
+2024-09-22 00:04:20,782 [WARNING] Encountered invalid tag 'NN' for word 'hat' in line 84. Mapped to 'X'.
+2024-09-22 00:04:20,782 [WARNING] Encountered invalid tag 'NN' for word 'silk' in line 88. Mapped to 'X'.
+2024-09-22 00:04:20,782 [WARNING] Encountered invalid tag 'NN' for word 'pocket' in line 89. Mapped to 'X'.
+2024-09-22 00:04:20,783 [WARNING] Encountered invalid tag 'NN' for word 'handkerchief' in line 90. Mapped to 'X'.
+2024-09-22 00:04:20,786 [WARNING] Encountered invalid tag 'NNS' for word 'knees' in line 93. Mapped to 'X'.
+2024-09-22 00:04:20,786 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 99. Mapped to 'X'.
+2024-09-22 00:04:20,786 [WARNING] Encountered invalid tag 'NNP' for word 'mistress' in line 102. Mapped to 'X'.
+2024-09-22 00:04:20,787 [WARNING] Encountered invalid tag 'NNP' for word 'perkins' in line 103. Mapped to 'X'.
+2024-09-22 00:04:20,788 [WARNING] Encountered invalid tag 'NNS' for word 'times' in line 108. Mapped to 'X'.
+2024-09-22 00:04:20,788 [WARNING] Encountered invalid tag 'NNS' for word 'times' in line 111. Mapped to 'X'.
+2024-09-22 00:04:20,789 [WARNING] Encountered invalid tag 'NN' for word 'sound' in line 116. Mapped to 'X'.
+2024-09-22 00:04:20,789 [WARNING] Encountered invalid tag 'NNS' for word 'tops' in line 122. Mapped to 'X'.
+2024-09-22 00:04:20,790 [WARNING] Encountered invalid tag 'NN' for word 'mulberry' in line 125. Mapped to 'X'.
+2024-09-22 00:04:20,790 [WARNING] Encountered invalid tag 'NNS' for word 'trees' in line 127. Mapped to 'X'.
+2024-09-22 00:04:20,791 [WARNING] Encountered invalid tag 'NN' for word 'sea' in line 132. Mapped to 'X'.
+2024-09-22 00:04:20,791 [WARNING] Encountered invalid tag 'NNS' for word 'waves' in line 134. Mapped to 'X'.
+2024-09-22 00:04:20,792 [WARNING] Encountered invalid tag 'NN' for word 'truth' in line 138. Mapped to 'X'.
+2024-09-22 00:04:20,792 [WARNING] Encountered invalid tag 'NNP' for word 'mistress' in line 150. Mapped to 'X'.
+2024-09-22 00:04:20,792 [WARNING] Encountered invalid tag 'NNP' for word 'perkins' in line 151. Mapped to 'X'.
+2024-09-22 00:04:20,793 [WARNING] Encountered invalid tag 'NN' for word 'will' in line 158. Mapped to 'X'.
+2024-09-22 00:04:20,793 [WARNING] Encountered invalid tag 'NN' for word 'meekness' in line 160. Mapped to 'X'.
+2024-09-22 00:04:20,793 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 173. Mapped to 'X'.
+2024-09-22 00:04:20,794 [WARNING] Encountered invalid tag 'NN' for word 'twinkle' in line 179. Mapped to 'X'.
+2024-09-22 00:04:20,794 [WARNING] Encountered invalid tag 'NN' for word 'eye' in line 182. Mapped to 'X'.
+2024-09-22 00:04:20,795 [WARNING] Encountered invalid tag 'NNP' for word 'moses' in line 194. Mapped to 'X'.
+2024-09-22 00:04:20,795 [WARNING] Encountered invalid tag 'NNP' for word 'parson' in line 196. Mapped to 'X'.
+2024-09-22 00:04:20,795 [WARNING] Encountered invalid tag 'NNS' for word 'things' in line 201. Mapped to 'X'.
+2024-09-22 00:04:20,796 [WARNING] Encountered invalid tag 'NN' for word 'truth' in line 207. Mapped to 'X'.
+2024-09-22 00:04:20,796 [WARNING] Encountered invalid tag 'NN' for word 'woman' in line 226. Mapped to 'X'.
+2024-09-22 00:04:20,796 [WARNING] Encountered invalid tag 'NNP' for word 'lord' in line 229. Mapped to 'X'.
+2024-09-22 00:04:20,796 [WARNING] Encountered invalid tag 'NN' for word 'duty' in line 245. Mapped to 'X'.
+2024-09-22 00:04:20,797 [WARNING] Encountered invalid tag 'NN' for word 'vessel' in line 248. Mapped to 'X'.
+2024-09-22 00:04:20,797 [WARNING] Encountered invalid tag 'NN' for word 'wrath' in line 250. Mapped to 'X'.
+2024-09-22 00:04:20,798 [WARNING] Encountered invalid tag 'NNS' for word 'pieces' in line 255. Mapped to 'X'.
+2024-09-22 00:04:20,798 [WARNING] Encountered invalid tag 'NN' for word 'maker' in line 260. Mapped to 'X'.
+2024-09-22 00:04:20,798 [WARNING] Encountered invalid tag 'NNP' for word 'mebbe' in line 266. Mapped to 'X'.
+2024-09-22 00:04:20,799 [WARNING] Encountered invalid tag 'NN' for word 'kind' in line 277. Mapped to 'X'.
+2024-09-22 00:04:20,801 [WARNING] Encountered invalid tag 'NN' for word 'vessel' in line 280. Mapped to 'X'.
+2024-09-22 00:04:20,801 [WARNING] Encountered invalid tag 'NN' for word 'anything' in line 290. Mapped to 'X'.
+2024-09-22 00:04:20,802 [WARNING] Encountered invalid tag 'NN' for word 'nothing' in line 306. Mapped to 'X'.
+2024-09-22 00:04:20,803 [WARNING] Encountered invalid tag 'NN' for word 'side' in line 319. Mapped to 'X'.
+2024-09-22 00:04:20,803 [WARNING] Encountered invalid tag 'NNP' for word 'lordwill' in line 325. Mapped to 'X'.
+2024-09-22 00:04:20,803 [WARNING] Encountered invalid tag 'NN' for word 'care' in line 327. Mapped to 'X'.
+2024-09-22 00:04:20,804 [WARNING] Encountered invalid tag 'NNS' for word 'folks' in line 330. Mapped to 'X'.
+2024-09-22 00:04:20,804 [WARNING] Encountered invalid tag 'NN' for word 'parson' in line 358. Mapped to 'X'.
+2024-09-22 00:04:20,804 [WARNING] Encountered invalid tag 'NN' for word 'wit' in line 363. Mapped to 'X'.
+2024-09-22 00:04:20,805 [WARNING] Encountered invalid tag 'NN' for word 'end' in line 365. Mapped to 'X'.
+2024-09-22 00:04:20,805 [WARNING] Encountered invalid tag 'NN' for word 'theology' in line 369. Mapped to 'X'.
+2024-09-22 00:04:20,806 [WARNING] Encountered invalid tag 'NN' for word 'grace' in line 378. Mapped to 'X'.
+2024-09-22 00:04:20,806 [WARNING] Encountered invalid tag 'NNP' for word 'mistress' in line 383. Mapped to 'X'.
+2024-09-22 00:04:20,807 [WARNING] Encountered invalid tag 'NNP' for word 'perkins' in line 384. Mapped to 'X'.
+2024-09-22 00:04:20,807 [WARNING] Encountered invalid tag 'NN' for word 'elation' in line 390. Mapped to 'X'.
+2024-09-22 00:04:20,807 [WARNING] Encountered invalid tag 'NN' for word 'man' in line 394. Mapped to 'X'.
+2024-09-22 00:04:20,808 [WARNING] Encountered invalid tag 'NNP' for word 'lord' in line 397. Mapped to 'X'.
+2024-09-22 00:04:20,808 [WARNING] Encountered invalid tag 'NN' for word 'temple' in line 402. Mapped to 'X'.
+2024-09-22 00:04:20,809 [WARNING] Encountered invalid tag 'NN' for word 'earth' in line 405. Mapped to 'X'.
+2024-09-22 00:04:20,809 [WARNING] Encountered invalid tag 'NN' for word 'footstool' in line 408. Mapped to 'X'.
+2024-09-22 00:04:20,810 [WARNING] Encountered invalid tag 'NN' for word 'parson' in line 415. Mapped to 'X'.
+2024-09-22 00:04:20,810 [WARNING] Encountered invalid tag 'NN' for word 'tangle' in line 420. Mapped to 'X'.
+2024-09-22 00:04:20,810 [WARNING] Encountered invalid tag 'NNS' for word 'texts' in line 422. Mapped to 'X'.
+2024-09-22 00:04:20,811 [WARNING] Encountered invalid tag 'NN' for word 'one' in line 428. Mapped to 'X'.
+2024-09-22 00:04:20,812 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 435. Mapped to 'X'.
+2024-09-22 00:04:20,812 [WARNING] Encountered invalid tag 'NN' for word 'care' in line 451. Mapped to 'X'.
+2024-09-22 00:04:20,813 [WARNING] Encountered invalid tag 'NNS' for word 'sparrers' in line 453. Mapped to 'X'.
+2024-09-22 00:04:20,813 [WARNING] Encountered invalid tag 'NNP' for word 'bible' in line 457. Mapped to 'X'.
+2024-09-22 00:04:20,814 [WARNING] Encountered invalid tag 'NN' for word 'lot' in line 470. Mapped to 'X'.
+2024-09-22 00:04:20,816 [WARNING] Encountered invalid tag 'NN' for word 'kind' in line 473. Mapped to 'X'.
+2024-09-22 00:04:20,816 [WARNING] Encountered invalid tag 'NN' for word 'text' in line 476. Mapped to 'X'.
+2024-09-22 00:04:20,816 [WARNING] Encountered invalid tag 'NNS' for word 'times' in line 480. Mapped to 'X'.
+2024-09-22 00:04:20,817 [WARNING] Encountered invalid tag 'NN' for word 'person' in line 489. Mapped to 'X'.
+2024-09-22 00:04:20,817 [WARNING] Encountered invalid tag 'NN' for word 'bedrock' in line 493. Mapped to 'X'.
+2024-09-22 00:04:20,817 [WARNING] Encountered invalid tag 'NNP' for word 'grandsir' in line 496. Mapped to 'X'.
+2024-09-22 00:04:20,818 [WARNING] Encountered invalid tag 'NNP' for word 'penlyn' in line 497. Mapped to 'X'.
+2024-09-22 00:04:20,818 [WARNING] Encountered invalid tag 'NNP' for word 'lord' in line 513. Mapped to 'X'.
+2024-09-22 00:04:20,819 [WARNING] Encountered invalid tag 'NNP' for word 'lord' in line 517. Mapped to 'X'.
+2024-09-22 00:04:20,819 [WARNING] Encountered invalid tag 'NN' for word 'care' in line 525. Mapped to 'X'.
+2024-09-22 00:04:20,819 [WARNING] Encountered invalid tag 'NNP' for word 'parson' in line 551. Mapped to 'X'.
+2024-09-22 00:04:20,819 [WARNING] Encountered invalid tag 'NNP' for word 'everett' in line 552. Mapped to 'X'.
+2024-09-22 00:04:20,820 [WARNING] Encountered invalid tag 'NN' for word 'sigh' in line 556. Mapped to 'X'.
+2024-09-22 00:04:20,820 [WARNING] Encountered invalid tag 'NN' for word 'hat' in line 562. Mapped to 'X'.
+2024-09-22 00:04:20,821 [WARNING] Encountered invalid tag 'NN' for word 'nose' in line 567. Mapped to 'X'.
+2024-09-22 00:04:20,822 [WARNING] Encountered invalid tag 'NN' for word 'silk' in line 571. Mapped to 'X'.
+2024-09-22 00:04:20,822 [WARNING] Encountered invalid tag 'NN' for word 'handkerchief' in line 572. Mapped to 'X'.
+2024-09-22 00:04:20,823 [WARNING] Encountered invalid tag 'NN' for word 'sort' in line 582. Mapped to 'X'.
+2024-09-22 00:04:20,823 [WARNING] Encountered invalid tag 'NN' for word 'dust' in line 588. Mapped to 'X'.
+2024-09-22 00:04:20,824 [WARNING] Encountered invalid tag 'NN' for word 'responsibility' in line 590. Mapped to 'X'.
+2024-09-22 00:04:20,824 [WARNING] Encountered invalid tag 'NN' for word 'conversation' in line 594. Mapped to 'X'.
+2024-09-22 00:04:20,825 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 604. Mapped to 'X'.
+2024-09-22 00:04:20,825 [WARNING] Encountered invalid tag 'NN' for word 'part' in line 606. Mapped to 'X'.
+2024-09-22 00:04:20,825 [WARNING] Encountered invalid tag 'NNS' for word 'spirits' in line 632. Mapped to 'X'.
+2024-09-22 00:04:20,827 [WARNING] Encountered invalid tag 'NN' for word 'parish' in line 636. Mapped to 'X'.
+2024-09-22 00:04:20,827 [WARNING] Encountered invalid tag 'NN' for word 'fashion' in line 647. Mapped to 'X'.
+2024-09-22 00:04:20,828 [WARNING] Encountered invalid tag 'NN' for word 'winter' in line 651. Mapped to 'X'.
+2024-09-22 00:04:20,828 [WARNING] Encountered invalid tag 'NNP' for word 'nepasset' in line 655. Mapped to 'X'.
+2024-09-22 00:04:20,829 [WARNING] Encountered invalid tag 'NNP' for word 'township' in line 656. Mapped to 'X'.
+2024-09-22 00:04:20,829 [WARNING] Encountered invalid tag 'NN' for word 'food' in line 660. Mapped to 'X'.
+2024-09-22 00:04:20,830 [WARNING] Encountered invalid tag 'NN' for word 'house' in line 664. Mapped to 'X'.
+2024-09-22 00:04:20,832 [WARNING] Encountered invalid tag 'NN' for word 'firewood' in line 666. Mapped to 'X'.
+2024-09-22 00:04:20,833 [WARNING] Encountered invalid tag 'NN' for word 'shed' in line 669. Mapped to 'X'.
+2024-09-22 00:04:20,833 [WARNING] Encountered invalid tag 'NN' for word 'food' in line 673. Mapped to 'X'.
+2024-09-22 00:04:20,834 [WARNING] Encountered invalid tag 'NN' for word 'fire' in line 675. Mapped to 'X'.
+2024-09-22 00:04:20,834 [WARNING] Encountered invalid tag 'NN' for word 'cold' in line 681. Mapped to 'X'.
+2024-09-22 00:04:20,834 [WARNING] Encountered invalid tag 'NN' for word 'vitality' in line 686. Mapped to 'X'.
+2024-09-22 00:04:20,835 [WARNING] Encountered invalid tag 'NN' for word 'courage' in line 688. Mapped to 'X'.
+2024-09-22 00:04:20,835 [WARNING] Encountered invalid tag 'NNS' for word 'hygienics' in line 693. Mapped to 'X'.
+2024-09-22 00:04:20,836 [WARNING] Encountered invalid tag 'NN' for word 'mystery' in line 697. Mapped to 'X'.
+2024-09-22 00:04:20,837 [WARNING] Encountered invalid tag 'NNS' for word 'people' in line 699. Mapped to 'X'.
+2024-09-22 00:04:20,837 [WARNING] Encountered invalid tag 'NN' for word 'day' in line 702. Mapped to 'X'.
+2024-09-22 00:04:20,837 [WARNING] Encountered invalid tag 'NN' for word 'food' in line 710. Mapped to 'X'.
+2024-09-22 00:04:20,838 [WARNING] Encountered invalid tag 'NN' for word 'brain' in line 716. Mapped to 'X'.
+2024-09-22 00:04:20,838 [WARNING] Encountered invalid tag 'NNS' for word 'muscles' in line 720. Mapped to 'X'.
+2024-09-22 00:04:20,839 [WARNING] Encountered invalid tag 'NNS' for word 'potatoes' in line 725. Mapped to 'X'.
+2024-09-22 00:04:20,839 [WARNING] Encountered invalid tag 'NNS' for word 'beets' in line 727. Mapped to 'X'.
+2024-09-22 00:04:20,840 [WARNING] Encountered invalid tag 'NNS' for word 'beans' in line 729. Mapped to 'X'.
+2024-09-22 00:04:20,840 [WARNING] Encountered invalid tag 'NN' for word 'bit' in line 736. Mapped to 'X'.
+2024-09-22 00:04:20,841 [WARNING] Encountered invalid tag 'NN' for word 'salt' in line 738. Mapped to 'X'.
+2024-09-22 00:04:20,841 [WARNING] Encountered invalid tag 'NN' for word 'pork' in line 739. Mapped to 'X'.
+2024-09-22 00:04:20,842 [WARNING] Encountered invalid tag 'NN' for word 'beef' in line 741. Mapped to 'X'.
+2024-09-22 00:04:20,842 [WARNING] Encountered invalid tag 'NN' for word 'pot' in line 745. Mapped to 'X'.
+2024-09-22 00:04:20,842 [WARNING] Encountered invalid tag 'NN' for word 'rest' in line 748. Mapped to 'X'.
+2024-09-22 00:04:20,843 [WARNING] Encountered invalid tag 'NNS' for word 'hearts' in line 752. Mapped to 'X'.
+2024-09-22 00:04:20,843 [WARNING] Encountered invalid tag 'NN' for word 'flesh' in line 757. Mapped to 'X'.
+2024-09-22 00:04:20,843 [WARNING] Encountered invalid tag 'NN' for word 'diet' in line 765. Mapped to 'X'.
+2024-09-22 00:04:20,844 [WARNING] Encountered invalid tag 'NN' for word 'night' in line 769. Mapped to 'X'.
+2024-09-22 00:04:20,844 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 770. Mapped to 'X'.
+2024-09-22 00:04:20,844 [WARNING] Encountered invalid tag 'NN' for word 'council' in line 777. Mapped to 'X'.
+2024-09-22 00:04:20,845 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 779. Mapped to 'X'.
+2024-09-22 00:04:20,845 [WARNING] Encountered invalid tag 'NNP' for word 'eben' in line 781. Mapped to 'X'.
+2024-09-22 00:04:20,845 [WARNING] Encountered invalid tag 'NN' for word 'potato' in line 787. Mapped to 'X'.
+2024-09-22 00:04:20,846 [WARNING] Encountered invalid tag 'NN' for word 'bin' in line 788. Mapped to 'X'.
+2024-09-22 00:04:20,849 [WARNING] Encountered invalid tag 'NN' for word 'pork' in line 791. Mapped to 'X'.
+2024-09-22 00:04:20,849 [WARNING] Encountered invalid tag 'NN' for word 'barrel' in line 792. Mapped to 'X'.
+2024-09-22 00:04:20,849 [WARNING] Encountered invalid tag 'NNS' for word 'homes' in line 809. Mapped to 'X'.
+2024-09-22 00:04:20,850 [WARNING] Encountered invalid tag 'NN' for word 'winter' in line 813. Mapped to 'X'.
+2024-09-22 00:04:20,850 [WARNING] Encountered invalid tag 'NN' for word 'father' in line 816. Mapped to 'X'.
+2024-09-22 00:04:20,850 [WARNING] Encountered invalid tag 'NNP' for word 'betty' in line 832. Mapped to 'X'.
+2024-09-22 00:04:20,851 [WARNING] Encountered invalid tag 'NN' for word 'rest' in line 835. Mapped to 'X'.
+2024-09-22 00:04:20,851 [WARNING] Encountered invalid tag 'NNS' for word 'chores' in line 842. Mapped to 'X'.
+2024-09-22 00:04:20,851 [WARNING] Encountered invalid tag 'NN' for word 'board' in line 846. Mapped to 'X'.
+2024-09-22 00:04:20,852 [WARNING] Encountered invalid tag 'NNS' for word 'families' in line 852. Mapped to 'X'.
+2024-09-22 00:04:20,852 [WARNING] Encountered invalid tag 'NN' for word 'help' in line 854. Mapped to 'X'.
+2024-09-22 00:04:20,853 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 860. Mapped to 'X'.
+2024-09-22 00:04:20,853 [WARNING] Encountered invalid tag 'NNP' for word 'litchfield' in line 862. Mapped to 'X'.
+2024-09-22 00:04:20,853 [WARNING] Encountered invalid tag 'NN' for word 'man' in line 867. Mapped to 'X'.
+2024-09-22 00:04:20,854 [WARNING] Encountered invalid tag 'NN' for word 'war' in line 872. Mapped to 'X'.
+2024-09-22 00:04:20,854 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 875. Mapped to 'X'.
+2024-09-22 00:04:20,854 [WARNING] Encountered invalid tag 'NN' for word 'scuffling' in line 883. Mapped to 'X'.
+2024-09-22 00:04:20,855 [WARNING] Encountered invalid tag 'NN' for word 'squawking' in line 885. Mapped to 'X'.
+2024-09-22 00:04:20,855 [WARNING] Encountered invalid tag 'NN' for word 'woodhouse' in line 888. Mapped to 'X'.
+2024-09-22 00:04:20,856 [WARNING] Encountered invalid tag 'NNS' for word 'boys' in line 891. Mapped to 'X'.
+2024-09-22 00:04:20,856 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 894. Mapped to 'X'.
+2024-09-22 00:04:20,857 [WARNING] Encountered invalid tag 'NNS' for word 'tongs' in line 897. Mapped to 'X'.
+2024-09-22 00:04:20,857 [WARNING] Encountered invalid tag 'NNP' for word 'diana' in line 899. Mapped to 'X'.
+2024-09-22 00:04:20,858 [WARNING] Encountered invalid tag 'NN' for word 'broomstick' in line 901. Mapped to 'X'.
+2024-09-22 00:04:20,858 [WARNING] Encountered invalid tag 'NN' for word 'weasel' in line 905. Mapped to 'X'.
+2024-09-22 00:04:20,858 [WARNING] Encountered invalid tag 'NNS' for word 'fowls' in line 915. Mapped to 'X'.
+2024-09-22 00:04:20,858 [WARNING] Encountered invalid tag 'NN' for word 'invader' in line 926. Mapped to 'X'.
+2024-09-22 00:04:20,859 [WARNING] Encountered invalid tag 'NNS' for word 'tongs' in line 929. Mapped to 'X'.
+2024-09-22 00:04:20,859 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 933. Mapped to 'X'.
+2024-09-22 00:04:20,860 [WARNING] Encountered invalid tag 'NN' for word 'exhaustion' in line 940. Mapped to 'X'.
+2024-09-22 00:04:20,860 [WARNING] Encountered invalid tag 'NN' for word 'weather' in line 944. Mapped to 'X'.
+2024-09-22 00:04:20,860 [WARNING] Encountered invalid tag 'NNS' for word 'victims' in line 951. Mapped to 'X'.
+2024-09-22 00:04:20,860 [WARNING] Encountered invalid tag 'NN' for word 'supper' in line 954. Mapped to 'X'.
+2024-09-22 00:04:20,863 [WARNING] Encountered invalid tag 'NNP' for word 'nor' in line 956. Mapped to 'X'.
+2024-09-22 00:04:20,863 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 958. Mapped to 'X'.
+2024-09-22 00:04:20,863 [WARNING] Encountered invalid tag 'NN' for word 'appeal' in line 962. Mapped to 'X'.
+2024-09-22 00:04:20,864 [WARNING] Encountered invalid tag 'NN' for word 'appetite' in line 966. Mapped to 'X'.
+2024-09-22 00:04:20,864 [WARNING] Encountered invalid tag 'NN' for word 'stew' in line 971. Mapped to 'X'.
+2024-09-22 00:04:20,864 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 975. Mapped to 'X'.
+2024-09-22 00:04:20,864 [WARNING] Encountered invalid tag 'NN' for word 'life' in line 982. Mapped to 'X'.
+2024-09-22 00:04:20,865 [WARNING] Encountered invalid tag 'NNS' for word 'spirits' in line 984. Mapped to 'X'.
+2024-09-22 00:04:20,865 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 986. Mapped to 'X'.
+2024-09-22 00:04:20,866 [WARNING] Encountered invalid tag 'NN' for word 'courage' in line 988. Mapped to 'X'.
+2024-09-22 00:04:20,866 [WARNING] Encountered invalid tag 'NN' for word 'heart' in line 996. Mapped to 'X'.
+2024-09-22 00:04:20,866 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 1003. Mapped to 'X'.
+2024-09-22 00:04:20,867 [WARNING] Encountered invalid tag 'NN' for word 'supper' in line 1010. Mapped to 'X'.
+2024-09-22 00:04:20,867 [WARNING] Encountered invalid tag 'NNS' for word 'dishes' in line 1011. Mapped to 'X'.
+2024-09-22 00:04:20,867 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 1019. Mapped to 'X'.
+2024-09-22 00:04:20,868 [WARNING] Encountered invalid tag 'NN' for word 'spring' in line 1023. Mapped to 'X'.
+2024-09-22 00:04:20,868 [WARNING] Encountered invalid tag 'NN' for word 'while' in line 1026. Mapped to 'X'.
+2024-09-22 00:04:20,869 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 1044. Mapped to 'X'.
+2024-09-22 00:04:20,869 [WARNING] Encountered invalid tag 'NNS' for word 'fowls' in line 1061. Mapped to 'X'.
+2024-09-22 00:04:20,870 [WARNING] Encountered invalid tag 'NN' for word 'master' in line 1069. Mapped to 'X'.
+2024-09-22 00:04:20,870 [WARNING] Encountered invalid tag 'NNS' for word 'hands' in line 1070. Mapped to 'X'.
+2024-09-22 00:04:20,871 [WARNING] Encountered invalid tag 'NN' for word 'corn' in line 1073. Mapped to 'X'.
+2024-09-22 00:04:20,871 [WARNING] Encountered invalid tag 'NN' for word 'hen' in line 1083. Mapped to 'X'.
+2024-09-22 00:04:20,872 [WARNING] Encountered invalid tag 'NN' for word 'sight' in line 1088. Mapped to 'X'.
+2024-09-22 00:04:20,872 [WARNING] Encountered invalid tag 'NN' for word 'night' in line 1094. Mapped to 'X'.
+2024-09-22 00:04:20,872 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 1099. Mapped to 'X'.
+2024-09-22 00:04:20,873 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1108. Mapped to 'X'.
+2024-09-22 00:04:20,873 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 1118. Mapped to 'X'.
+2024-09-22 00:04:20,874 [WARNING] Encountered invalid tag 'NN' for word 'cornstalk' in line 1121. Mapped to 'X'.
+2024-09-22 00:04:20,874 [WARNING] Encountered invalid tag 'NN' for word 'fiddle' in line 1122. Mapped to 'X'.
+2024-09-22 00:04:20,875 [WARNING] Encountered invalid tag 'NNP' for word 'eben' in line 1125. Mapped to 'X'.
+2024-09-22 00:04:20,875 [WARNING] Encountered invalid tag 'NN' for word 'singing' in line 1128. Mapped to 'X'.
+2024-09-22 00:04:20,876 [WARNING] Encountered invalid tag 'NN' for word 'book' in line 1129. Mapped to 'X'.
+2024-09-22 00:04:20,876 [WARNING] Encountered invalid tag 'NNP' for word 'diana' in line 1132. Mapped to 'X'.
+2024-09-22 00:04:20,876 [WARNING] Encountered invalid tag 'NN' for word 'shoulder' in line 1136. Mapped to 'X'.
+2024-09-22 00:04:20,877 [WARNING] Encountered invalid tag 'NN' for word 'sock' in line 1144. Mapped to 'X'.
+2024-09-22 00:04:20,879 [WARNING] Encountered invalid tag 'NNS' for word 'youngsters' in line 1149. Mapped to 'X'.
+2024-09-22 00:04:20,879 [WARNING] Encountered invalid tag 'NNP' for word 'sam' in line 1150. Mapped to 'X'.
+2024-09-22 00:04:20,880 [WARNING] Encountered invalid tag 'NNP' for word 'obed' in line 1152. Mapped to 'X'.
+2024-09-22 00:04:20,880 [WARNING] Encountered invalid tag 'NNP' for word 'betty' in line 1155. Mapped to 'X'.
+2024-09-22 00:04:20,881 [WARNING] Encountered invalid tag 'NNS' for word 'mouths' in line 1158. Mapped to 'X'.
+2024-09-22 00:04:20,881 [WARNING] Encountered invalid tag 'NNS' for word 'eyes' in line 1161. Mapped to 'X'.
+2024-09-22 00:04:20,882 [WARNING] Encountered invalid tag 'NNP' for word 'diana' in line 1164. Mapped to 'X'.
+2024-09-22 00:04:20,882 [WARNING] Encountered invalid tag 'NN' for word 'lining' in line 1167. Mapped to 'X'.
+2024-09-22 00:04:20,883 [WARNING] Encountered invalid tag 'NN' for word 'hymn' in line 1173. Mapped to 'X'.
+2024-09-22 00:04:20,883 [WARNING] Encountered invalid tag 'NNPS' for word 'israelites' in line 1177. Mapped to 'X'.
+2024-09-22 00:04:20,884 [WARNING] Encountered invalid tag 'NN' for word 'gusto' in line 1183. Mapped to 'X'.
+2024-09-22 00:04:20,884 [WARNING] Encountered invalid tag 'NN' for word 'power' in line 1185. Mapped to 'X'.
+2024-09-22 00:04:20,884 [WARNING] Encountered invalid tag 'NNS' for word 'verses' in line 1190. Mapped to 'X'.
+2024-09-22 00:04:20,885 [WARNING] Encountered invalid tag 'NNS' for word 'numbers' in line 1202. Mapped to 'X'.
+2024-09-22 00:04:20,886 [WARNING] Encountered invalid tag 'NNS' for word 'sons' in line 1208. Mapped to 'X'.
+2024-09-22 00:04:20,886 [WARNING] Encountered invalid tag 'NNP' for word 'anak' in line 1211. Mapped to 'X'.
+2024-09-22 00:04:20,886 [WARNING] Encountered invalid tag 'NN' for word 'track' in line 1220. Mapped to 'X'.
+2024-09-22 00:04:20,887 [WARNING] Encountered invalid tag 'NN' for word 'risk' in line 1232. Mapped to 'X'.
+2024-09-22 00:04:20,888 [WARNING] Encountered invalid tag 'NN' for word 'way' in line 1239. Mapped to 'X'.
+2024-09-22 00:04:20,888 [WARNING] Encountered invalid tag 'NN' for word 'sea' in line 1256. Mapped to 'X'.
+2024-09-22 00:04:20,889 [WARNING] Encountered invalid tag 'NN' for word 'none' in line 1259. Mapped to 'X'.
+2024-09-22 00:04:20,889 [WARNING] Encountered invalid tag 'NNS' for word 'onions' in line 1265. Mapped to 'X'.
+2024-09-22 00:04:20,890 [WARNING] Encountered invalid tag 'NNS' for word 'leeks' in line 1267. Mapped to 'X'.
+2024-09-22 00:04:20,890 [WARNING] Encountered invalid tag 'NNS' for word 'garlics' in line 1272. Mapped to 'X'.
+2024-09-22 00:04:20,890 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1277. Mapped to 'X'.
+2024-09-22 00:04:20,891 [WARNING] Encountered invalid tag 'NN' for word 'face' in line 1279. Mapped to 'X'.
+2024-09-22 00:04:20,891 [WARNING] Encountered invalid tag 'NN' for word 'voice' in line 1296. Mapped to 'X'.
+2024-09-22 00:04:20,891 [WARNING] Encountered invalid tag 'NN' for word 'ditty' in line 1301. Mapped to 'X'.
+2024-09-22 00:04:20,892 [WARNING] Encountered invalid tag 'NN' for word 'power' in line 1305. Mapped to 'X'.
+2024-09-22 00:04:20,894 [WARNING] Encountered invalid tag 'NN' for word 'rear' in line 1312. Mapped to 'X'.
+2024-09-22 00:04:20,895 [WARNING] Encountered invalid tag 'NN' for word 'terror' in line 1315. Mapped to 'X'.
+2024-09-22 00:04:20,895 [WARNING] Encountered invalid tag 'NN' for word 'fear' in line 1317. Mapped to 'X'.
+2024-09-22 00:04:20,895 [WARNING] Encountered invalid tag 'NNS' for word 'trials' in line 1323. Mapped to 'X'.
+2024-09-22 00:04:20,896 [WARNING] Encountered invalid tag 'NNS' for word 'giants' in line 1330. Mapped to 'X'.
+2024-09-22 00:04:20,896 [WARNING] Encountered invalid tag 'NN' for word 'fury' in line 1334. Mapped to 'X'.
+2024-09-22 00:04:20,896 [WARNING] Encountered invalid tag 'NN' for word 'spirit' in line 1349. Mapped to 'X'.
+2024-09-22 00:04:20,897 [WARNING] Encountered invalid tag 'NNS' for word 'chickens' in line 1359. Mapped to 'X'.
+2024-09-22 00:04:20,897 [WARNING] Encountered invalid tag 'NN' for word 'winter' in line 1364. Mapped to 'X'.
+2024-09-22 00:04:20,897 [WARNING] Encountered invalid tag 'NN' for word 'spring' in line 1371. Mapped to 'X'.
+2024-09-22 00:04:20,898 [WARNING] Encountered invalid tag 'NN' for word 'news' in line 1377. Mapped to 'X'.
+2024-09-22 00:04:20,898 [WARNING] Encountered invalid tag 'NN' for word 'news' in line 1380. Mapped to 'X'.
+2024-09-22 00:04:20,899 [WARNING] Encountered invalid tag 'NN' for word 'army' in line 1388. Mapped to 'X'.
+2024-09-22 00:04:20,899 [WARNING] Encountered invalid tag 'NN' for word 'post' in line 1396. Mapped to 'X'.
+2024-09-22 00:04:20,899 [WARNING] Encountered invalid tag 'NN' for word 'rider' in line 1397. Mapped to 'X'.
+2024-09-22 00:04:20,900 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 1399. Mapped to 'X'.
+2024-09-22 00:04:20,900 [WARNING] Encountered invalid tag 'NNP' for word 'january' in line 1402. Mapped to 'X'.
+2024-09-22 00:04:20,900 [WARNING] Encountered invalid tag 'NN' for word 'thaw' in line 1403. Mapped to 'X'.
+2024-09-22 00:04:20,900 [WARNING] Encountered invalid tag 'NNS' for word 'letters' in line 1409. Mapped to 'X'.
+2024-09-22 00:04:20,901 [WARNING] Encountered invalid tag 'NN' for word 'battle' in line 1418. Mapped to 'X'.
+2024-09-22 00:04:20,901 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 1424. Mapped to 'X'.
+2024-09-22 00:04:20,901 [WARNING] Encountered invalid tag 'NNS' for word 'assurances' in line 1429. Mapped to 'X'.
+2024-09-22 00:04:20,901 [WARNING] Encountered invalid tag 'NN' for word 'health' in line 1431. Mapped to 'X'.
+2024-09-22 00:04:20,902 [WARNING] Encountered invalid tag 'NNS' for word 'hopes' in line 1434. Mapped to 'X'.
+2024-09-22 00:04:20,902 [WARNING] Encountered invalid tag 'NN' for word 'future' in line 1437. Mapped to 'X'.
+2024-09-22 00:04:20,903 [WARNING] Encountered invalid tag 'NN' for word 'news' in line 1443. Mapped to 'X'.
+2024-09-22 00:04:20,903 [WARNING] Encountered invalid tag 'NN' for word 'quarter' in line 1448. Mapped to 'X'.
+2024-09-22 00:04:20,903 [WARNING] Encountered invalid tag 'NN' for word 'man' in line 1452. Mapped to 'X'.
+2024-09-22 00:04:20,904 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 1455. Mapped to 'X'.
+2024-09-22 00:04:20,905 [WARNING] Encountered invalid tag 'NNP' for word 'company' in line 1456. Mapped to 'X'.
+2024-09-22 00:04:20,905 [WARNING] Encountered invalid tag 'NN' for word 'consumption' in line 1462. Mapped to 'X'.
+2024-09-22 00:04:20,906 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1464. Mapped to 'X'.
+2024-09-22 00:04:20,906 [WARNING] Encountered invalid tag 'NNS' for word 'tidings' in line 1472. Mapped to 'X'.
+2024-09-22 00:04:20,907 [WARNING] Encountered invalid tag 'NNP' for word 'john' in line 1476. Mapped to 'X'.
+2024-09-22 00:04:20,909 [WARNING] Encountered invalid tag 'NN' for word 'welfare' in line 1478. Mapped to 'X'.
+2024-09-22 00:04:20,909 [WARNING] Encountered invalid tag 'NN' for word 'voice' in line 1485. Mapped to 'X'.
+2024-09-22 00:04:20,910 [WARNING] Encountered invalid tag 'NN' for word 'countenance' in line 1492. Mapped to 'X'.
+2024-09-22 00:04:20,910 [WARNING] Encountered invalid tag 'NN' for word 'agony' in line 1498. Mapped to 'X'.
+2024-09-22 00:04:20,911 [WARNING] Encountered invalid tag 'NN' for word 'wife' in line 1501. Mapped to 'X'.
+2024-09-22 00:04:20,911 [WARNING] Encountered invalid tag 'NNS' for word 'eyes' in line 1503. Mapped to 'X'.
+2024-09-22 00:04:20,911 [WARNING] Encountered invalid tag 'NNS' for word 'words' in line 1506. Mapped to 'X'.
+2024-09-22 00:04:20,912 [WARNING] Encountered invalid tag 'NN' for word 'thankfulness' in line 1508. Mapped to 'X'.
+2024-09-22 00:04:20,912 [WARNING] Encountered invalid tag 'NNS' for word 'stabs' in line 1518. Mapped to 'X'.
+2024-09-22 00:04:20,913 [WARNING] Encountered invalid tag 'NN' for word 'woman' in line 1521. Mapped to 'X'.
+2024-09-22 00:04:20,913 [WARNING] Encountered invalid tag 'NN' for word 'breast' in line 1523. Mapped to 'X'.
+2024-09-22 00:04:20,914 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 1531. Mapped to 'X'.
+2024-09-22 00:04:20,914 [WARNING] Encountered invalid tag 'NN' for word 'hearing' in line 1535. Mapped to 'X'.
+2024-09-22 00:04:20,915 [WARNING] Encountered invalid tag 'NN' for word 'news' in line 1546. Mapped to 'X'.
+2024-09-22 00:04:20,915 [WARNING] Encountered invalid tag 'NNP' for word 'sylvia' in line 1549. Mapped to 'X'.
+2024-09-22 00:04:20,916 [WARNING] Encountered invalid tag 'NN' for word 'schoolmaster' in line 1556. Mapped to 'X'.
+2024-09-22 00:04:20,916 [WARNING] Encountered invalid tag 'NNP' for word 'litchfield' in line 1558. Mapped to 'X'.
+2024-09-22 00:04:20,916 [WARNING] Encountered invalid tag 'NNP' for word 'sylvy' in line 1567. Mapped to 'X'.
+2024-09-22 00:04:20,917 [WARNING] Encountered invalid tag 'NNS' for word 'times' in line 1572. Mapped to 'X'.
+2024-09-22 00:04:20,917 [WARNING] Encountered invalid tag 'NNP' for word 'sir' in line 1576. Mapped to 'X'.
+2024-09-22 00:04:20,917 [WARNING] Encountered invalid tag 'NN' for word 'schoolmaster' in line 1582. Mapped to 'X'.
+2024-09-22 00:04:20,918 [WARNING] Encountered invalid tag 'NNP' for word 'parson' in line 1584. Mapped to 'X'.
+2024-09-22 00:04:20,918 [WARNING] Encountered invalid tag 'NNP' for word 'everett' in line 1585. Mapped to 'X'.
+2024-09-22 00:04:20,918 [WARNING] Encountered invalid tag 'NNP' for word 'master' in line 1596. Mapped to 'X'.
+2024-09-22 00:04:20,919 [WARNING] Encountered invalid tag 'NNP' for word 'loomis' in line 1597. Mapped to 'X'.
+2024-09-22 00:04:20,919 [WARNING] Encountered invalid tag 'NN' for word 'blackness' in line 1603. Mapped to 'X'.
+2024-09-22 00:04:20,920 [WARNING] Encountered invalid tag 'NN' for word 'darkness' in line 1605. Mapped to 'X'.
+2024-09-22 00:04:20,920 [WARNING] Encountered invalid tag 'NN' for word 'hand' in line 1607. Mapped to 'X'.
+2024-09-22 00:04:20,921 [WARNING] Encountered invalid tag 'NNPS' for word 'philistines' in line 1610. Mapped to 'X'.
+2024-09-22 00:04:20,921 [WARNING] Encountered invalid tag 'NNP' for word 'behemoth' in line 1625. Mapped to 'X'.
+2024-09-22 00:04:20,922 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 1646. Mapped to 'X'.
+2024-09-22 00:04:20,922 [WARNING] Encountered invalid tag 'NN' for word 'marriage' in line 1652. Mapped to 'X'.
+2024-09-22 00:04:20,923 [WARNING] Encountered invalid tag 'NNPS' for word 'sackbuts' in line 1657. Mapped to 'X'.
+2024-09-22 00:04:20,925 [WARNING] Encountered invalid tag 'NNS' for word 'dulcimers' in line 1659. Mapped to 'X'.
+2024-09-22 00:04:20,926 [WARNING] Encountered invalid tag 'NN' for word 'dollar' in line 1667. Mapped to 'X'.
+2024-09-22 00:04:20,926 [WARNING] Encountered invalid tag 'NNP' for word 'thanksgiving' in line 1672. Mapped to 'X'.
+2024-09-22 00:04:20,927 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 1673. Mapped to 'X'.
+2024-09-22 00:04:20,927 [WARNING] Encountered invalid tag 'NNS' for word 'fowls' in line 1677. Mapped to 'X'.
+2024-09-22 00:04:20,928 [WARNING] Encountered invalid tag 'NNP' for word 'litchfield' in line 1680. Mapped to 'X'.
+2024-09-22 00:04:20,928 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 1682. Mapped to 'X'.
+2024-09-22 00:04:20,928 [WARNING] Encountered invalid tag 'NNS' for word 'dollars' in line 1685. Mapped to 'X'.
+2024-09-22 00:04:20,928 [WARNING] Encountered invalid tag 'NN' for word 'winter' in line 1690. Mapped to 'X'.
+2024-09-22 00:04:20,929 [WARNING] Encountered invalid tag 'NNS' for word 'clothes' in line 1691. Mapped to 'X'.
+2024-09-22 00:04:20,929 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 1695. Mapped to 'X'.
+2024-09-22 00:04:20,929 [WARNING] Encountered invalid tag 'NN' for word 'wool' in line 1702. Mapped to 'X'.
+2024-09-22 00:04:20,930 [WARNING] Encountered invalid tag 'NNP' for word 'mahala' in line 1710. Mapped to 'X'.
+2024-09-22 00:04:20,930 [WARNING] Encountered invalid tag 'NNP' for word 'green' in line 1711. Mapped to 'X'.
+2024-09-22 00:04:20,930 [WARNING] Encountered invalid tag 'NN' for word 'village' in line 1714. Mapped to 'X'.
+2024-09-22 00:04:20,930 [WARNING] Encountered invalid tag 'NNS' for word 'tailoress' in line 1715. Mapped to 'X'.
+2024-09-22 00:04:20,931 [WARNING] Encountered invalid tag 'NNS' for word 'garments' in line 1721. Mapped to 'X'.
+2024-09-22 00:04:20,931 [WARNING] Encountered invalid tag 'NNS' for word 'girls' in line 1725. Mapped to 'X'.
+2024-09-22 00:04:20,931 [WARNING] Encountered invalid tag 'NN' for word 'aspect' in line 1733. Mapped to 'X'.
+2024-09-22 00:04:20,931 [WARNING] Encountered invalid tag 'NN' for word 'fashion' in line 1736. Mapped to 'X'.
+2024-09-22 00:04:20,932 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 1742. Mapped to 'X'.
+2024-09-22 00:04:20,932 [WARNING] Encountered invalid tag 'NN' for word 'elegance' in line 1753. Mapped to 'X'.
+2024-09-22 00:04:20,933 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1756. Mapped to 'X'.
+2024-09-22 00:04:20,933 [WARNING] Encountered invalid tag 'NN' for word 'brood' in line 1763. Mapped to 'X'.
+2024-09-22 00:04:20,933 [WARNING] Encountered invalid tag 'NN' for word 'force' in line 1773. Mapped to 'X'.
+2024-09-22 00:04:20,934 [WARNING] Encountered invalid tag 'NN' for word 'freedom' in line 1775. Mapped to 'X'.
+2024-09-22 00:04:20,934 [WARNING] Encountered invalid tag 'NNS' for word 'birds' in line 1781. Mapped to 'X'.
+2024-09-22 00:04:20,934 [WARNING] Encountered invalid tag 'NNS' for word 'squirrels' in line 1783. Mapped to 'X'.
+2024-09-22 00:04:20,934 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1790. Mapped to 'X'.
+2024-09-22 00:04:20,935 [WARNING] Encountered invalid tag 'NN' for word 'face' in line 1795. Mapped to 'X'.
+2024-09-22 00:04:20,935 [WARNING] Encountered invalid tag 'NN' for word 'sigh' in line 1806. Mapped to 'X'.
+2024-09-22 00:04:20,936 [WARNING] Encountered invalid tag 'NN' for word 'husband' in line 1810. Mapped to 'X'.
+2024-09-22 00:04:20,936 [WARNING] Encountered invalid tag 'NN' for word 'soldier' in line 1813. Mapped to 'X'.
+2024-09-22 00:04:20,936 [WARNING] Encountered invalid tag 'NNS' for word 'boys' in line 1814. Mapped to 'X'.
+2024-09-22 00:04:20,936 [WARNING] Encountered invalid tag 'NN' for word 'contentment' in line 1821. Mapped to 'X'.
+2024-09-22 00:04:20,937 [WARNING] Encountered invalid tag 'NN' for word 'winter' in line 1831. Mapped to 'X'.
+2024-09-22 00:04:20,937 [WARNING] Encountered invalid tag 'NN' for word 'woodpile' in line 1834. Mapped to 'X'.
+2024-09-22 00:04:20,940 [WARNING] Encountered invalid tag 'NN' for word 'shed' in line 1847. Mapped to 'X'.
+2024-09-22 00:04:20,941 [WARNING] Encountered invalid tag 'NN' for word 'shelter' in line 1853. Mapped to 'X'.
+2024-09-22 00:04:20,941 [WARNING] Encountered invalid tag 'NNS' for word 'logs' in line 1856. Mapped to 'X'.
+2024-09-22 00:04:20,941 [WARNING] Encountered invalid tag 'NNS' for word 'chickens' in line 1863. Mapped to 'X'.
+2024-09-22 00:04:20,942 [WARNING] Encountered invalid tag 'NNS' for word 'roosts' in line 1868. Mapped to 'X'.
+2024-09-22 00:04:20,942 [WARNING] Encountered invalid tag 'NN' for word 'nest' in line 1870. Mapped to 'X'.
+2024-09-22 00:04:20,943 [WARNING] Encountered invalid tag 'NNS' for word 'boxes' in line 1871. Mapped to 'X'.
+2024-09-22 00:04:20,943 [WARNING] Encountered invalid tag 'NN' for word 'wicker' in line 1875. Mapped to 'X'.
+2024-09-22 00:04:20,943 [WARNING] Encountered invalid tag 'NNS' for word 'boards' in line 1877. Mapped to 'X'.
+2024-09-22 00:04:20,943 [WARNING] Encountered invalid tag 'NN' for word 'bark' in line 1882. Mapped to 'X'.
+2024-09-22 00:04:20,944 [WARNING] Encountered invalid tag 'NN' for word 'hemlock' in line 1885. Mapped to 'X'.
+2024-09-22 00:04:20,944 [WARNING] Encountered invalid tag 'NNS' for word 'logs' in line 1886. Mapped to 'X'.
+2024-09-22 00:04:20,944 [WARNING] Encountered invalid tag 'NN' for word 'tin' in line 1892. Mapped to 'X'.
+2024-09-22 00:04:20,945 [WARNING] Encountered invalid tag 'NNS' for word 'pails' in line 1893. Mapped to 'X'.
+2024-09-22 00:04:20,945 [WARNING] Encountered invalid tag 'NN' for word 'cellar' in line 1901. Mapped to 'X'.
+2024-09-22 00:04:20,945 [WARNING] Encountered invalid tag 'NN' for word 'outside' in line 1908. Mapped to 'X'.
+2024-09-22 00:04:20,946 [WARNING] Encountered invalid tag 'NN' for word 'cavern' in line 1913. Mapped to 'X'.
+2024-09-22 00:04:20,946 [WARNING] Encountered invalid tag 'NN' for word 'store' in line 1916. Mapped to 'X'.
+2024-09-22 00:04:20,946 [WARNING] Encountered invalid tag 'NNS' for word 'apples' in line 1918. Mapped to 'X'.
+2024-09-22 00:04:20,947 [WARNING] Encountered invalid tag 'NN' for word 'pork' in line 1920. Mapped to 'X'.
+2024-09-22 00:04:20,947 [WARNING] Encountered invalid tag 'NNS' for word 'potatoes' in line 1923. Mapped to 'X'.
+2024-09-22 00:04:20,947 [WARNING] Encountered invalid tag 'NN' for word 'beef' in line 1928. Mapped to 'X'.
+2024-09-22 00:04:20,948 [WARNING] Encountered invalid tag 'NN' for word 'stairway' in line 1931. Mapped to 'X'.
+2024-09-22 00:04:20,948 [WARNING] Encountered invalid tag 'NNS' for word 'squashes' in line 1933. Mapped to 'X'.
+2024-09-22 00:04:20,948 [WARNING] Encountered invalid tag 'NN' for word 'cupboard' in line 1936. Mapped to 'X'.
+2024-09-22 00:04:20,949 [WARNING] Encountered invalid tag 'NN' for word 'flour' in line 1938. Mapped to 'X'.
+2024-09-22 00:04:20,949 [WARNING] Encountered invalid tag 'NN' for word 'pantry' in line 1941. Mapped to 'X'.
+2024-09-22 00:04:20,949 [WARNING] Encountered invalid tag 'NN' for word 'cow' in line 1948. Mapped to 'X'.
+2024-09-22 00:04:20,950 [WARNING] Encountered invalid tag 'NN' for word 'barn' in line 1951. Mapped to 'X'.
+2024-09-22 00:04:20,950 [WARNING] Encountered invalid tag 'NN' for word 'milker' in line 1955. Mapped to 'X'.
+2024-09-22 00:04:20,950 [WARNING] Encountered invalid tag 'NNS' for word 'weeks' in line 1959. Mapped to 'X'.
+2024-09-22 00:04:20,951 [WARNING] Encountered invalid tag 'NNP' for word 'thanksgiving' in line 1960. Mapped to 'X'.
+2024-09-22 00:04:20,951 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 1966. Mapped to 'X'.
+2024-09-22 00:04:20,953 [WARNING] Encountered invalid tag 'NN' for word 'heart' in line 1969. Mapped to 'X'.
+2024-09-22 00:04:20,953 [WARNING] Encountered invalid tag 'NN' for word 'husband' in line 1977. Mapped to 'X'.
+2024-09-22 00:04:20,953 [WARNING] Encountered invalid tag 'NNS' for word 'boys' in line 1979. Mapped to 'X'.
+2024-09-22 00:04:20,956 [WARNING] Encountered invalid tag 'NNS' for word 'faces' in line 1984. Mapped to 'X'.
+2024-09-22 00:04:20,956 [WARNING] Encountered invalid tag 'NNS' for word 'causes' in line 1997. Mapped to 'X'.
+2024-09-22 00:04:20,957 [WARNING] Encountered invalid tag 'NN' for word 'thankfulness' in line 1999. Mapped to 'X'.
+2024-09-22 00:04:20,957 [WARNING] Encountered invalid tag 'NNP' for word 'thanksgiving' in line 2009. Mapped to 'X'.
+2024-09-22 00:04:20,958 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 2015. Mapped to 'X'.
+2024-09-22 00:04:20,958 [WARNING] Encountered invalid tag 'NNS' for word 'thoughts' in line 2025. Mapped to 'X'.
+2024-09-22 00:04:20,959 [WARNING] Encountered invalid tag 'NN' for word 'festival' in line 2033. Mapped to 'X'.
+2024-09-22 00:04:20,959 [WARNING] Encountered invalid tag 'NN' for word 'night' in line 2036. Mapped to 'X'.
+2024-09-22 00:04:20,960 [WARNING] Encountered invalid tag 'NN' for word 'fire' in line 2044. Mapped to 'X'.
+2024-09-22 00:04:20,960 [WARNING] Encountered invalid tag 'NN' for word 'messenger' in line 2048. Mapped to 'X'.
+2024-09-22 00:04:20,960 [WARNING] Encountered invalid tag 'NNP' for word 'litchfield' in line 2050. Mapped to 'X'.
+2024-09-22 00:04:20,961 [WARNING] Encountered invalid tag 'NN' for word 'door' in line 2055. Mapped to 'X'.
+2024-09-22 00:04:20,962 [WARNING] Encountered invalid tag 'NN' for word 'news' in line 2059. Mapped to 'X'.
+2024-09-22 00:04:20,963 [WARNING] Encountered invalid tag 'NNP' for word 'master' in line 2061. Mapped to 'X'.
+2024-09-22 00:04:20,963 [WARNING] Encountered invalid tag 'NNP' for word 'loomis' in line 2062. Mapped to 'X'.
+2024-09-22 00:04:20,963 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2064. Mapped to 'X'.
+2024-09-22 00:04:20,964 [WARNING] Encountered invalid tag 'NN' for word 'master' in line 2070. Mapped to 'X'.
+2024-09-22 00:04:20,964 [WARNING] Encountered invalid tag 'NN' for word 'levy' in line 2078. Mapped to 'X'.
+2024-09-22 00:04:20,965 [WARNING] Encountered invalid tag 'NNS' for word 'troops' in line 2080. Mapped to 'X'.
+2024-09-22 00:04:20,965 [WARNING] Encountered invalid tag 'NN' for word 'war' in line 2087. Mapped to 'X'.
+2024-09-22 00:04:20,966 [WARNING] Encountered invalid tag 'NN' for word 'wedding' in line 2098. Mapped to 'X'.
+2024-09-22 00:04:20,966 [WARNING] Encountered invalid tag 'NN' for word 'fashion' in line 2106. Mapped to 'X'.
+2024-09-22 00:04:20,966 [WARNING] Encountered invalid tag 'NNP' for word 'thanksgiving' in line 2112. Mapped to 'X'.
+2024-09-22 00:04:20,967 [WARNING] Encountered invalid tag 'NN' for word 'day' in line 2113. Mapped to 'X'.
+2024-09-22 00:04:20,967 [WARNING] Encountered invalid tag 'NNP' for word 'madam' in line 2116. Mapped to 'X'.
+2024-09-22 00:04:20,968 [WARNING] Encountered invalid tag 'NNP' for word 'everett' in line 2117. Mapped to 'X'.
+2024-09-22 00:04:20,971 [WARNING] Encountered invalid tag 'NNP' for word 'sylvy' in line 2123. Mapped to 'X'.
+2024-09-22 00:04:20,972 [WARNING] Encountered invalid tag 'NNS' for word 'people' in line 2125. Mapped to 'X'.
+2024-09-22 00:04:20,972 [WARNING] Encountered invalid tag 'NN' for word 'feast' in line 2128. Mapped to 'X'.
+2024-09-22 00:04:20,973 [WARNING] Encountered invalid tag 'NN' for word 'excitement' in line 2136. Mapped to 'X'.
+2024-09-22 00:04:20,973 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 2138. Mapped to 'X'.
+2024-09-22 00:04:20,974 [WARNING] Encountered invalid tag 'NN' for word 'madam' in line 2142. Mapped to 'X'.
+2024-09-22 00:04:20,975 [WARNING] Encountered invalid tag 'NN' for word 'note' in line 2144. Mapped to 'X'.
+2024-09-22 00:04:20,975 [WARNING] Encountered invalid tag 'NN' for word 'tribe' in line 2147. Mapped to 'X'.
+2024-09-22 00:04:20,976 [WARNING] Encountered invalid tag 'NNPS' for word 'perkins' in line 2149. Mapped to 'X'.
+2024-09-22 00:04:20,976 [WARNING] Encountered invalid tag 'NN' for word 'joy' in line 2152. Mapped to 'X'.
+2024-09-22 00:04:20,976 [WARNING] Encountered invalid tag 'NN' for word 'chill' in line 2157. Mapped to 'X'.
+2024-09-22 00:04:20,977 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2162. Mapped to 'X'.
+2024-09-22 00:04:20,977 [WARNING] Encountered invalid tag 'NNS' for word 'children' in line 2167. Mapped to 'X'.
+2024-09-22 00:04:20,978 [WARNING] Encountered invalid tag 'NN' for word 'thing' in line 2183. Mapped to 'X'.
+2024-09-22 00:04:20,978 [WARNING] Encountered invalid tag 'NN' for word 'word' in line 2188. Mapped to 'X'.
+2024-09-22 00:04:20,978 [WARNING] Encountered invalid tag 'NNS' for word 'edgeways' in line 2189. Mapped to 'X'.
+2024-09-22 00:04:20,979 [WARNING] Encountered invalid tag 'NNS' for word 'noways' in line 2203. Mapped to 'X'.
+2024-09-22 00:04:20,979 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2210. Mapped to 'X'.
+2024-09-22 00:04:20,980 [WARNING] Encountered invalid tag 'NNP' for word 'sylvy' in line 2221. Mapped to 'X'.
+2024-09-22 00:04:20,980 [WARNING] Encountered invalid tag 'NN' for word 'wedding' in line 2223. Mapped to 'X'.
+2024-09-22 00:04:20,980 [WARNING] Encountered invalid tag 'NN' for word 'chorus' in line 2232. Mapped to 'X'.
+2024-09-22 00:04:20,981 [WARNING] Encountered invalid tag 'NNS' for word 'youngsters' in line 2235. Mapped to 'X'.
+2024-09-22 00:04:20,981 [WARNING] Encountered invalid tag 'NN' for word 'team' in line 2248. Mapped to 'X'.
+2024-09-22 00:04:20,982 [WARNING] Encountered invalid tag 'NN' for word 'county' in line 2251. Mapped to 'X'.
+2024-09-22 00:04:20,982 [WARNING] Encountered invalid tag 'NNP' for word 'sylvyhad' in line 2272. Mapped to 'X'.
+2024-09-22 00:04:20,982 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2279. Mapped to 'X'.
+2024-09-22 00:04:20,983 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 2285. Mapped to 'X'.
+2024-09-22 00:04:20,983 [WARNING] Encountered invalid tag 'NN' for word 'right' in line 2294. Mapped to 'X'.
+2024-09-22 00:04:20,984 [WARNING] Encountered invalid tag 'NN' for word 'protest' in line 2300. Mapped to 'X'.
+2024-09-22 00:04:20,986 [WARNING] Encountered invalid tag 'NN' for word 'right' in line 2305. Mapped to 'X'.
+2024-09-22 00:04:20,986 [WARNING] Encountered invalid tag 'NN' for word 'primogeniture' in line 2307. Mapped to 'X'.
+2024-09-22 00:04:20,987 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2310. Mapped to 'X'.
+2024-09-22 00:04:20,988 [WARNING] Encountered invalid tag 'NNP' for word 'bible' in line 2319. Mapped to 'X'.
+2024-09-22 00:04:20,988 [WARNING] Encountered invalid tag 'NNS' for word 'leastways' in line 2321. Mapped to 'X'.
+2024-09-22 00:04:20,989 [WARNING] Encountered invalid tag 'NNP' for word 'bible' in line 2323. Mapped to 'X'.
+2024-09-22 00:04:20,989 [WARNING] Encountered invalid tag 'NNS' for word 'folks' in line 2324. Mapped to 'X'.
+2024-09-22 00:04:20,990 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 2337. Mapped to 'X'.
+2024-09-22 00:04:20,990 [WARNING] Encountered invalid tag 'NNP' for word 'eben' in line 2343. Mapped to 'X'.
+2024-09-22 00:04:20,991 [WARNING] Encountered invalid tag 'NNP' for word 'obed' in line 2353. Mapped to 'X'.
+2024-09-22 00:04:20,991 [WARNING] Encountered invalid tag 'NN' for word 'death' in line 2360. Mapped to 'X'.
+2024-09-22 00:04:20,991 [WARNING] Encountered invalid tag 'NN' for word 'somebody' in line 2362. Mapped to 'X'.
+2024-09-22 00:04:20,992 [WARNING] Encountered invalid tag 'NN' for word 'everlastin' in line 2366. Mapped to 'X'.
+2024-09-22 00:04:20,993 [WARNING] Encountered invalid tag 'NN' for word 'mischief' in line 2368. Mapped to 'X'.
+2024-09-22 00:04:20,993 [WARNING] Encountered invalid tag 'NN' for word 'home' in line 2375. Mapped to 'X'.
+2024-09-22 00:04:20,994 [WARNING] Encountered invalid tag 'NNP' for word 'mebbe' in line 2377. Mapped to 'X'.
+2024-09-22 00:04:20,994 [WARNING] Encountered invalid tag 'NNP' for word 'betty' in line 2382. Mapped to 'X'.
+2024-09-22 00:04:20,995 [WARNING] Encountered invalid tag 'NN' for word 'company' in line 2387. Mapped to 'X'.
+2024-09-22 00:04:20,995 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2389. Mapped to 'X'.
+2024-09-22 00:04:20,995 [WARNING] Encountered invalid tag 'NNP' for word 'sam' in line 2391. Mapped to 'X'.
+2024-09-22 00:04:20,995 [WARNING] Encountered invalid tag 'NNP' for word 'dianner' in line 2393. Mapped to 'X'.
+2024-09-22 00:04:20,996 [WARNING] Encountered invalid tag 'NN' for word 'care' in line 2402. Mapped to 'X'.
+2024-09-22 00:04:20,996 [WARNING] Encountered invalid tag 'NNS' for word 'cows' in line 2406. Mapped to 'X'.
+2024-09-22 00:04:20,997 [WARNING] Encountered invalid tag 'NNS' for word 'chickens' in line 2408. Mapped to 'X'.
+2024-09-22 00:04:20,997 [WARNING] Encountered invalid tag 'NNS' for word 'fires' in line 2410. Mapped to 'X'.
+2024-09-22 00:04:20,998 [WARNING] Encountered invalid tag 'NNP' for word 'sam' in line 2421. Mapped to 'X'.
+2024-09-22 00:04:20,998 [WARNING] Encountered invalid tag 'NN' for word 'howl' in line 2426. Mapped to 'X'.
+2024-09-22 00:04:20,999 [WARNING] Encountered invalid tag 'NN' for word 'sentence' in line 2429. Mapped to 'X'.
+2024-09-22 00:04:21,001 [WARNING] Encountered invalid tag 'NN' for word 'mongrel' in line 2434. Mapped to 'X'.
+2024-09-22 00:04:21,001 [WARNING] Encountered invalid tag 'NN' for word 'puppy' in line 2436. Mapped to 'X'.
+2024-09-22 00:04:21,002 [WARNING] Encountered invalid tag 'NN' for word 'beast' in line 2451. Mapped to 'X'.
+2024-09-22 00:04:21,002 [WARNING] Encountered invalid tag 'NN' for word 'concert' in line 2454. Mapped to 'X'.
+2024-09-22 00:04:21,003 [WARNING] Encountered invalid tag 'NNP' for word 'diana' in line 2456. Mapped to 'X'.
+2024-09-22 00:04:21,003 [WARNING] Encountered invalid tag 'NNS' for word 'eyes' in line 2463. Mapped to 'X'.
+2024-09-22 00:04:21,003 [WARNING] Encountered invalid tag 'NN' for word 'apron' in line 2467. Mapped to 'X'.
+2024-09-22 00:04:21,004 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2483. Mapped to 'X'.
+2024-09-22 00:04:21,004 [WARNING] Encountered invalid tag 'NN' for word 'land' in line 2488. Mapped to 'X'.
+2024-09-22 00:04:21,005 [WARNING] Encountered invalid tag 'NN' for word 'sake' in line 2490. Mapped to 'X'.
+2024-09-22 00:04:21,005 [WARNING] Encountered invalid tag 'NN' for word 'noise' in line 2495. Mapped to 'X'.
+2024-09-22 00:04:21,006 [WARNING] Encountered invalid tag 'NN' for word 'part' in line 2510. Mapped to 'X'.
+2024-09-22 00:04:21,006 [WARNING] Encountered invalid tag 'NN' for word 'weddin' in line 2521. Mapped to 'X'.
+2024-09-22 00:04:21,007 [WARNING] Encountered invalid tag 'NN' for word 'day' in line 2527. Mapped to 'X'.
+2024-09-22 00:04:21,008 [WARNING] Encountered invalid tag 'NN' for word 'look' in line 2536. Mapped to 'X'.
+2024-09-22 00:04:21,008 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 2538. Mapped to 'X'.
+2024-09-22 00:04:21,009 [WARNING] Encountered invalid tag 'NN' for word 'apple' in line 2549. Mapped to 'X'.
+2024-09-22 00:04:21,009 [WARNING] Encountered invalid tag 'NN' for word 'blossom' in line 2551. Mapped to 'X'.
+2024-09-22 00:04:21,009 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2554. Mapped to 'X'.
+2024-09-22 00:04:21,010 [WARNING] Encountered invalid tag 'NN' for word 'country' in line 2576. Mapped to 'X'.
+2024-09-22 00:04:21,010 [WARNING] Encountered invalid tag 'NN' for word 'time' in line 2577. Mapped to 'X'.
+2024-09-22 00:04:21,011 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2580. Mapped to 'X'.
+2024-09-22 00:04:21,011 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2590. Mapped to 'X'.
+2024-09-22 00:04:21,011 [WARNING] Encountered invalid tag 'NN' for word 'money' in line 2595. Mapped to 'X'.
+2024-09-22 00:04:21,012 [WARNING] Encountered invalid tag 'NN' for word 'musk' in line 2596. Mapped to 'X'.
+2024-09-22 00:04:21,012 [WARNING] Encountered invalid tag 'NN' for word 'night' in line 2599. Mapped to 'X'.
+2024-09-22 00:04:21,012 [WARNING] Encountered invalid tag 'NN' for word 'corn' in line 2611. Mapped to 'X'.
+2024-09-22 00:04:21,013 [WARNING] Encountered invalid tag 'NN' for word 'huskin' in line 2612. Mapped to 'X'.
+2024-09-22 00:04:21,013 [WARNING] Encountered invalid tag 'NNP' for word 'betty' in line 2621. Mapped to 'X'.
+2024-09-22 00:04:21,014 [WARNING] Encountered invalid tag 'NN' for word 'chintz' in line 2627. Mapped to 'X'.
+2024-09-22 00:04:21,016 [WARNING] Encountered invalid tag 'NN' for word 'gown' in line 2628. Mapped to 'X'.
+2024-09-22 00:04:21,016 [WARNING] Encountered invalid tag 'NNP' for word 'sunday' in line 2632. Mapped to 'X'.
+2024-09-22 00:04:21,017 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 2635. Mapped to 'X'.
+2024-09-22 00:04:21,017 [WARNING] Encountered invalid tag 'NN' for word 'one' in line 2638. Mapped to 'X'.
+2024-09-22 00:04:21,017 [WARNING] Encountered invalid tag 'NNP' for word 'dianner' in line 2644. Mapped to 'X'.
+2024-09-22 00:04:21,018 [WARNING] Encountered invalid tag 'NN' for word 'lawn' in line 2651. Mapped to 'X'.
+2024-09-22 00:04:21,018 [WARNING] Encountered invalid tag 'NNS' for word 'ruffles' in line 2652. Mapped to 'X'.
+2024-09-22 00:04:21,019 [WARNING] Encountered invalid tag 'NNP' for word 't' in line 2655. Mapped to 'X'.
+2024-09-22 00:04:21,019 [WARNING] Encountered invalid tag 'NN' for word 'ribbin' in line 2662. Mapped to 'X'.
+2024-09-22 00:04:21,020 [WARNING] Encountered invalid tag 'NN' for word 'chest' in line 2667. Mapped to 'X'.
+2024-09-22 00:04:21,020 [WARNING] Encountered invalid tag 'NNS' for word 'drawers' in line 2670. Mapped to 'X'.
+2024-09-22 00:04:21,021 [WARNING] Encountered invalid tag 'NN' for word 'hair' in line 2674. Mapped to 'X'.
+2024-09-22 00:04:21,021 [WARNING] Encountered invalid tag 'NNS' for word 'shoes' in line 2683. Mapped to 'X'.
+2024-09-22 00:04:21,022 [WARNING] Encountered invalid tag 'NNP' for word 'obed' in line 2688. Mapped to 'X'.
+2024-09-22 00:04:21,022 [WARNING] Encountered invalid tag 'NN' for word 'coat' in line 2690. Mapped to 'X'.
+2024-09-22 00:04:21,023 [WARNING] Encountered invalid tag 'NNS' for word 'breeches' in line 2692. Mapped to 'X'.
+2024-09-22 00:04:21,023 [WARNING] Encountered invalid tag 'NN' for word 'pa' in line 2706. Mapped to 'X'.
+2024-09-22 00:04:21,024 [WARNING] Encountered invalid tag 'NN' for word 'weddin' in line 2708. Mapped to 'X'.
+2024-09-22 00:04:21,024 [WARNING] Encountered invalid tag 'NN' for word 'suit' in line 2710. Mapped to 'X'.
+2024-09-22 00:04:21,025 [WARNING] Encountered invalid tag 'NN' for word 'cloth' in line 2719. Mapped to 'X'.
+2024-09-22 00:04:21,025 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2726. Mapped to 'X'.
+2024-09-22 00:04:21,025 [WARNING] Encountered invalid tag 'NNP' for word 'd' in line 2728. Mapped to 'X'.
+2024-09-22 00:04:21,025 [WARNING] Encountered invalid tag 'NNP' for word 'sam' in line 2733. Mapped to 'X'.
+2024-09-22 00:04:21,026 [WARNING] Encountered invalid tag 'NN' for word 'spell' in line 2738. Mapped to 'X'.
+2024-09-22 00:04:21,026 [WARNING] Encountered invalid tag 'NNP' for word 'jest' in line 2744. Mapped to 'X'.
+2024-09-22 00:04:21,027 [WARNING] Encountered invalid tag 'NNP' for word 'obey' in line 2747. Mapped to 'X'.
+2024-09-22 00:04:21,027 [WARNING] Encountered invalid tag 'NNP' for word 'paduasoy' in line 2751. Mapped to 'X'.
+2024-09-22 00:04:21,028 [WARNING] Encountered invalid tag 'NNS' for word 'stars' in line 2763. Mapped to 'X'.
+2024-09-22 00:04:21,028 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 2765. Mapped to 'X'.
+2024-09-22 00:04:21,028 [WARNING] Encountered invalid tag 'NN' for word 'mother' in line 2777. Mapped to 'X'.
+2024-09-22 00:04:21,029 [WARNING] Encountered invalid tag 'NN' for word 'gown' in line 2788. Mapped to 'X'.
+2024-09-22 00:04:21,029 [WARNING] Encountered invalid tag 'NN' for word 'lutestring' in line 2794. Mapped to 'X'.
+2024-09-22 00:04:21,030 [WARNING] Encountered invalid tag 'NN' for word 'petticoat' in line 2795. Mapped to 'X'.
+2024-09-22 00:04:21,032 [WARNING] Encountered invalid tag 'NNP' for word 'sylvy' in line 2796. Mapped to 'X'.
+2024-09-22 00:04:21,032 [WARNING] Encountered invalid tag 'NNS' for word 'years' in line 2800. Mapped to 'X'.
+2024-09-22 00:04:21,032 [WARNING] Encountered invalid tag 'NN' for word 'gown' in line 2808. Mapped to 'X'.
+2024-09-22 00:04:21,033 [WARNING] Encountered invalid tag 'NNP' for word 'linsey' in line 2818. Mapped to 'X'.
+2024-09-22 00:04:21,033 [WARNING] Encountered invalid tag 'NN' for word 'jacket' in line 2819. Mapped to 'X'.
+2024-09-22 00:04:21,033 [WARNING] Encountered invalid tag 'NN' for word 'meeting' in line 2821. Mapped to 'X'.
+2024-09-22 00:04:21,034 [WARNING] Encountered invalid tag 'NN' for word 'coat' in line 2825. Mapped to 'X'.
+2024-09-22 00:04:21,034 [WARNING] Encountered invalid tag 'NN' for word 'weddin' in line 2836. Mapped to 'X'.
+2024-09-22 00:04:21,035 [WARNING] Encountered invalid tag 'NN' for word 'gospel' in line 2843. Mapped to 'X'.
+2024-09-22 00:04:21,036 [WARNING] Encountered invalid tag 'NN' for word 'truth' in line 2844. Mapped to 'X'.
+2024-09-22 00:04:21,036 [WARNING] Encountered invalid tag 'NN' for word 'somethin'' in line 2858. Mapped to 'X'.
+2024-09-22 00:04:21,036 [WARNING] Encountered invalid tag 'NNP' for word 'sylvy' in line 2866. Mapped to 'X'.
+2024-09-22 00:04:21,037 [WARNING] Encountered invalid tag 'NNP' for word 'linsey' in line 2871. Mapped to 'X'.
+2024-09-22 00:04:21,037 [WARNING] Encountered invalid tag 'NNP' for word 'woolsy' in line 2872. Mapped to 'X'.
+2024-09-22 00:04:21,038 [WARNING] Encountered invalid tag 'NNS' for word 'dollars' in line 2885. Mapped to 'X'.
+2024-09-22 00:04:21,038 [WARNING] Encountered invalid tag 'NN' for word 'house' in line 2888. Mapped to 'X'.
+2024-09-22 00:04:21,039 [WARNING] Encountered invalid tag 'NNS' for word 'continentals' in line 2894. Mapped to 'X'.
+2024-09-22 00:04:21,039 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2904. Mapped to 'X'.
+2024-09-22 00:04:21,040 [WARNING] Encountered invalid tag 'NN' for word 'mill' in line 2911. Mapped to 'X'.
+2024-09-22 00:04:21,040 [WARNING] Encountered invalid tag 'NN' for word 'fust' in line 2912. Mapped to 'X'.
+2024-09-22 00:04:21,040 [WARNING] Encountered invalid tag 'NN' for word 'thing' in line 2913. Mapped to 'X'.
+2024-09-22 00:04:21,041 [WARNING] Encountered invalid tag 'NN' for word 'morning' in line 2916. Mapped to 'X'.
+2024-09-22 00:04:21,041 [WARNING] Encountered invalid tag 'NNP' for word 'sylvester' in line 2919. Mapped to 'X'.
+2024-09-22 00:04:21,042 [WARNING] Encountered invalid tag 'NN' for word 'mare' in line 2925. Mapped to 'X'.
+2024-09-22 00:04:21,042 [WARNING] Encountered invalid tag 'NN' for word 'spell' in line 2927. Mapped to 'X'.
+2024-09-22 00:04:21,042 [WARNING] Encountered invalid tag 'NNP' for word 'nepash' in line 2936. Mapped to 'X'.
+2024-09-22 00:04:21,043 [WARNING] Encountered invalid tag 'NN' for word 'store' in line 2940. Mapped to 'X'.
+2024-09-22 00:04:21,043 [WARNING] Encountered invalid tag 'NNP' for word 'doll' in line 2949. Mapped to 'X'.
+2024-09-22 00:04:21,043 [WARNING] Encountered invalid tag 'NNP' for word 'joe' in line 2953. Mapped to 'X'.
+2024-09-22 00:04:21,044 [WARNING] Encountered invalid tag 'NN' for word 'glance' in line 2958. Mapped to 'X'.
+2024-09-22 00:04:21,044 [WARNING] Encountered invalid tag 'NN' for word 'girl' in line 2961. Mapped to 'X'.
+2024-09-22 00:04:21,044 [WARNING] Encountered invalid tag 'NN' for word 'tongue' in line 2971. Mapped to 'X'.
+2024-09-22 00:04:21,045 [WARNING] Encountered invalid tag 'NNP' for word 'joseph' in line 2973. Mapped to 'X'.
+2024-09-22 00:04:21,045 [WARNING] Encountered invalid tag 'NN' for word 'bedtime' in line 2983. Mapped to 'X'.
+2024-09-22 00:04:21,045 [WARNING] Encountered invalid tag 'NNP' for word 'hannah' in line 2996. Mapped to 'X'.
+2024-09-22 00:04:21,048 [WARNING] Encountered invalid tag 'NN' for word 'day' in line 3000. Mapped to 'X'.
+2024-09-22 00:04:21,049 [WARNING] Encountered invalid tag 'NN' for word 'cloak' in line 3004. Mapped to 'X'.
+2024-09-22 00:04:21,049 [WARNING] Encountered invalid tag 'NN' for word 'hood' in line 3006. Mapped to 'X'.
+2024-09-22 00:04:21,050 [WARNING] Encountered invalid tag 'NN' for word 'mare' in line 3012. Mapped to 'X'.
+2024-09-22 00:04:21,050 [WARNING] Encountered invalid tag 'NNS' for word 'sides' in line 3015. Mapped to 'X'.
+2024-09-22 00:04:21,050 [WARNING] Encountered invalid tag 'NN' for word 'errand' in line 3021. Mapped to 'X'.
+2024-09-22 00:04:21,051 [WARNING] Encountered invalid tag 'NN' for word 'noon' in line 3025. Mapped to 'X'.
+2024-09-22 00:04:21,051 [WARNING] Encountered invalid tag 'NNP' for word 'mark' in line 3027. Mapped to 'X'.
+2024-09-22 00:04:21,051 [WARNING] Encountered invalid tag 'NN' for word 'means' in line 3043. Mapped to 'X'.
+2024-09-22 00:04:21,078 [INFO] Added document from data\final_pos\book_part_1_shape.txt to DocBin.
+2024-09-22 00:04:21,080 [INFO] Processing merged POS-tagged file: data\final_pos\book_part_2_shape.txt
+2024-09-22 00:04:21,087 [WARNING] Encountered invalid tag 'NNP' for word 'dolly' in line 4. Mapped to 'X'.
+2024-09-22 00:04:21,087 [WARNING] Encountered invalid tag 'NN' for word 'cloak' in line 13. Mapped to 'X'.
+2024-09-22 00:04:21,087 [WARNING] Encountered invalid tag 'NN' for word 'hood' in line 15. Mapped to 'X'.
+2024-09-22 00:04:21,088 [WARNING] Encountered invalid tag 'NN' for word 'piece' in line 25. Mapped to 'X'.
+2024-09-22 00:04:21,088 [WARNING] Encountered invalid tag 'NN' for word 'chintz' in line 27. Mapped to 'X'.
+2024-09-22 00:04:21,089 [WARNING] Encountered invalid tag 'NN' for word 'store' in line 31. Mapped to 'X'.
+2024-09-22 00:04:21,089 [WARNING] Encountered invalid tag 'NN' for word 'gown' in line 39. Mapped to 'X'.
+2024-09-22 00:04:21,090 [WARNING] Encountered invalid tag 'NN' for word 'ground' in line 48. Mapped to 'X'.
+2024-09-22 00:04:21,091 [WARNING] Encountered invalid tag 'NNS' for word 'roses' in line 54. Mapped to 'X'.
+2024-09-22 00:04:21,091 [WARNING] Encountered invalid tag 'NNS' for word 'roses' in line 59. Mapped to 'X'.
+2024-09-22 00:04:21,091 [WARNING] Encountered invalid tag 'NN' for word 'life' in line 64. Mapped to 'X'.
+2024-09-22 00:04:21,092 [ERROR] Failed to process file data\final_pos\book_part_2_shape.txt: not enough values to unpack (expected 2, got 1)
+2024-09-22 00:04:21,092 [INFO] Encountered the following invalid or non-standard tags:
+2024-09-22 00:04:21,094 [INFO] NN: 338
+2024-09-22 00:04:21,096 [INFO] NNP: 137
+2024-09-22 00:04:21,097 [INFO] NNS: 107
+2024-09-22 00:04:21,097 [INFO] NNPS: 4
+2024-09-22 00:04:21,101 [INFO] Total documents collected: 1
+2024-09-22 00:04:21,102 [ERROR] An error occurred during dataset preparation: With n_samples=1, test_size=0.1 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2024-09-22 01:50:00,887 [INFO] Starting Dataset Preparation Pipeline
+2024-09-22 01:50:00,887 [INFO] Output directory is set to: data\final_pos
+2024-09-22 01:50:00,887 [INFO] Loading spaCy blank English model.
+2024-09-22 01:50:02,028 [INFO] spaCy model loaded successfully.
+2024-09-22 01:50:02,029 [INFO] 
+Processing File Number: 1
+2024-09-22 01:50:02,029 [INFO] Loading POS-tagged data from: data\pos_tagged\document_1.pickle
+2024-09-22 01:50:02,030 [INFO] Loaded POS-tagged data from data\pos_tagged\document_1.pickle
+2024-09-22 01:50:02,031 [INFO] Loading GPT-tagged data from: data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-22 01:50:02,033 [INFO] Loaded GPT-tagged data from data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-22 01:50:02,033 [INFO] Merging SpaCy POS tags with GPT-generated noun classifications.
+2024-09-22 01:50:02,079 [INFO] Successfully merged and saved POS tags for File Number: 1
+2024-09-22 01:50:02,080 [INFO] 
+Processing File Number: 2
+2024-09-22 01:50:02,080 [INFO] Loading POS-tagged data from: data\pos_tagged\document_2.pickle
+2024-09-22 01:50:02,081 [INFO] Loaded POS-tagged data from data\pos_tagged\document_2.pickle
+2024-09-22 01:50:02,082 [INFO] Loading GPT-tagged data from: data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-22 01:50:02,083 [INFO] Loaded GPT-tagged data from data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-22 01:50:02,083 [INFO] Merging SpaCy POS tags with GPT-generated noun classifications.
+2024-09-22 01:50:02,099 [INFO] Successfully merged and saved POS tags for File Number: 2
+2024-09-22 01:50:02,099 [INFO] Starting dataset validation and preparation.
+2024-09-22 01:50:02,099 [INFO] Processing merged POS-tagged file: data\final_pos\book_part_1_shape.txt
+2024-09-22 01:50:02,139 [INFO] Added document from data\final_pos\book_part_1_shape.txt to DocBin.
+2024-09-22 01:50:02,139 [INFO] Processing merged POS-tagged file: data\final_pos\book_part_2_shape.txt
+2024-09-22 01:50:02,168 [INFO] Added document from data\final_pos\book_part_2_shape.txt to DocBin.
+2024-09-22 01:50:02,169 [INFO] No invalid tags encountered.
+2024-09-22 01:50:02,173 [INFO] Total documents collected: 2
+2024-09-22 01:50:02,174 [INFO] Training documents: 1
+2024-09-22 01:50:02,174 [INFO] Development documents: 1
+2024-09-22 01:50:02,198 [INFO] Saved training data to data\final_pos\train.spacy
+2024-09-22 01:50:02,199 [INFO] Saved development data to data\final_pos\dev.spacy
+2024-09-22 01:50:02,199 [INFO] Dataset Preparation Pipeline completed successfully.

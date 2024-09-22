@@ -1,0 +1,49 @@
+2024-09-21 23:30:50,855 [INFO] Starting ETL Pipeline
+2024-09-21 23:30:50,855 [INFO] Loading spaCy model 'en_core_web_trf'.
+2024-09-21 23:30:53,818 [INFO] spaCy model loaded successfully.
+2024-09-21 23:30:53,818 [INFO] Loading input file: data\raw_texts\stories.txt
+2024-09-21 23:30:53,822 [INFO] Input file loaded successfully.
+2024-09-21 23:30:53,823 [INFO] Filtering lines with more than 150 words.
+2024-09-21 23:30:53,827 [INFO] Filtered 6 lines exceeding 150 words.
+2024-09-21 23:30:53,828 [INFO] Starting word replacement.
+2024-09-21 23:30:54,009 [INFO] Word replacement completed.
+2024-09-21 23:30:54,010 [INFO] Converting content to lowercase.
+2024-09-21 23:30:54,012 [INFO] Splitting content into documents with up to 2500 words each.
+2024-09-21 23:30:54,013 [INFO] Total documents created: 3
+2024-09-21 23:30:54,013 [INFO] Starting POS tagging and saving process.
+2024-09-21 23:30:54,015 [INFO] Total documents to process: 3
+2024-09-21 23:30:54,016 [INFO] Processing document 1/3
+2024-09-21 23:30:59,085 [INFO] Saved POS tags to data\pos_tagged\document_1.txt
+2024-09-21 23:30:59,089 [INFO] Saved POS tags to data\pos_tagged\document_1.pickle
+2024-09-21 23:30:59,089 [INFO] Processing document 2/3
+2024-09-21 23:31:03,915 [INFO] Saved POS tags to data\pos_tagged\document_2.txt
+2024-09-21 23:31:03,919 [INFO] Saved POS tags to data\pos_tagged\document_2.pickle
+2024-09-21 23:31:03,919 [INFO] Processing document 3/3
+2024-09-21 23:31:08,075 [INFO] Saved POS tags to data\pos_tagged\document_3.txt
+2024-09-21 23:31:08,077 [INFO] Saved POS tags to data\pos_tagged\document_3.pickle
+2024-09-21 23:31:08,077 [INFO] POS tagging and saving completed successfully.
+2024-09-21 23:31:08,078 [INFO] Starting dictionary creation and splitting process.
+2024-09-21 23:31:08,078 [INFO] Output dictionary directory is set to: data\dictionaries
+2024-09-21 23:31:08,079 [INFO] Found 3 .txt files to process in 'data\pos_tagged'.
+2024-09-21 23:31:08,079 [INFO] Processing file: document_1.txt
+2024-09-21 23:31:08,104 [INFO] Processed and saved dictionary to: data\dictionaries\document_1_dict.txt
+2024-09-21 23:31:08,104 [INFO] Processing file: document_2.txt
+2024-09-21 23:31:08,118 [INFO] Processed and saved dictionary to: data\dictionaries\document_2_dict.txt
+2024-09-21 23:31:08,119 [INFO] Processing file: document_3.txt
+2024-09-21 23:31:08,130 [INFO] Processed and saved dictionary to: data\dictionaries\document_3_dict.txt
+2024-09-21 23:31:08,131 [INFO] Output directory for separated dictionaries is set to: data\separated
+2024-09-21 23:31:08,131 [INFO] Found 3 _dict.txt files to process in 'data\dictionaries'.
+2024-09-21 23:31:08,132 [INFO] Processing split for file: document_1_dict.txt
+2024-09-21 23:31:08,187 [INFO] File document_1_dict.txt split into 51 parts.
+2024-09-21 23:31:08,189 [INFO] Saved split dictionaries to pickle file: document_1_sep.pkl
+2024-09-21 23:31:08,232 [INFO] Saved split dictionaries to text file: document_1_sep.txt
+2024-09-21 23:31:08,232 [INFO] Processing split for file: document_2_dict.txt
+2024-09-21 23:31:08,280 [INFO] File document_2_dict.txt split into 53 parts.
+2024-09-21 23:31:08,282 [INFO] Saved split dictionaries to pickle file: document_2_sep.pkl
+2024-09-21 23:31:08,331 [INFO] Saved split dictionaries to text file: document_2_sep.txt
+2024-09-21 23:31:08,331 [INFO] Processing split for file: document_3_dict.txt
+2024-09-21 23:31:08,425 [INFO] File document_3_dict.txt split into 43 parts.
+2024-09-21 23:31:08,426 [INFO] Saved split dictionaries to pickle file: document_3_sep.pkl
+2024-09-21 23:31:08,459 [INFO] Saved split dictionaries to text file: document_3_sep.txt
+2024-09-21 23:31:08,461 [INFO] Dictionary creation and splitting completed successfully.
+2024-09-21 23:31:08,461 [INFO] ETL Pipeline completed successfully.

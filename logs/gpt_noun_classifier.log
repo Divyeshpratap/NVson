@@ -1,0 +1,338 @@
+2024-09-21 23:32:19,795 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:32:19,795 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:32:19,795 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:32:20,470 [INFO] Model and embeddings initialized successfully.
+2024-09-21 23:32:20,470 [INFO] 
+Processing Book Number: 1
+2024-09-21 23:32:20,486 [INFO] Loaded 51 sentences from Book 1.
+2024-09-21 23:32:20,486 [INFO] Invoking chain for sentence 1 in Book 1
+2024-09-21 23:32:20,861 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:32:20,861 [ERROR] An error occurred while processing sentence 1 in Book 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:32:20,861 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:32:20,861 [INFO] Successfully saved pickle file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-21 23:32:20,861 [INFO] Successfully saved text file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.txt
+
+2024-09-21 23:32:20,861 [INFO] 
+Processing Book Number: 2
+2024-09-21 23:32:20,877 [INFO] Loaded 53 sentences from Book 2.
+2024-09-21 23:32:20,877 [INFO] Invoking chain for sentence 1 in Book 2
+2024-09-21 23:32:21,002 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:32:21,002 [ERROR] An error occurred while processing sentence 1 in Book 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:32:21,002 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:32:21,002 [INFO] Successfully saved pickle file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-21 23:32:21,002 [INFO] Successfully saved text file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.txt
+
+2024-09-21 23:32:21,002 [INFO] 
+Processing Book Number: 3
+2024-09-21 23:32:21,018 [INFO] Loaded 43 sentences from Book 3.
+2024-09-21 23:32:21,018 [INFO] Invoking chain for sentence 1 in Book 3
+2024-09-21 23:32:21,144 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:32:21,144 [ERROR] An error occurred while processing sentence 1 in Book 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:32:21,144 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:32:21,144 [INFO] Successfully saved pickle file for Book 3: data\gpt_tagged\book_part_3_dict_shape_comb.pkl
+2024-09-21 23:32:21,144 [INFO] Successfully saved text file for Book 3: data\gpt_tagged\book_part_3_dict_shape_comb.txt
+
+2024-09-21 23:32:21,144 [INFO] GPT Noun Classifier Pipeline processing complete.
+2024-09-21 23:36:56,682 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:36:56,683 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:36:56,684 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:36:57,400 [INFO] Model and embeddings initialized successfully.
+2024-09-21 23:36:57,401 [INFO] 
+Processing Book Number: 1
+2024-09-21 23:36:57,402 [INFO] Loaded 51 sentences from Book 1.
+2024-09-21 23:36:57,403 [INFO] Invoking chain for sentence 1 in Book 1
+2024-09-21 23:36:57,756 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:36:57,757 [ERROR] An error occurred while processing sentence 1 in Book 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:36:57,757 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:36:57,758 [INFO] Successfully saved pickle file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-21 23:36:57,759 [INFO] Successfully saved text file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.txt
+
+2024-09-21 23:36:57,759 [INFO] 
+Processing Book Number: 2
+2024-09-21 23:36:57,761 [INFO] Loaded 53 sentences from Book 2.
+2024-09-21 23:36:57,761 [INFO] Invoking chain for sentence 1 in Book 2
+2024-09-21 23:36:57,865 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:36:57,867 [ERROR] An error occurred while processing sentence 1 in Book 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:36:57,869 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:36:57,870 [INFO] Successfully saved pickle file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-21 23:36:57,871 [INFO] Successfully saved text file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.txt
+
+2024-09-21 23:36:57,872 [INFO] 
+Processing Book Number: 3
+2024-09-21 23:36:57,874 [INFO] Loaded 43 sentences from Book 3.
+2024-09-21 23:36:57,875 [INFO] Invoking chain for sentence 1 in Book 3
+2024-09-21 23:36:57,986 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-09-21 23:36:57,987 [ERROR] An error occurred while processing sentence 1 in Book 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your-ope*******-key. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-09-21 23:36:57,990 [INFO] Saving progress up to the last successfully processed sentence.
+2024-09-21 23:36:57,992 [INFO] Successfully saved pickle file for Book 3: data\gpt_tagged\book_part_3_dict_shape_comb.pkl
+2024-09-21 23:36:57,994 [INFO] Successfully saved text file for Book 3: data\gpt_tagged\book_part_3_dict_shape_comb.txt
+
+2024-09-21 23:36:57,994 [INFO] GPT Noun Classifier Pipeline processing complete.
+2024-09-21 23:37:18,995 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:37:18,995 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:37:18,995 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:37:18,996 [ERROR] Failed to initialize model or embeddings: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. (type=value_error)
+2024-09-21 23:41:13,116 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:41:13,116 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:41:13,116 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:41:13,803 [INFO] Model and embeddings initialized successfully.
+2024-09-21 23:41:13,803 [INFO] 
+Processing Book Number: 1
+2024-09-21 23:41:13,803 [INFO] Loaded 51 sentences from Book 1.
+2024-09-21 23:41:13,803 [INFO] Invoking chain for sentence 1 in Book 1
+2024-09-21 23:41:19,633 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:19,664 [INFO] Invoking chain for sentence 2 in Book 1
+2024-09-21 23:41:24,694 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:24,694 [INFO] Invoking chain for sentence 3 in Book 1
+2024-09-21 23:41:28,353 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:28,394 [INFO] Invoking chain for sentence 4 in Book 1
+2024-09-21 23:41:34,704 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:34,767 [INFO] Invoking chain for sentence 5 in Book 1
+2024-09-21 23:41:35,635 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:35,649 [INFO] Invoking chain for sentence 6 in Book 1
+2024-09-21 23:41:40,492 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:40,550 [INFO] Invoking chain for sentence 7 in Book 1
+2024-09-21 23:41:45,746 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:45,749 [INFO] Invoking chain for sentence 8 in Book 1
+2024-09-21 23:41:50,606 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:50,643 [INFO] Invoking chain for sentence 9 in Book 1
+2024-09-21 23:41:56,392 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:56,396 [INFO] Invoking chain for sentence 10 in Book 1
+2024-09-21 23:41:57,403 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:41:57,407 [INFO] Invoking chain for sentence 11 in Book 1
+2024-09-21 23:42:02,550 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:02,571 [INFO] Invoking chain for sentence 12 in Book 1
+2024-09-21 23:42:05,368 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:05,423 [INFO] Invoking chain for sentence 13 in Book 1
+2024-09-21 23:42:07,217 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:07,229 [INFO] Invoking chain for sentence 14 in Book 1
+2024-09-21 23:42:12,687 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:12,720 [INFO] Invoking chain for sentence 15 in Book 1
+2024-09-21 23:42:20,459 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:20,472 [INFO] Invoking chain for sentence 16 in Book 1
+2024-09-21 23:42:26,873 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:26,904 [INFO] Invoking chain for sentence 17 in Book 1
+2024-09-21 23:42:32,535 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:32,543 [INFO] Invoking chain for sentence 18 in Book 1
+2024-09-21 23:42:38,253 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:38,269 [INFO] Invoking chain for sentence 19 in Book 1
+2024-09-21 23:42:42,357 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:42,373 [INFO] Invoking chain for sentence 20 in Book 1
+2024-09-21 23:42:48,981 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:48,994 [INFO] Invoking chain for sentence 21 in Book 1
+2024-09-21 23:42:55,790 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:42:55,796 [INFO] Invoking chain for sentence 22 in Book 1
+2024-09-21 23:43:01,935 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:01,993 [INFO] Invoking chain for sentence 23 in Book 1
+2024-09-21 23:43:03,929 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:03,968 [INFO] Invoking chain for sentence 24 in Book 1
+2024-09-21 23:43:09,448 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:09,465 [INFO] Invoking chain for sentence 25 in Book 1
+2024-09-21 23:43:15,100 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:15,111 [INFO] Invoking chain for sentence 26 in Book 1
+2024-09-21 23:43:20,753 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:20,765 [INFO] Invoking chain for sentence 27 in Book 1
+2024-09-21 23:43:26,752 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:26,763 [INFO] Invoking chain for sentence 28 in Book 1
+2024-09-21 23:43:33,646 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:33,671 [INFO] Invoking chain for sentence 29 in Book 1
+2024-09-21 23:43:41,842 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:41,844 [INFO] Invoking chain for sentence 30 in Book 1
+2024-09-21 23:43:49,307 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:49,309 [INFO] Invoking chain for sentence 31 in Book 1
+2024-09-21 23:43:56,563 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:43:56,578 [INFO] Invoking chain for sentence 32 in Book 1
+2024-09-21 23:44:03,061 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:03,080 [INFO] Invoking chain for sentence 33 in Book 1
+2024-09-21 23:44:09,133 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:09,144 [INFO] Invoking chain for sentence 34 in Book 1
+2024-09-21 23:44:14,339 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:14,395 [INFO] Invoking chain for sentence 35 in Book 1
+2024-09-21 23:44:17,349 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:17,371 [INFO] Invoking chain for sentence 36 in Book 1
+2024-09-21 23:44:22,392 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:22,395 [INFO] Invoking chain for sentence 37 in Book 1
+2024-09-21 23:44:28,682 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:28,685 [INFO] Invoking chain for sentence 38 in Book 1
+2024-09-21 23:44:36,460 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:36,464 [INFO] Invoking chain for sentence 39 in Book 1
+2024-09-21 23:44:43,184 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:43,200 [INFO] Invoking chain for sentence 40 in Book 1
+2024-09-21 23:44:48,171 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:48,183 [INFO] Invoking chain for sentence 41 in Book 1
+2024-09-21 23:44:56,413 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:44:56,428 [INFO] Invoking chain for sentence 42 in Book 1
+2024-09-21 23:45:01,646 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:01,653 [INFO] Invoking chain for sentence 43 in Book 1
+2024-09-21 23:45:07,190 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:07,193 [INFO] Invoking chain for sentence 44 in Book 1
+2024-09-21 23:45:12,652 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:12,708 [INFO] Invoking chain for sentence 45 in Book 1
+2024-09-21 23:45:20,004 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:20,069 [INFO] Invoking chain for sentence 46 in Book 1
+2024-09-21 23:45:29,479 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:29,489 [INFO] Invoking chain for sentence 47 in Book 1
+2024-09-21 23:45:37,717 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:37,733 [INFO] Invoking chain for sentence 48 in Book 1
+2024-09-21 23:45:44,469 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:44,489 [INFO] Invoking chain for sentence 49 in Book 1
+2024-09-21 23:45:50,654 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:50,710 [INFO] Invoking chain for sentence 50 in Book 1
+2024-09-21 23:45:55,656 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:55,658 [INFO] Invoking chain for sentence 51 in Book 1
+2024-09-21 23:45:58,162 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:45:58,213 [INFO] Successfully saved pickle file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.pkl
+2024-09-21 23:45:58,226 [INFO] Successfully saved text file for Book 1: data\gpt_tagged\book_part_1_dict_shape_comb.txt
+
+2024-09-21 23:45:58,226 [INFO] 
+Processing Book Number: 2
+2024-09-21 23:45:58,230 [INFO] Loaded 53 sentences from Book 2.
+2024-09-21 23:45:58,231 [INFO] Invoking chain for sentence 1 in Book 2
+2024-09-21 23:46:05,064 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:05,071 [INFO] Invoking chain for sentence 2 in Book 2
+2024-09-21 23:46:06,411 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:06,418 [INFO] Invoking chain for sentence 3 in Book 2
+2024-09-21 23:46:11,904 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:11,923 [INFO] Invoking chain for sentence 4 in Book 2
+2024-09-21 23:46:15,102 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:15,146 [INFO] Invoking chain for sentence 5 in Book 2
+2024-09-21 23:46:20,149 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:20,203 [INFO] Invoking chain for sentence 6 in Book 2
+2024-09-21 23:46:22,775 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:22,805 [INFO] Invoking chain for sentence 7 in Book 2
+2024-09-21 23:46:28,703 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:28,705 [INFO] Invoking chain for sentence 8 in Book 2
+2024-09-21 23:46:30,175 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:46:30,178 [INFO] Invoking chain for sentence 9 in Book 2
+2024-09-21 23:50:56,825 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:50:56,825 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:50:56,825 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:50:56,827 [ERROR] Failed to initialize model or embeddings: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. (type=value_error)
+2024-09-21 23:52:09,194 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:52:09,195 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:52:09,195 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:52:09,197 [ERROR] Failed to initialize model or embeddings: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. (type=value_error)
+2024-09-21 23:53:12,232 [INFO] Starting GPT Noun Classifier Pipeline
+2024-09-21 23:53:12,233 [INFO] Output directory is set to: data\gpt_tagged
+2024-09-21 23:53:12,233 [INFO] Initializing ChatOpenAI model: gpt-4o-mini
+2024-09-21 23:53:13,000 [INFO] Model and embeddings initialized successfully.
+2024-09-21 23:53:13,001 [INFO] 
+Processing Book Number: 2
+2024-09-21 23:53:13,002 [INFO] Loaded 53 sentences from Book 2.
+2024-09-21 23:53:13,002 [INFO] Invoking chain for sentence 1 in Book 2
+2024-09-21 23:53:19,067 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:19,084 [INFO] Invoking chain for sentence 2 in Book 2
+2024-09-21 23:53:21,526 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:21,529 [ERROR] Failed to decode JSON: Expecting value: line 2 column 11 (char 12)
+2024-09-21 23:53:21,529 [INFO] Invoking chain for sentence 3 in Book 2
+2024-09-21 23:53:28,678 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:28,694 [INFO] Invoking chain for sentence 4 in Book 2
+2024-09-21 23:53:32,229 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:32,238 [INFO] Invoking chain for sentence 5 in Book 2
+2024-09-21 23:53:37,952 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:37,953 [INFO] Invoking chain for sentence 6 in Book 2
+2024-09-21 23:53:39,979 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:40,029 [INFO] Invoking chain for sentence 7 in Book 2
+2024-09-21 23:53:49,429 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:49,453 [INFO] Invoking chain for sentence 8 in Book 2
+2024-09-21 23:53:50,809 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:50,822 [INFO] Invoking chain for sentence 9 in Book 2
+2024-09-21 23:53:55,906 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:55,922 [INFO] Invoking chain for sentence 10 in Book 2
+2024-09-21 23:53:57,328 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:53:57,336 [INFO] Invoking chain for sentence 11 in Book 2
+2024-09-21 23:54:02,120 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:02,128 [INFO] Invoking chain for sentence 12 in Book 2
+2024-09-21 23:54:07,586 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:07,632 [INFO] Invoking chain for sentence 13 in Book 2
+2024-09-21 23:54:09,962 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:09,982 [INFO] Invoking chain for sentence 14 in Book 2
+2024-09-21 23:54:14,928 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:14,977 [INFO] Invoking chain for sentence 15 in Book 2
+2024-09-21 23:54:20,583 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:20,597 [INFO] Invoking chain for sentence 16 in Book 2
+2024-09-21 23:54:21,741 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:21,747 [INFO] Invoking chain for sentence 17 in Book 2
+2024-09-21 23:54:25,382 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:25,420 [INFO] Invoking chain for sentence 18 in Book 2
+2024-09-21 23:54:32,191 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:32,194 [INFO] Invoking chain for sentence 19 in Book 2
+2024-09-21 23:54:36,514 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:36,532 [INFO] Invoking chain for sentence 20 in Book 2
+2024-09-21 23:54:43,379 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:43,390 [INFO] Invoking chain for sentence 21 in Book 2
+2024-09-21 23:54:47,582 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:47,603 [INFO] Invoking chain for sentence 22 in Book 2
+2024-09-21 23:54:52,849 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:52,883 [INFO] Invoking chain for sentence 23 in Book 2
+2024-09-21 23:54:58,867 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:54:58,877 [INFO] Invoking chain for sentence 24 in Book 2
+2024-09-21 23:55:00,142 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:00,156 [INFO] Invoking chain for sentence 25 in Book 2
+2024-09-21 23:55:04,311 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:04,327 [INFO] Invoking chain for sentence 26 in Book 2
+2024-09-21 23:55:10,450 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:10,457 [INFO] Invoking chain for sentence 27 in Book 2
+2024-09-21 23:55:17,351 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:17,355 [INFO] Invoking chain for sentence 28 in Book 2
+2024-09-21 23:55:24,303 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:24,319 [INFO] Invoking chain for sentence 29 in Book 2
+2024-09-21 23:55:29,480 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:29,491 [INFO] Invoking chain for sentence 30 in Book 2
+2024-09-21 23:55:32,692 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:32,723 [INFO] Invoking chain for sentence 31 in Book 2
+2024-09-21 23:55:40,275 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:40,292 [INFO] Invoking chain for sentence 32 in Book 2
+2024-09-21 23:55:43,911 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:43,923 [INFO] Invoking chain for sentence 33 in Book 2
+2024-09-21 23:55:50,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:50,638 [INFO] Invoking chain for sentence 34 in Book 2
+2024-09-21 23:55:52,025 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:52,055 [INFO] Invoking chain for sentence 35 in Book 2
+2024-09-21 23:55:57,717 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:55:57,722 [INFO] Invoking chain for sentence 36 in Book 2
+2024-09-21 23:56:03,117 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:03,126 [INFO] Invoking chain for sentence 37 in Book 2
+2024-09-21 23:56:10,333 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:10,337 [INFO] Invoking chain for sentence 38 in Book 2
+2024-09-21 23:56:15,942 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:15,954 [INFO] Invoking chain for sentence 39 in Book 2
+2024-09-21 23:56:21,648 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:21,659 [INFO] Invoking chain for sentence 40 in Book 2
+2024-09-21 23:56:26,127 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:26,135 [INFO] Invoking chain for sentence 41 in Book 2
+2024-09-21 23:56:35,741 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:35,743 [INFO] Invoking chain for sentence 42 in Book 2
+2024-09-21 23:56:41,758 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:41,760 [INFO] Invoking chain for sentence 43 in Book 2
+2024-09-21 23:56:44,579 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:44,581 [INFO] Invoking chain for sentence 44 in Book 2
+2024-09-21 23:56:52,317 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:52,329 [INFO] Invoking chain for sentence 45 in Book 2
+2024-09-21 23:56:59,524 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:56:59,526 [INFO] Invoking chain for sentence 46 in Book 2
+2024-09-21 23:57:06,408 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:06,422 [INFO] Invoking chain for sentence 47 in Book 2
+2024-09-21 23:57:15,823 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:15,825 [INFO] Invoking chain for sentence 48 in Book 2
+2024-09-21 23:57:23,583 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:23,590 [INFO] Invoking chain for sentence 49 in Book 2
+2024-09-21 23:57:27,435 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:27,455 [INFO] Invoking chain for sentence 50 in Book 2
+2024-09-21 23:57:34,076 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:34,116 [INFO] Invoking chain for sentence 51 in Book 2
+2024-09-21 23:57:40,929 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:40,941 [INFO] Invoking chain for sentence 52 in Book 2
+2024-09-21 23:57:45,460 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:45,510 [INFO] Invoking chain for sentence 53 in Book 2
+2024-09-21 23:57:52,139 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-21 23:57:52,185 [INFO] Successfully saved pickle file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.pkl
+2024-09-21 23:57:52,198 [INFO] Successfully saved text file for Book 2: data\gpt_tagged\book_part_2_dict_shape_comb.txt
+
+2024-09-21 23:57:52,199 [INFO] GPT Noun Classifier Pipeline processing complete.
