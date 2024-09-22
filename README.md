@@ -117,8 +117,8 @@ This script merges POS tags, validates them, and prepares the final dataset for 
 4. **Train using Spacy Tagger Model**
 
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-    ```bash
-    python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+   ```bash
+   python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 ## Results
 
