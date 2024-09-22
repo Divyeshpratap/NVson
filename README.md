@@ -19,7 +19,7 @@
 
 ## Introduction
 
-**NV-son: Noun Verb Syntax Observation Network** is an automated data annotation pipeline designed to enhance Part-of-Speech (POS) tagging for previously uncategorized tags. By integrating traditional NLP tools like SpaCy with modern architectures such as Large Language Models (LLMs), this project provides a unified end-to-end pipeline for POS tagging, which can be extended further to Named Entity Recognition (NER).
+**NV-son: Noun Verb Syntax Observation Network** is an automated data annotation pipeline, and pos tagger model designed to enhance Part-of-Speech (POS) tagging for previously uncategorized tags. By integrating traditional NLP tools like SpaCy with modern architectures such as Large Language Models (LLMs), this project provides a unified end-to-end pipeline for POS tagging, which can be extended further to Named Entity Recognition (NER).
 NLP tasks like POS tagging and NER require extensive resources for data annotation and preprocessing (ETL). This project targets these areas by creating an automated pipeline to preprocess data and leverage GPT/LLMs for annotating data into previously undefined categories. By simply changing the context provided to the LLM model, the pipeline can annotate data based on different classification schemes.
 In the current application, the model is guided to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN) as per instructions from [Samuelson and Smith 1998](https://cogdev.sitehost.iu.edu/labwork/sam.pdf) and MacArthur-Bates Communicative Development Inventories (MB-CDIs). These definitions can be modified to instruct the LLM to classify words into other categories as needed.
 
@@ -66,6 +66,7 @@ In the current application, the model is guided to classify nouns into Shape Nou
    - **Flexible Training**: Leverage SpaCy's SOTA model training capabilities by choosing from varied model architecture like RoBERTa or single direction RNN. 
 
 
+
 **Research Insights:**
 
 Studies have demonstrated that GPT and similar LLMs can outperform human annotators in certain classification tasks due to their vast training data and ability to recognize intricate patterns. For instance, the [QLoRA](https://arxiv.org/abs/2305.14314) paper highlights how parameter-efficient fine-tuning methods enhance the performance of language models in specialized tasks, including data annotation and classification.
@@ -82,44 +83,51 @@ Studies have demonstrated that GPT and similar LLMs can outperform human annotat
 1. **Run the ETL Pipeline**
 This script handles data extraction, preprocessing, initial POS tagging, and dictionary creation.
    ```bash
-python etl_pipeline.py \
-    --input_file_path data/raw_texts/stories.txt \
-    --max_line_words 150 \
-    --max_document_words 2500 \
-    --output_pos_tagged_dir data/pos_tagged/ \
-    --output_dict_dir data/dictionaries/ \
-    --output_separated_dir data/separated/ \
-    --min_keys_per_split 25 \
-    --max_keys_per_split 70 \
-    --log_dir logs/
+  python etl_pipeline.py \
+      --input_file_path data/raw_texts/stories.txt \
+      --max_line_words 150 \
+      --max_document_words 2500 \
+      --output_pos_tagged_dir data/pos_tagged/ \
+      --output_dict_dir data/dictionaries/ \
+      --output_separated_dir data/separated/ \
+      --min_keys_per_split 25 \
+      --max_keys_per_split 70 \
+      --log_dir logs/
 
 2. **Run the GPT Noun Classifier**
 This script leverages GPT/LLMs to classify nouns based on the processed data from the ETL pipeline.
    ```bash
-python noun_classifier.py \
-    --start_book 1 \
-    --end_book 3 \
-    --input_dir data/separated/ \
-    --output_dir data/gpt_tagged/ \
-    --log_dir logs/
+  python noun_classifier.py \
+      --start_book 1 \
+      --end_book 3 \
+      --input_dir data/separated/ \
+      --output_dir data/gpt_tagged/ \
+      --log_dir logs/
 
 3. **Run the Dataset Preparation**
 This script merges POS tags, validates them, and prepares the final dataset for model training.
    ```bash
-python dataset_preparation.py \
-    --start_num 1 \
-    --end_num 2 \
-    --pos_input_dir data/pos_tagged/ \
-    --pickle_input_dir data/gpt_tagged/ \
-    --output_dir data/final_pos/ \
-    --log_dir logs/
+  python dataset_preparation.py \
+      --start_num 1 \
+      --end_num 2 \
+      --pos_input_dir data/pos_tagged/ \
+      --pickle_input_dir data/gpt_tagged/ \
+      --output_dir data/final_pos/ \
+      --log_dir logs/
 
 4. **Train using Spacy Tagger Model**
-   ```bash
+
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+   ```bash
+  python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 
+## Results
+
+![image](https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae)
+![image](https://github.com/user-attachments/assets/03e7b274-338a-4d99-bb72-9bb89ee892a4)
+
+In the above results SN represents Shape Noun where NSN represents Non-Shape Nouns. The classification of train, pen, and apple into shape nouns is accurate as shape nouns are nouns that are primarily identified by their ditinct shape. However painting is marked as Non-shape nouns which is accurate as they can have various shape, and also cheese is marked correctly as NSN because it is primarily a material noun, and also is deformable.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
