@@ -95,30 +95,30 @@ This script handles data extraction, preprocessing, initial POS tagging, and dic
 
 2. **Run the GPT Noun Classifier**
 This script leverages GPT/LLMs to classify nouns based on the processed data from the ETL pipeline.
-  ```bash
-  python noun_classifier.py \
-      --start_book 1 \
-      --end_book 3 \
-      --input_dir data/separated/ \
-      --output_dir data/gpt_tagged/ \
-      --log_dir logs/
+      ```bash
+      python noun_classifier.py \
+          --start_book 1 \
+          --end_book 3 \
+          --input_dir data/separated/ \
+          --output_dir data/gpt_tagged/ \
+          --log_dir logs/
 
 3. **Run the Dataset Preparation**
 This script merges POS tags, validates them, and prepares the final dataset for model training.
-  ```bash
-  python dataset_preparation.py \
-      --start_num 1 \
-      --end_num 2 \
-      --pos_input_dir data/pos_tagged/ \
-      --pickle_input_dir data/gpt_tagged/ \
-      --output_dir data/final_pos/ \
-      --log_dir logs/
+    ```bash
+    python dataset_preparation.py \
+        --start_num 1 \
+        --end_num 2 \
+        --pos_input_dir data/pos_tagged/ \
+        --pickle_input_dir data/gpt_tagged/ \
+        --output_dir data/final_pos/ \
+        --log_dir logs/
 
 4. **Train using Spacy Tagger Model**
 
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-  ```bash
-  python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+    ```bash
+    python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 
 ## Results
