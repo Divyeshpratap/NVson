@@ -120,7 +120,6 @@ Once the final dataset is prepared, train the custom SpaCy POS tagger using the 
     ```bash
     python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
-
 ## Results
 
 <div align="center">
