@@ -117,14 +117,14 @@ This script merges POS tags, validates them, and prepares the final dataset for 
 4. **Train using Spacy Tagger Model**
 
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-      ```bash
-      python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+    ```bash
+    python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 
 ## Results
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae" alt="Training Quanitative Measures" width="75%">
+  <img src="https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae" alt="Training Quanitative Measures" width="50%">
 </div>
 
 <div align="center">
