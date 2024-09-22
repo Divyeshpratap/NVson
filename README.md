@@ -81,17 +81,17 @@ Studies have demonstrated that GPT and similar LLMs can outperform human annotat
 
 1. **Run the ETL Pipeline**
 This script handles data extraction, preprocessing, initial POS tagging, and dictionary creation.
-  ```bash
-  python etl_pipeline.py \
-      --input_file_path data/raw_texts/stories.txt \
-      --max_line_words 150 \
-      --max_document_words 2500 \
-      --output_pos_tagged_dir data/pos_tagged/ \
-      --output_dict_dir data/dictionaries/ \
-      --output_separated_dir data/separated/ \
-      --min_keys_per_split 25 \
-      --max_keys_per_split 70 \
-      --log_dir logs/
+    ```bash
+    python etl_pipeline.py \
+        --input_file_path data/raw_texts/stories.txt \
+        --max_line_words 150 \
+        --max_document_words 2500 \
+        --output_pos_tagged_dir data/pos_tagged/ \
+        --output_dict_dir data/dictionaries/ \
+        --output_separated_dir data/separated/ \
+        --min_keys_per_split 25 \
+        --max_keys_per_split 70 \
+        --log_dir logs/
 
 2. **Run the GPT Noun Classifier**
 This script leverages GPT/LLMs to classify nouns based on the processed data from the ETL pipeline.
