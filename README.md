@@ -13,8 +13,7 @@
   - [Pipeline Steps](#pipeline-steps)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Repository Structure](#repository-structure)
-- [Contributing](#contributing)
+- [Results](#results)
 - [License](#license)
 
 ## Introduction
@@ -82,7 +81,7 @@ Studies have demonstrated that GPT and similar LLMs can outperform human annotat
 
 1. **Run the ETL Pipeline**
 This script handles data extraction, preprocessing, initial POS tagging, and dictionary creation.
-   ```bash
+  ```bash
   python etl_pipeline.py \
       --input_file_path data/raw_texts/stories.txt \
       --max_line_words 150 \
@@ -96,7 +95,7 @@ This script handles data extraction, preprocessing, initial POS tagging, and dic
 
 2. **Run the GPT Noun Classifier**
 This script leverages GPT/LLMs to classify nouns based on the processed data from the ETL pipeline.
-   ```bash
+  ```bash
   python noun_classifier.py \
       --start_book 1 \
       --end_book 3 \
@@ -106,7 +105,7 @@ This script leverages GPT/LLMs to classify nouns based on the processed data fro
 
 3. **Run the Dataset Preparation**
 This script merges POS tags, validates them, and prepares the final dataset for model training.
-   ```bash
+  ```bash
   python dataset_preparation.py \
       --start_num 1 \
       --end_num 2 \
@@ -118,7 +117,7 @@ This script merges POS tags, validates them, and prepares the final dataset for 
 4. **Train using Spacy Tagger Model**
 
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-   ```bash
+  ```bash
   python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 
