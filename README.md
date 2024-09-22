@@ -117,14 +117,19 @@ This script merges POS tags, validates them, and prepares the final dataset for 
 4. **Train using Spacy Tagger Model**
 
 Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
-    ```bash
-    python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+      ```bash
+      python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
 
 
 ## Results
 
-![image](https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae)
-![image](https://github.com/user-attachments/assets/03e7b274-338a-4d99-bb72-9bb89ee892a4)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae" alt="Training Quanitative Measures" width="75%">
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/03e7b274-338a-4d99-bb72-9bb89ee892a4" alt="Sample Sentence Tag" width="75%">
+</div>
 
 In the above results SN represents Shape Noun where NSN represents Non-Shape Nouns. The classification of train, pen, and apple into shape nouns is accurate as shape nouns are nouns that are primarily identified by their ditinct shape. However painting is marked as Non-shape nouns which is accurate as they can have various shape, and also cheese is marked correctly as NSN because it is primarily a material noun, and also is deformable.
 
