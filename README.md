@@ -8,32 +8,26 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
+- [Architecture](#architecture)
 - [Technical Overview](#technical-overview)
   - [Pipeline Steps](#pipeline-steps)
-  - [Leveraging GPT/LLMs for Data Annotation](#leveraging-gptllms-for-data-annotation)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
 - [Contributing](#contributing)
 - [License](#license)
-- [References](#references)
 
 ## Introduction
 
-**NVson Noun Verb Syntax Observation Network for GPT/ LLM Enhanced Automatic Data Annotation pipeline**. This project presents a comprehensive pipeline designed to streamline and enhance the process of Part-of-Speech (POS) tagging for natural language processing (NLP) tasks. By integrating traditional NLP tools with advanced Generative Pre-trained Transformers (GPT) and Large Language Models (LLMs), this pipeline one command pipeline to create a custom POS tagger from scratch.
+**NV-son: Noun Verb Syntax Observation Network** is an automated data annotation pipeline designed to enhance Part-of-Speech (POS) tagging for previously uncategorized tags. By integrating traditional NLP tools like SpaCy with modern architectures such as Large Language Models (LLMs), this project provides a unified end-to-end pipeline for POS tagging, which can be extended further to Named Entity Recognition (NER).
+NLP tasks like POS tagging and NER require extensive resources for data annotation and preprocessing (ETL). This project targets these areas by creating an automated pipeline to preprocess data and leverage GPT/LLMs for annotating data into previously undefined categories. By simply changing the context provided to the LLM model, the pipeline can annotate data based on different classification schemes.
+In the current application, the model is guided to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN) as per instructions from [Samuelson and Smith 1998](https://cogdev.sitehost.iu.edu/labwork/sam.pdf) and MacArthur-Bates Communicative Development Inventories (MB-CDIs). These definitions can be modified to instruct the LLM to classify words into other categories as needed.
 
-## Features
+## Architecture
 
-- **Comprehensive ETL Process**: Extract, transform, and load raw text data with preprocessing steps like filtering, word replacement, and case normalization.
-- **Advanced POS Tagging**: Utilize SpaCy's transformer-based models for initial POS tagging.
-- **GPT-Enhanced Noun Classification**: Leverage GPT/LLMs to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN), surpassing traditional tagging methods.
-- **Data Merging and Validation**: Combine SpaCy's POS tags with GPT-generated classifications, ensuring data integrity and consistency.
-- **Automated Dataset Preparation**: Convert merged data into SpaCy's `.spacy` format, ready for model training with train-dev splits.
-- **Flexible Configuration**: Parameterize key variables for customizable processing based on user requirements.
-- **Robust Logging and Error Handling**: Maintain comprehensive logs for monitoring and debugging.
-
-## Technical Overview
+- **Data preprocessing** The dataset used to train the model is scraped from [Project Gutenberg](https://www.gutenberg.org/) specifically from the short stories for kids section. The dataset is cleaned and stored in a single-line format to facilitate POS tagging by the GPT/LLM model. The overall dataset comprises 4 million words and 100k sentences.
+- **GPT-Enhanced Noun Classification**:  Single-line sentences are passed to GPT to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN). This step eliminates the need for manual annotation by human annotators, reducing bias and improving annotation quality by leveraging the consistent expertise of the LLM.
+- **Training**: The training process is flexible and can be configured using SpaCy's configuration file. This flexibility allows users to choose between transformer-based models and conventional RNN models based on available computational resources.
 
 ### Pipeline Steps
 
@@ -67,22 +61,14 @@
      - Convert merged data into SpaCy `Doc` objects.
      - Split the dataset into training and development sets.
      - Save the final datasets in SpaCy's `.spacy` binary format.
+       
+4. **Training**
+   - **Flexible Training**: Leverage SpaCy's SOTA model training capabilities by choosing from varied model architecture like RoBERTa or single direction RNN. 
 
-### Leveraging GPT/LLMs for Data Annotation
-
-The integration of GPT and LLMs into the data annotation pipeline marks a significant advancement in NLP workflows. Traditional POS tagging relies on predefined rules and statistical models, which, while effective, have limitations in handling nuanced language patterns and context-specific classifications.
-
-**Advantages of Using GPT/LLMs:**
-
-- **Contextual Understanding**: GPT models excel in grasping the context, allowing for more accurate and context-aware annotations.
-- **Adaptive Learning**: These models can adapt to specific classification schemes, such as distinguishing between Shape Nouns (SN) and Non-Shape Nouns (NSN), based on detailed instructions.
-- **Efficiency**: Automating complex annotation tasks reduces manual effort and accelerates the data preparation process.
 
 **Research Insights:**
 
 Studies have demonstrated that GPT and similar LLMs can outperform human annotators in certain classification tasks due to their vast training data and ability to recognize intricate patterns. For instance, the [QLoRA](https://arxiv.org/abs/2305.14314) paper highlights how parameter-efficient fine-tuning methods enhance the performance of language models in specialized tasks, including data annotation and classification.
-
-By incorporating GPT/LLMs into the POS tagging pipeline, this project leverages cutting-edge AI to achieve higher accuracy and consistency in data annotation, ultimately contributing to more robust and reliable NLP models.
 
 ## Installation
 
@@ -90,3 +76,50 @@ By incorporating GPT/LLMs into the POS tagging pipeline, this project leverages 
 
    ```bash
    git clone git@github.com:Divyeshpratap/NVson.git
+
+## Usage
+
+1. **Run the ETL Pipeline**
+This script handles data extraction, preprocessing, initial POS tagging, and dictionary creation.
+   ```bash
+python etl_pipeline.py \
+    --input_file_path data/raw_texts/stories.txt \
+    --max_line_words 150 \
+    --max_document_words 2500 \
+    --output_pos_tagged_dir data/pos_tagged/ \
+    --output_dict_dir data/dictionaries/ \
+    --output_separated_dir data/separated/ \
+    --min_keys_per_split 25 \
+    --max_keys_per_split 70 \
+    --log_dir logs/
+
+2. **Run the GPT Noun Classifier**
+This script leverages GPT/LLMs to classify nouns based on the processed data from the ETL pipeline.
+   ```bash
+python noun_classifier.py \
+    --start_book 1 \
+    --end_book 3 \
+    --input_dir data/separated/ \
+    --output_dir data/gpt_tagged/ \
+    --log_dir logs/
+
+3. **Run the Dataset Preparation**
+This script merges POS tags, validates them, and prepares the final dataset for model training.
+   ```bash
+python dataset_preparation.py \
+    --start_num 1 \
+    --end_num 2 \
+    --pos_input_dir data/pos_tagged/ \
+    --pickle_input_dir data/gpt_tagged/ \
+    --output_dir data/final_pos/ \
+    --log_dir logs/
+
+4. **Train using Spacy Tagger Model**
+   ```bash
+Once the final dataset is prepared, train the custom SpaCy POS tagger using the generated .spacy files.
+python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy --gpu-id 1
+
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
