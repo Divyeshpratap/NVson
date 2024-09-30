@@ -65,7 +65,6 @@ In the current application, the model is guided to classify nouns into Shape Nou
    - **Flexible Training**: Leverage SpaCy's SOTA model training capabilities by choosing from varied model architecture like RoBERTa or single direction RNN. 
 
 
-
 **Research Insights:**
 
 Studies have demonstrated that GPT and similar LLMs can outperform human annotators in certain classification tasks due to their vast training data and ability to recognize intricate patterns. For instance, the [QLoRA](https://arxiv.org/abs/2305.14314) paper highlights how parameter-efficient fine-tuning methods enhance the performance of language models in specialized tasks, including data annotation and classification.
@@ -124,14 +123,21 @@ Once the final dataset is prepared, train the custom SpaCy POS tagger using the 
 ## Results
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae" alt="Training Quanitative Measures" width="50%">
+  <img src="https://github.com/user-attachments/assets/2b8ece9e-3fb0-497b-98d5-2a2a41bdf5ae" alt="Training Quantitative Measures" width="50%">
+  <p><i>Training Quantitative Measures</i></p>
 </div>
+
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/03e7b274-338a-4d99-bb72-9bb89ee892a4" alt="Sample Sentence Tag" width="75%">
+  <p><i>Generated Shape Noun tags for a sentence</i></p>
 </div>
 
 In the above results SN represents Shape Noun where NSN represents Non-Shape Nouns. The classification of train, pen, and apple into shape nouns is accurate as shape nouns are nouns that are primarily identified by their ditinct shape. However painting is marked as Non-shape nouns which is accurate as they can have various shape, and also cheese is marked correctly as NSN because it is primarily a material noun, and also is deformable.
 
+## Contact
+For more information, contact [Divyesh Pratap Singh](https://www.linkedin.com/in/divyesh-pratap-singh/)
+
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+This project is licensed under the [MIT License](LICENSE).
