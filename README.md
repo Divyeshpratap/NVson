@@ -4,6 +4,14 @@
 ![Generative AI](https://img.shields.io/badge/Generative%20AI-green)
 ![LangChain](https://img.shields.io/badge/LangChain-blue)
 ![Llama](https://img.shields.io/badge/Llama-grey)
+![Python](https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=ffdd54)
+![spaCy](https://img.shields.io/badge/spaCy-000000?logo=spacy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-343541?logo=OpenAI&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-grey)
+
+
 
 ## Table of Contents
 
