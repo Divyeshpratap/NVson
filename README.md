@@ -34,13 +34,20 @@ In the current application, the model is guided to classify nouns into Shape Nou
 
 - **Data preprocessing** The dataset used to train the model is scraped from [Project Gutenberg](https://www.gutenberg.org/) specifically from the short stories for kids section. The dataset is cleaned and stored in a single-line format to facilitate POS tagging by the GPT/LLM model. The overall dataset comprises 4 million words and 100k sentences.
 - **GPT-Enhanced Noun Classification**:  Single-line sentences are passed to GPT to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN). This step eliminates the need for manual annotation by human annotators, reducing bias and improving annotation quality by leveraging the consistent expertise of the LLM.
-- **Training**: The training process is flexible and can be configured using SpaCy's configuration file. This flexibility allows users to choose between transformer-based models and conventional RNN models based on available computational resources.
-
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/7753bc34-f1e4-4b63-b709-810668f87df1" alt="Training Quantitative Measures" width="75%">
+  <img src="https://github.com/user-attachments/assets/7753bc34-f1e4-4b63-b709-810668f87df1" alt="ETL Pipeline" width="75%">
   <p><i>Training Data Preparation and Annotation Pipeline</i></p>
 </div>
+
+- **Training**: The training process is flexible and can be configured using SpaCy's configuration file. This flexibility allows users to choose between transformer-based models and conventional RNN models based on available computational resources.
+
+<div align="center">
+  <img src="![image](https://github.com/user-attachments/assets/37de953c-3d87-4161-a7d3-9859f12dc0c6)
+" alt="Training Pipeline" width="75%">
+  <p><i>Training Pipeline and Model Architecture</i></p>
+</div>
+
 
 ### Pipeline Steps
 
