@@ -38,10 +38,9 @@ In the current application, the model is guided to classify nouns into Shape Nou
 
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/57fa68b8-93ce-4a61-ab41-3eebff419120" alt="Training Quantitative Measures" width="75%">
+  <img src="https://github.com/user-attachments/assets/7753bc34-f1e4-4b63-b709-810668f87df1" alt="Training Quantitative Measures" width="75%">
   <p><i>Training Data Preparation and Annotation Pipeline</i></p>
 </div>
-
 
 ### Pipeline Steps
 
