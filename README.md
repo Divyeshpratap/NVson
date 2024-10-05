@@ -43,9 +43,10 @@ In the current application, the model is guided to classify nouns into Shape Nou
 - **Training**: The training process is flexible and can be configured using SpaCy's configuration file. This flexibility allows users to choose between transformer-based models and conventional RNN models based on available computational resources.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c63d27df-1073-42c8-8271-521719bb36f3" alt="Training Pipeline" width="75%">
+  <img src="https://github.com/user-attachments/assets/3820be7c-1329-4581-bfdc-9ebb71b94a69" alt="Training Pipeline" width="75%">
   <p><i>Training Pipeline and Model Architecture</i></p>
 </div>
+
 
 ### Pipeline Steps
 
