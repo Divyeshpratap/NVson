@@ -36,6 +36,13 @@ In the current application, the model is guided to classify nouns into Shape Nou
 - **GPT-Enhanced Noun Classification**:  Single-line sentences are passed to GPT to classify nouns into Shape Nouns (SN) and Non-Shape Nouns (NSN). This step eliminates the need for manual annotation by human annotators, reducing bias and improving annotation quality by leveraging the consistent expertise of the LLM.
 - **Training**: The training process is flexible and can be configured using SpaCy's configuration file. This flexibility allows users to choose between transformer-based models and conventional RNN models based on available computational resources.
 
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/57fa68b8-93ce-4a61-ab41-3eebff419120" alt="Training Quantitative Measures" width="75%">
+  <p><i>Training Data Preparation and Annotation Pipeline</i></p>
+</div>
+
+
 ### Pipeline Steps
 
 1. **ETL Pipeline (`etl_pipeline.py`)**
