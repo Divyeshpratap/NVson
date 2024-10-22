@@ -1,4 +1,4 @@
-# gpt_noun_classifier.py
+# gpt_verb_classifier.py
 
 import os
 import json
@@ -20,7 +20,7 @@ from langchain.prompts import PromptTemplate
 
 # ----------------------- Logging Setup ----------------------- #
 
-def setup_logging(log_dir: Path, log_file: str = "gpt_noun_classifier.log"):
+def setup_logging(log_dir: Path, log_file: str = "gpt_verb_classifier.log"):
     """
     Set up logging configuration.
 
@@ -47,7 +47,7 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 DEFAULT_INPUT_DIR = Path('data/separated/')
-DEFAULT_OUTPUT_DIR = Path('data/gpt_tagged/')
+DEFAULT_OUTPUT_DIR = Path('data/gpt_tagged/verb/')
 DEFAULT_LOG_DIR = Path('logs/')
 
 DEFAULT_START_BOOK = 1
@@ -58,16 +58,16 @@ MODEL = 'gpt-4o-mini'  # Options: 'gpt-4o-mini', 'llama3.1:70b', 'llama2:latest'
 # Tag Descriptions and Prompt Template
 TAG_DESCRIPTIONS = """
 **Verb Classification: Manner Verb (MV) vs. Result Verb (RV)**
-
+You are tasked with classifying verbs in a sentence into two distinct categories based on their semantic roles:
 - **Manner Verbs (MV)**:
-    - **Definition**: Encode the *how* of an action, focusing on the method or pattern without specifying an outcome.
-    - **Semantic Basis**: Involve **nonscalar** or **complex** changes (multidimensional actions).
+    - **Definition**: These verbs encode the *how* of an action, focusing on the method or pattern without specifying an outcome.
+    - **Semantic Basis**: Involve **nonscalar** or **complex** changes like multidimensional actions (e.g., the specific pattern of leg movements while jogging)
     - **Examples**: nibble, rub, scribble, sweep, flutter, laugh, run, swim.
     - **Usage**: "She **scribbled** on the notebook." (Focus on the writing method)
 
 - **Result Verbs (RV)**:
-    - **Definition**: Encode the *outcome* or resultant state of an action.
-    - **Semantic Basis**: Involve **scalar** changes (changes along a defined scale).
+    - **Definition**: These verbs encode the *outcome* or resultant state that follows from an action.
+    - **Semantic Basis**: Involve **scalar** changes like changes along a defined scale (e.g., temperature increasing, distance decreasing). 
     - **Examples**: clean, cover, empty, fill, freeze, kill, melt, open, arrive, die, enter, faint.
     - **Usage**: "He **melted** the ice." (Focus on the ice turning to water)
 
@@ -85,13 +85,12 @@ TAG_DESCRIPTIONS = """
     - **"Paint"**:
         - **MV**: "She **painted** the wall slowly."
         - **RV**: "She **painted** the wall red."
-4. **Non-Verb Handling**: Do not assign tags to non-verbs; leave their POS tags blank.
-5. **Comprehensive Tagging**:
+4. **Comprehensive Tagging**:
     - **Instruction**: Don't forget to also tag **all** action verbs in the sentence as either MV or RV based on their semantic roles.
     - **Example**:
         - "She **asked** a question." → "asked" should be tagged as **MV**.
         - "He **said** quietly." → "said" should be tagged as **MV**.
-6. **Supplementary Classification Method**:
+5. **Supplementary Classification Method**:
     - **"But Nothing Changed"** Sentence Frame:
         - **Purpose**: Provides an additional method to determine verb classification.
         - **Guidelines**:
@@ -103,16 +102,16 @@ TAG_DESCRIPTIONS = """
             - **Result:** seems unacceptable, making it a result verb: something changed because now she is a teacher.
         - **Sentence 2 (MV):** "She **walked** to the store."
             - **Modified Sentence:** "She walked to the store, but nothing changed."
-            - **Result:** here it seems like it acceptable, making it a manner verb
-        - **Note**: This method is supplementary and should be used alongside other classification criteria.
+            - **Result:** here the sentence seems acceptable, making it a manner verb
+        - **Note**: This method is supplementary and should be used alongside primary classification criteria.
 """
 
 QUESTION_TEMPLATE = (
-    'Please provide POS tagging for the VERBS in the following document according to my specific rules. Use the input data format to fill in the dictionary, where each key is the position of the word, and the value is a tuple containing the word and its corresponding POS tag (Manner Verb "MV" or Result Verb "RV"). For words that are not verbs, leave the POS tag blank. But please make sure to classify all verbs (except Modal verbs), though something like "is/ has, would, etc." has to be skipped.  Example: Input: {10: ("She", ""), 11: ("scrubbed", ""), 12: ("the", ""), 13: ("floor", ""), 14: ("until", ""), 15: ("it", ""), 16: ("shone", ""), 17: (".", "") }. Output: {10: ("She", ""), 11: ("scrubbed", "MV"), 12: ("the", ""), 13: ("floor", ""), 14: ("until", ""), 15: ("it", ""), 16: ("shone", "RV"), 17: (".", "")}.'
+    'Please provide POS tagging for the VERBS in the following document according to my specific rules. Use the input data format to fill in the dictionary, where each key is the position of the word, and the value is a tuple containing the word and its corresponding POS tag (Manner Verb "MV" or Result Verb "RV"). For words that are not verbs, leave the POS tag blank. Example: Input: {10: ("She", ""), 11: ("scrubbed", ""), 12: ("the", ""), 13: ("floor", ""), 14: ("until", ""), 15: ("it", ""), 16: ("shone", ""), 17: (".", "") }. Output: {10: ("She", ""), 11: ("scrubbed", "MV"), 12: ("the", ""), 13: ("floor", ""), 14: ("until", ""), 15: ("it", ""), 16: ("shone", "RV"), 17: (".", "")}.'
 )
 
 PROMPT_TEMPLATE = """
-You are a POS (Part of Speech) tagger specialized in classifying verbs as Manner Verbs (MV) or Result Verbs (RV) based on specific semantic criteria.
+You are a POS (Part of Speech) tagger specialized in classifying verbs as Manner Verbs (MV) or Result Verbs (RV) based on specific semantic criteria. For words that are not verbs, leave the POS tag blank. But please make sure to classify all verbs (except Modal verbs) including action verb, though something like "is/ has, would, etc." has to be skipped.
 
 Context: {context}
 
@@ -140,8 +139,8 @@ def clean_and_parse_json(output: str, input_data_example: Dict[int, Tuple[str, s
             json_str = json_match.group()
             return json.loads(json_str)
         else:
-            # If no JSON found, assume no nouns and set POS tags to blank
-            logger.warning("No JSON found in output. Assuming no nouns present.")
+            # If no JSON found, assume no verbs and set POS tags to blank
+            logger.warning("No JSON found in output. Assuming no verbs present.")
             return {k: (v[0], "") for k, v in input_data_example.items()}
     except json.JSONDecodeError as e:
         logger.error(f"Failed to decode JSON: {e}")
@@ -153,7 +152,7 @@ def clean_and_parse_json(output: str, input_data_example: Dict[int, Tuple[str, s
 
 def main():
     # ----------------------- Argument Parsing ----------------------- #
-    parser = argparse.ArgumentParser(description="GPT Noun Classifier Pipeline")
+    parser = argparse.ArgumentParser(description="GPT Result/ Manner Verb Classifier Pipeline")
     
     parser.add_argument(
         '--start_book',
@@ -177,7 +176,7 @@ def main():
         '--output_dir',
         type=Path,
         default=DEFAULT_OUTPUT_DIR,
-        help=f"Output directory to save GPT-tagged POS data. Default: {DEFAULT_OUTPUT_DIR}"
+        help=f"Output directory to save GPT-tagged Verb POS data. Default: {DEFAULT_OUTPUT_DIR}"
     )
     parser.add_argument(
         '--log_dir',
@@ -190,7 +189,7 @@ def main():
     
     # ----------------------- Setup Logger ----------------------- #
     logger = setup_logging(args.log_dir)
-    logger.info("Starting GPT Noun Classifier Pipeline")
+    logger.info("Starting GPT Result/ Manner Verb Classifier Pipeline")
     
     # ----------------------- Validate Arguments ----------------------- #
     if args.start_book > args.end_book:
@@ -232,8 +231,8 @@ def main():
         
         # Construct Input and Output File Paths
         input_file = args.input_dir / f'document_{book_num}_sep.pkl'
-        output_pickle_file = args.output_dir / f'book_part_{book_num}_dict_shape_comb.pkl'
-        output_text_file = args.output_dir / f'book_part_{book_num}_dict_shape_comb.txt'  # New Text File Path
+        output_pickle_file = args.output_dir / f'book_part_{book_num}_dict_verb_comb.pkl'
+        output_text_file = args.output_dir / f'book_part_{book_num}_dict_verb_comb.txt'  # New Text File Path
         
         # Check if Input File Exists
         if not input_file.exists():
@@ -288,7 +287,7 @@ def main():
             logger.info('Continuing to the next book.')
             continue
     
-    logger.info('GPT Noun Classifier Pipeline processing complete.')
+    logger.info('GPT Result/ Manner Verb Classifier Pipeline processing complete.')
 
 # ----------------------- Entry Point ----------------------- #
 

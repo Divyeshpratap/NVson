@@ -652,3 +652,776 @@ Processing File Number: 2
 2024-09-22 01:50:02,198 [INFO] Saved training data to data\final_pos\train.spacy
 2024-09-22 01:50:02,199 [INFO] Saved development data to data\final_pos\dev.spacy
 2024-09-22 01:50:02,199 [INFO] Dataset Preparation Pipeline completed successfully.
+2024-10-16 05:54:04,947 [INFO] Starting Dataset Preparation Pipeline
+2024-10-16 05:54:04,947 [INFO] Output directory is set to: data\final_pos\verb
+2024-10-16 05:54:04,947 [INFO] Loading spaCy blank English model.
+2024-10-16 05:54:06,280 [INFO] spaCy model loaded successfully.
+2024-10-16 05:54:06,280 [INFO] 
+Processing File Number: 1
+2024-10-16 05:54:06,280 [INFO] Loading POS-tagged data from: data\pos_tagged\document_1.pickle
+2024-10-16 05:54:06,280 [INFO] Loaded POS-tagged data from data\pos_tagged\document_1.pickle
+2024-10-16 05:54:06,295 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 05:54:06,298 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 05:54:06,298 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 05:54:06,315 [ERROR] An error occurred during merging POS tags: 2 columns passed, passed data had 3 columns
+2024-10-16 21:18:32,809 [INFO] Starting Dataset Preparation Pipeline
+2024-10-16 21:18:32,809 [INFO] Output directory is set to: data\final_pos\verb
+2024-10-16 21:18:32,809 [INFO] Loading spaCy blank English model.
+2024-10-16 21:18:36,565 [INFO] spaCy model loaded successfully.
+2024-10-16 21:18:36,565 [INFO] 
+Processing File Number: 1
+2024-10-16 21:18:36,565 [INFO] Loading POS-tagged data from: data\pos_tagged\document_1.pickle
+2024-10-16 21:18:36,590 [INFO] Loaded POS-tagged data from data\pos_tagged\document_1.pickle
+2024-10-16 21:18:36,590 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 21:18:36,606 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 21:18:36,606 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:18:36,667 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_1_verb.txt
+2024-10-16 21:18:36,667 [INFO] Successfully merged and saved POS tags for File Number: 1
+2024-10-16 21:18:36,667 [INFO] 
+Processing File Number: 2
+2024-10-16 21:18:36,667 [INFO] Loading POS-tagged data from: data\pos_tagged\document_2.pickle
+2024-10-16 21:18:36,683 [INFO] Loaded POS-tagged data from data\pos_tagged\document_2.pickle
+2024-10-16 21:18:36,683 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_2_dict_verb_comb.pkl
+2024-10-16 21:18:36,694 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_2_dict_verb_comb.pkl
+2024-10-16 21:18:36,694 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:18:36,728 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_2_verb.txt
+2024-10-16 21:18:36,728 [INFO] Successfully merged and saved POS tags for File Number: 2
+2024-10-16 21:18:36,728 [INFO] Starting dataset validation and preparation.
+2024-10-16 21:18:36,728 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_1_verb.txt
+2024-10-16 21:18:36,819 [INFO] Added document from data\final_pos\verb\book_part_1_verb.txt to DocBin.
+2024-10-16 21:18:36,819 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_2_verb.txt
+2024-10-16 21:18:36,899 [INFO] Added document from data\final_pos\verb\book_part_2_verb.txt to DocBin.
+2024-10-16 21:18:36,899 [INFO] No invalid tags encountered.
+2024-10-16 21:18:36,914 [INFO] Total documents collected: 2
+2024-10-16 21:18:36,914 [INFO] Training documents: 1
+2024-10-16 21:18:36,914 [INFO] Development documents: 1
+2024-10-16 21:18:36,978 [INFO] Saved training data to data\final_pos\verb\train.spacy
+2024-10-16 21:18:36,978 [INFO] Saved development data to data\final_pos\verb\dev.spacy
+2024-10-16 21:18:36,978 [INFO] Dataset Preparation Pipeline completed successfully.
+2024-10-16 21:24:01,408 [INFO] Starting Dataset Preparation Pipeline
+2024-10-16 21:24:01,408 [INFO] Output directory is set to: data\final_pos\verb
+2024-10-16 21:24:01,408 [INFO] Loading spaCy blank English model.
+2024-10-16 21:24:02,802 [INFO] spaCy model loaded successfully.
+2024-10-16 21:24:02,802 [INFO] 
+Processing File Number: 1
+2024-10-16 21:24:02,802 [INFO] Loading POS-tagged data from: data\pos_tagged\document_1.pickle
+2024-10-16 21:24:02,818 [INFO] Loaded POS-tagged data from data\pos_tagged\document_1.pickle
+2024-10-16 21:24:02,818 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 21:24:02,818 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_1_dict_verb_comb.pkl
+2024-10-16 21:24:02,818 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:02,866 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_1_verb.txt
+2024-10-16 21:24:02,868 [INFO] Successfully merged and saved POS tags for File Number: 1
+2024-10-16 21:24:02,868 [INFO] 
+Processing File Number: 2
+2024-10-16 21:24:02,868 [INFO] Loading POS-tagged data from: data\pos_tagged\document_2.pickle
+2024-10-16 21:24:02,868 [INFO] Loaded POS-tagged data from data\pos_tagged\document_2.pickle
+2024-10-16 21:24:02,868 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_2_dict_verb_comb.pkl
+2024-10-16 21:24:02,868 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_2_dict_verb_comb.pkl
+2024-10-16 21:24:02,881 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:02,897 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_2_verb.txt
+2024-10-16 21:24:02,897 [INFO] Successfully merged and saved POS tags for File Number: 2
+2024-10-16 21:24:02,897 [INFO] 
+Processing File Number: 3
+2024-10-16 21:24:02,897 [INFO] Loading POS-tagged data from: data\pos_tagged\document_3.pickle
+2024-10-16 21:24:02,945 [INFO] Loaded POS-tagged data from data\pos_tagged\document_3.pickle
+2024-10-16 21:24:02,945 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_3_dict_verb_comb.pkl
+2024-10-16 21:24:02,961 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_3_dict_verb_comb.pkl
+2024-10-16 21:24:02,961 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:02,988 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_3_verb.txt
+2024-10-16 21:24:02,988 [INFO] Successfully merged and saved POS tags for File Number: 3
+2024-10-16 21:24:02,988 [INFO] 
+Processing File Number: 4
+2024-10-16 21:24:02,988 [INFO] Loading POS-tagged data from: data\pos_tagged\document_4.pickle
+2024-10-16 21:24:03,002 [INFO] Loaded POS-tagged data from data\pos_tagged\document_4.pickle
+2024-10-16 21:24:03,002 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_4_dict_verb_comb.pkl
+2024-10-16 21:24:03,008 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_4_dict_verb_comb.pkl
+2024-10-16 21:24:03,008 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,056 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_4_verb.txt
+2024-10-16 21:24:03,056 [INFO] Successfully merged and saved POS tags for File Number: 4
+2024-10-16 21:24:03,057 [INFO] 
+Processing File Number: 5
+2024-10-16 21:24:03,057 [INFO] Loading POS-tagged data from: data\pos_tagged\document_5.pickle
+2024-10-16 21:24:03,076 [INFO] Loaded POS-tagged data from data\pos_tagged\document_5.pickle
+2024-10-16 21:24:03,078 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_5_dict_verb_comb.pkl
+2024-10-16 21:24:03,090 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_5_dict_verb_comb.pkl
+2024-10-16 21:24:03,090 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,122 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_5_verb.txt
+2024-10-16 21:24:03,122 [INFO] Successfully merged and saved POS tags for File Number: 5
+2024-10-16 21:24:03,122 [INFO] 
+Processing File Number: 6
+2024-10-16 21:24:03,134 [INFO] Loading POS-tagged data from: data\pos_tagged\document_6.pickle
+2024-10-16 21:24:03,191 [INFO] Loaded POS-tagged data from data\pos_tagged\document_6.pickle
+2024-10-16 21:24:03,191 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_6_dict_verb_comb.pkl
+2024-10-16 21:24:03,207 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_6_dict_verb_comb.pkl
+2024-10-16 21:24:03,215 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,251 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_6_verb.txt
+2024-10-16 21:24:03,251 [INFO] Successfully merged and saved POS tags for File Number: 6
+2024-10-16 21:24:03,251 [INFO] 
+Processing File Number: 7
+2024-10-16 21:24:03,251 [INFO] Loading POS-tagged data from: data\pos_tagged\document_7.pickle
+2024-10-16 21:24:03,297 [INFO] Loaded POS-tagged data from data\pos_tagged\document_7.pickle
+2024-10-16 21:24:03,297 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_7_dict_verb_comb.pkl
+2024-10-16 21:24:03,311 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_7_dict_verb_comb.pkl
+2024-10-16 21:24:03,311 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,359 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_7_verb.txt
+2024-10-16 21:24:03,359 [INFO] Successfully merged and saved POS tags for File Number: 7
+2024-10-16 21:24:03,359 [INFO] 
+Processing File Number: 8
+2024-10-16 21:24:03,359 [INFO] Loading POS-tagged data from: data\pos_tagged\document_8.pickle
+2024-10-16 21:24:03,381 [INFO] Loaded POS-tagged data from data\pos_tagged\document_8.pickle
+2024-10-16 21:24:03,381 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_8_dict_verb_comb.pkl
+2024-10-16 21:24:03,401 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_8_dict_verb_comb.pkl
+2024-10-16 21:24:03,406 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,444 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_8_verb.txt
+2024-10-16 21:24:03,444 [INFO] Successfully merged and saved POS tags for File Number: 8
+2024-10-16 21:24:03,444 [INFO] 
+Processing File Number: 9
+2024-10-16 21:24:03,444 [INFO] Loading POS-tagged data from: data\pos_tagged\document_9.pickle
+2024-10-16 21:24:03,462 [INFO] Loaded POS-tagged data from data\pos_tagged\document_9.pickle
+2024-10-16 21:24:03,462 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_9_dict_verb_comb.pkl
+2024-10-16 21:24:03,485 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_9_dict_verb_comb.pkl
+2024-10-16 21:24:03,488 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,518 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_9_verb.txt
+2024-10-16 21:24:03,518 [INFO] Successfully merged and saved POS tags for File Number: 9
+2024-10-16 21:24:03,518 [INFO] 
+Processing File Number: 10
+2024-10-16 21:24:03,518 [INFO] Loading POS-tagged data from: data\pos_tagged\document_10.pickle
+2024-10-16 21:24:03,544 [INFO] Loaded POS-tagged data from data\pos_tagged\document_10.pickle
+2024-10-16 21:24:03,544 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_10_dict_verb_comb.pkl
+2024-10-16 21:24:03,566 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_10_dict_verb_comb.pkl
+2024-10-16 21:24:03,566 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,607 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_10_verb.txt
+2024-10-16 21:24:03,607 [INFO] Successfully merged and saved POS tags for File Number: 10
+2024-10-16 21:24:03,607 [INFO] 
+Processing File Number: 11
+2024-10-16 21:24:03,607 [INFO] Loading POS-tagged data from: data\pos_tagged\document_11.pickle
+2024-10-16 21:24:03,630 [INFO] Loaded POS-tagged data from data\pos_tagged\document_11.pickle
+2024-10-16 21:24:03,630 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_11_dict_verb_comb.pkl
+2024-10-16 21:24:03,647 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_11_dict_verb_comb.pkl
+2024-10-16 21:24:03,647 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,677 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_11_verb.txt
+2024-10-16 21:24:03,677 [INFO] Successfully merged and saved POS tags for File Number: 11
+2024-10-16 21:24:03,677 [INFO] 
+Processing File Number: 12
+2024-10-16 21:24:03,693 [INFO] Loading POS-tagged data from: data\pos_tagged\document_12.pickle
+2024-10-16 21:24:03,709 [INFO] Loaded POS-tagged data from data\pos_tagged\document_12.pickle
+2024-10-16 21:24:03,709 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_12_dict_verb_comb.pkl
+2024-10-16 21:24:03,728 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_12_dict_verb_comb.pkl
+2024-10-16 21:24:03,741 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,774 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_12_verb.txt
+2024-10-16 21:24:03,774 [INFO] Successfully merged and saved POS tags for File Number: 12
+2024-10-16 21:24:03,774 [INFO] 
+Processing File Number: 13
+2024-10-16 21:24:03,774 [INFO] Loading POS-tagged data from: data\pos_tagged\document_13.pickle
+2024-10-16 21:24:03,788 [INFO] Loaded POS-tagged data from data\pos_tagged\document_13.pickle
+2024-10-16 21:24:03,804 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_13_dict_verb_comb.pkl
+2024-10-16 21:24:03,822 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_13_dict_verb_comb.pkl
+2024-10-16 21:24:03,822 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,852 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_13_verb.txt
+2024-10-16 21:24:03,852 [INFO] Successfully merged and saved POS tags for File Number: 13
+2024-10-16 21:24:03,852 [INFO] 
+Processing File Number: 14
+2024-10-16 21:24:03,852 [INFO] Loading POS-tagged data from: data\pos_tagged\document_14.pickle
+2024-10-16 21:24:03,885 [INFO] Loaded POS-tagged data from data\pos_tagged\document_14.pickle
+2024-10-16 21:24:03,885 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_14_dict_verb_comb.pkl
+2024-10-16 21:24:03,901 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_14_dict_verb_comb.pkl
+2024-10-16 21:24:03,901 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:03,932 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_14_verb.txt
+2024-10-16 21:24:03,932 [INFO] Successfully merged and saved POS tags for File Number: 14
+2024-10-16 21:24:03,932 [INFO] 
+Processing File Number: 15
+2024-10-16 21:24:03,932 [INFO] Loading POS-tagged data from: data\pos_tagged\document_15.pickle
+2024-10-16 21:24:03,964 [INFO] Loaded POS-tagged data from data\pos_tagged\document_15.pickle
+2024-10-16 21:24:03,964 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_15_dict_verb_comb.pkl
+2024-10-16 21:24:03,980 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_15_dict_verb_comb.pkl
+2024-10-16 21:24:03,980 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,023 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_15_verb.txt
+2024-10-16 21:24:04,023 [INFO] Successfully merged and saved POS tags for File Number: 15
+2024-10-16 21:24:04,023 [INFO] 
+Processing File Number: 16
+2024-10-16 21:24:04,023 [INFO] Loading POS-tagged data from: data\pos_tagged\document_16.pickle
+2024-10-16 21:24:04,045 [INFO] Loaded POS-tagged data from data\pos_tagged\document_16.pickle
+2024-10-16 21:24:04,045 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_16_dict_verb_comb.pkl
+2024-10-16 21:24:04,060 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_16_dict_verb_comb.pkl
+2024-10-16 21:24:04,060 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,092 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_16_verb.txt
+2024-10-16 21:24:04,092 [INFO] Successfully merged and saved POS tags for File Number: 16
+2024-10-16 21:24:04,092 [INFO] 
+Processing File Number: 17
+2024-10-16 21:24:04,107 [INFO] Loading POS-tagged data from: data\pos_tagged\document_17.pickle
+2024-10-16 21:24:04,124 [INFO] Loaded POS-tagged data from data\pos_tagged\document_17.pickle
+2024-10-16 21:24:04,124 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_17_dict_verb_comb.pkl
+2024-10-16 21:24:04,159 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_17_dict_verb_comb.pkl
+2024-10-16 21:24:04,159 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,187 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_17_verb.txt
+2024-10-16 21:24:04,187 [INFO] Successfully merged and saved POS tags for File Number: 17
+2024-10-16 21:24:04,187 [INFO] 
+Processing File Number: 18
+2024-10-16 21:24:04,187 [INFO] Loading POS-tagged data from: data\pos_tagged\document_18.pickle
+2024-10-16 21:24:04,219 [INFO] Loaded POS-tagged data from data\pos_tagged\document_18.pickle
+2024-10-16 21:24:04,219 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_18_dict_verb_comb.pkl
+2024-10-16 21:24:04,240 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_18_dict_verb_comb.pkl
+2024-10-16 21:24:04,240 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,267 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_18_verb.txt
+2024-10-16 21:24:04,267 [INFO] Successfully merged and saved POS tags for File Number: 18
+2024-10-16 21:24:04,267 [INFO] 
+Processing File Number: 19
+2024-10-16 21:24:04,283 [INFO] Loading POS-tagged data from: data\pos_tagged\document_19.pickle
+2024-10-16 21:24:04,299 [INFO] Loaded POS-tagged data from data\pos_tagged\document_19.pickle
+2024-10-16 21:24:04,299 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_19_dict_verb_comb.pkl
+2024-10-16 21:24:04,331 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_19_dict_verb_comb.pkl
+2024-10-16 21:24:04,331 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,363 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_19_verb.txt
+2024-10-16 21:24:04,363 [INFO] Successfully merged and saved POS tags for File Number: 19
+2024-10-16 21:24:04,363 [INFO] 
+Processing File Number: 20
+2024-10-16 21:24:04,363 [INFO] Loading POS-tagged data from: data\pos_tagged\document_20.pickle
+2024-10-16 21:24:04,412 [INFO] Loaded POS-tagged data from data\pos_tagged\document_20.pickle
+2024-10-16 21:24:04,412 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_20_dict_verb_comb.pkl
+2024-10-16 21:24:04,434 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_20_dict_verb_comb.pkl
+2024-10-16 21:24:04,434 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,474 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_20_verb.txt
+2024-10-16 21:24:04,474 [INFO] Successfully merged and saved POS tags for File Number: 20
+2024-10-16 21:24:04,474 [INFO] 
+Processing File Number: 21
+2024-10-16 21:24:04,474 [INFO] Loading POS-tagged data from: data\pos_tagged\document_21.pickle
+2024-10-16 21:24:04,500 [INFO] Loaded POS-tagged data from data\pos_tagged\document_21.pickle
+2024-10-16 21:24:04,500 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_21_dict_verb_comb.pkl
+2024-10-16 21:24:04,523 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_21_dict_verb_comb.pkl
+2024-10-16 21:24:04,523 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,557 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_21_verb.txt
+2024-10-16 21:24:04,557 [INFO] Successfully merged and saved POS tags for File Number: 21
+2024-10-16 21:24:04,557 [INFO] 
+Processing File Number: 22
+2024-10-16 21:24:04,557 [INFO] Loading POS-tagged data from: data\pos_tagged\document_22.pickle
+2024-10-16 21:24:04,585 [INFO] Loaded POS-tagged data from data\pos_tagged\document_22.pickle
+2024-10-16 21:24:04,585 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_22_dict_verb_comb.pkl
+2024-10-16 21:24:04,609 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_22_dict_verb_comb.pkl
+2024-10-16 21:24:04,609 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,647 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_22_verb.txt
+2024-10-16 21:24:04,649 [INFO] Successfully merged and saved POS tags for File Number: 22
+2024-10-16 21:24:04,649 [INFO] 
+Processing File Number: 23
+2024-10-16 21:24:04,649 [INFO] Loading POS-tagged data from: data\pos_tagged\document_23.pickle
+2024-10-16 21:24:04,773 [INFO] Loaded POS-tagged data from data\pos_tagged\document_23.pickle
+2024-10-16 21:24:04,773 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_23_dict_verb_comb.pkl
+2024-10-16 21:24:04,789 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_23_dict_verb_comb.pkl
+2024-10-16 21:24:04,791 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:04,820 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_23_verb.txt
+2024-10-16 21:24:04,820 [INFO] Successfully merged and saved POS tags for File Number: 23
+2024-10-16 21:24:04,820 [INFO] 
+Processing File Number: 24
+2024-10-16 21:24:04,820 [INFO] Loading POS-tagged data from: data\pos_tagged\document_24.pickle
+2024-10-16 21:24:04,988 [INFO] Loaded POS-tagged data from data\pos_tagged\document_24.pickle
+2024-10-16 21:24:04,988 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_24_dict_verb_comb.pkl
+2024-10-16 21:24:05,004 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_24_dict_verb_comb.pkl
+2024-10-16 21:24:05,004 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,036 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_24_verb.txt
+2024-10-16 21:24:05,036 [INFO] Successfully merged and saved POS tags for File Number: 24
+2024-10-16 21:24:05,036 [INFO] 
+Processing File Number: 25
+2024-10-16 21:24:05,038 [INFO] Loading POS-tagged data from: data\pos_tagged\document_25.pickle
+2024-10-16 21:24:05,052 [INFO] Loaded POS-tagged data from data\pos_tagged\document_25.pickle
+2024-10-16 21:24:05,052 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_25_dict_verb_comb.pkl
+2024-10-16 21:24:05,067 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_25_dict_verb_comb.pkl
+2024-10-16 21:24:05,067 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,083 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_25_verb.txt
+2024-10-16 21:24:05,099 [INFO] Successfully merged and saved POS tags for File Number: 25
+2024-10-16 21:24:05,099 [INFO] 
+Processing File Number: 26
+2024-10-16 21:24:05,099 [INFO] Loading POS-tagged data from: data\pos_tagged\document_26.pickle
+2024-10-16 21:24:05,116 [INFO] Loaded POS-tagged data from data\pos_tagged\document_26.pickle
+2024-10-16 21:24:05,116 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_26_dict_verb_comb.pkl
+2024-10-16 21:24:05,138 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_26_dict_verb_comb.pkl
+2024-10-16 21:24:05,138 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,183 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_26_verb.txt
+2024-10-16 21:24:05,183 [INFO] Successfully merged and saved POS tags for File Number: 26
+2024-10-16 21:24:05,183 [INFO] 
+Processing File Number: 27
+2024-10-16 21:24:05,183 [INFO] Loading POS-tagged data from: data\pos_tagged\document_27.pickle
+2024-10-16 21:24:05,228 [INFO] Loaded POS-tagged data from data\pos_tagged\document_27.pickle
+2024-10-16 21:24:05,233 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_27_dict_verb_comb.pkl
+2024-10-16 21:24:05,258 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_27_dict_verb_comb.pkl
+2024-10-16 21:24:05,258 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,298 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_27_verb.txt
+2024-10-16 21:24:05,298 [INFO] Successfully merged and saved POS tags for File Number: 27
+2024-10-16 21:24:05,298 [INFO] 
+Processing File Number: 28
+2024-10-16 21:24:05,298 [INFO] Loading POS-tagged data from: data\pos_tagged\document_28.pickle
+2024-10-16 21:24:05,321 [INFO] Loaded POS-tagged data from data\pos_tagged\document_28.pickle
+2024-10-16 21:24:05,321 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_28_dict_verb_comb.pkl
+2024-10-16 21:24:05,347 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_28_dict_verb_comb.pkl
+2024-10-16 21:24:05,353 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,390 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_28_verb.txt
+2024-10-16 21:24:05,390 [INFO] Successfully merged and saved POS tags for File Number: 28
+2024-10-16 21:24:05,390 [INFO] 
+Processing File Number: 29
+2024-10-16 21:24:05,390 [INFO] Loading POS-tagged data from: data\pos_tagged\document_29.pickle
+2024-10-16 21:24:05,402 [INFO] Loaded POS-tagged data from data\pos_tagged\document_29.pickle
+2024-10-16 21:24:05,416 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_29_dict_verb_comb.pkl
+2024-10-16 21:24:05,434 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_29_dict_verb_comb.pkl
+2024-10-16 21:24:05,434 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,465 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_29_verb.txt
+2024-10-16 21:24:05,480 [INFO] Successfully merged and saved POS tags for File Number: 29
+2024-10-16 21:24:05,480 [INFO] 
+Processing File Number: 30
+2024-10-16 21:24:05,480 [INFO] Loading POS-tagged data from: data\pos_tagged\document_30.pickle
+2024-10-16 21:24:05,500 [INFO] Loaded POS-tagged data from data\pos_tagged\document_30.pickle
+2024-10-16 21:24:05,500 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_30_dict_verb_comb.pkl
+2024-10-16 21:24:05,530 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_30_dict_verb_comb.pkl
+2024-10-16 21:24:05,530 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,577 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_30_verb.txt
+2024-10-16 21:24:05,578 [INFO] Successfully merged and saved POS tags for File Number: 30
+2024-10-16 21:24:05,578 [INFO] 
+Processing File Number: 31
+2024-10-16 21:24:05,578 [INFO] Loading POS-tagged data from: data\pos_tagged\document_31.pickle
+2024-10-16 21:24:05,598 [INFO] Loaded POS-tagged data from data\pos_tagged\document_31.pickle
+2024-10-16 21:24:05,598 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_31_dict_verb_comb.pkl
+2024-10-16 21:24:05,624 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_31_dict_verb_comb.pkl
+2024-10-16 21:24:05,624 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,665 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_31_verb.txt
+2024-10-16 21:24:05,665 [INFO] Successfully merged and saved POS tags for File Number: 31
+2024-10-16 21:24:05,672 [INFO] 
+Processing File Number: 32
+2024-10-16 21:24:05,672 [INFO] Loading POS-tagged data from: data\pos_tagged\document_32.pickle
+2024-10-16 21:24:05,692 [INFO] Loaded POS-tagged data from data\pos_tagged\document_32.pickle
+2024-10-16 21:24:05,692 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_32_dict_verb_comb.pkl
+2024-10-16 21:24:05,784 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_32_dict_verb_comb.pkl
+2024-10-16 21:24:05,784 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,816 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_32_verb.txt
+2024-10-16 21:24:05,816 [INFO] Successfully merged and saved POS tags for File Number: 32
+2024-10-16 21:24:05,816 [INFO] 
+Processing File Number: 33
+2024-10-16 21:24:05,816 [INFO] Loading POS-tagged data from: data\pos_tagged\document_33.pickle
+2024-10-16 21:24:05,847 [INFO] Loaded POS-tagged data from data\pos_tagged\document_33.pickle
+2024-10-16 21:24:05,847 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_33_dict_verb_comb.pkl
+2024-10-16 21:24:05,863 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_33_dict_verb_comb.pkl
+2024-10-16 21:24:05,863 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:05,910 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_33_verb.txt
+2024-10-16 21:24:05,910 [INFO] Successfully merged and saved POS tags for File Number: 33
+2024-10-16 21:24:05,910 [INFO] 
+Processing File Number: 34
+2024-10-16 21:24:05,910 [INFO] Loading POS-tagged data from: data\pos_tagged\document_34.pickle
+2024-10-16 21:24:05,942 [INFO] Loaded POS-tagged data from data\pos_tagged\document_34.pickle
+2024-10-16 21:24:05,942 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_34_dict_verb_comb.pkl
+2024-10-16 21:24:05,958 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_34_dict_verb_comb.pkl
+2024-10-16 21:24:05,958 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,006 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_34_verb.txt
+2024-10-16 21:24:06,006 [INFO] Successfully merged and saved POS tags for File Number: 34
+2024-10-16 21:24:06,006 [INFO] 
+Processing File Number: 35
+2024-10-16 21:24:06,006 [INFO] Loading POS-tagged data from: data\pos_tagged\document_35.pickle
+2024-10-16 21:24:06,048 [INFO] Loaded POS-tagged data from data\pos_tagged\document_35.pickle
+2024-10-16 21:24:06,048 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_35_dict_verb_comb.pkl
+2024-10-16 21:24:06,072 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_35_dict_verb_comb.pkl
+2024-10-16 21:24:06,072 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,118 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_35_verb.txt
+2024-10-16 21:24:06,118 [INFO] Successfully merged and saved POS tags for File Number: 35
+2024-10-16 21:24:06,118 [INFO] 
+Processing File Number: 36
+2024-10-16 21:24:06,118 [INFO] Loading POS-tagged data from: data\pos_tagged\document_36.pickle
+2024-10-16 21:24:06,135 [INFO] Loaded POS-tagged data from data\pos_tagged\document_36.pickle
+2024-10-16 21:24:06,135 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_36_dict_verb_comb.pkl
+2024-10-16 21:24:06,168 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_36_dict_verb_comb.pkl
+2024-10-16 21:24:06,168 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,214 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_36_verb.txt
+2024-10-16 21:24:06,214 [INFO] Successfully merged and saved POS tags for File Number: 36
+2024-10-16 21:24:06,214 [INFO] 
+Processing File Number: 37
+2024-10-16 21:24:06,214 [INFO] Loading POS-tagged data from: data\pos_tagged\document_37.pickle
+2024-10-16 21:24:06,230 [INFO] Loaded POS-tagged data from data\pos_tagged\document_37.pickle
+2024-10-16 21:24:06,230 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_37_dict_verb_comb.pkl
+2024-10-16 21:24:06,261 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_37_dict_verb_comb.pkl
+2024-10-16 21:24:06,261 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,308 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_37_verb.txt
+2024-10-16 21:24:06,310 [INFO] Successfully merged and saved POS tags for File Number: 37
+2024-10-16 21:24:06,310 [INFO] 
+Processing File Number: 38
+2024-10-16 21:24:06,312 [INFO] Loading POS-tagged data from: data\pos_tagged\document_38.pickle
+2024-10-16 21:24:06,324 [INFO] Loaded POS-tagged data from data\pos_tagged\document_38.pickle
+2024-10-16 21:24:06,340 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_38_dict_verb_comb.pkl
+2024-10-16 21:24:06,357 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_38_dict_verb_comb.pkl
+2024-10-16 21:24:06,357 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,403 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_38_verb.txt
+2024-10-16 21:24:06,403 [INFO] Successfully merged and saved POS tags for File Number: 38
+2024-10-16 21:24:06,403 [INFO] 
+Processing File Number: 39
+2024-10-16 21:24:06,411 [INFO] Loading POS-tagged data from: data\pos_tagged\document_39.pickle
+2024-10-16 21:24:06,435 [INFO] Loaded POS-tagged data from data\pos_tagged\document_39.pickle
+2024-10-16 21:24:06,435 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_39_dict_verb_comb.pkl
+2024-10-16 21:24:06,451 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_39_dict_verb_comb.pkl
+2024-10-16 21:24:06,451 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,499 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_39_verb.txt
+2024-10-16 21:24:06,499 [INFO] Successfully merged and saved POS tags for File Number: 39
+2024-10-16 21:24:06,499 [INFO] 
+Processing File Number: 40
+2024-10-16 21:24:06,506 [INFO] Loading POS-tagged data from: data\pos_tagged\document_40.pickle
+2024-10-16 21:24:06,547 [INFO] Loaded POS-tagged data from data\pos_tagged\document_40.pickle
+2024-10-16 21:24:06,547 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_40_dict_verb_comb.pkl
+2024-10-16 21:24:06,642 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_40_dict_verb_comb.pkl
+2024-10-16 21:24:06,642 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,674 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_40_verb.txt
+2024-10-16 21:24:06,674 [INFO] Successfully merged and saved POS tags for File Number: 40
+2024-10-16 21:24:06,686 [INFO] 
+Processing File Number: 41
+2024-10-16 21:24:06,688 [INFO] Loading POS-tagged data from: data\pos_tagged\document_41.pickle
+2024-10-16 21:24:06,708 [INFO] Loaded POS-tagged data from data\pos_tagged\document_41.pickle
+2024-10-16 21:24:06,708 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_41_dict_verb_comb.pkl
+2024-10-16 21:24:06,731 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_41_dict_verb_comb.pkl
+2024-10-16 21:24:06,731 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,786 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_41_verb.txt
+2024-10-16 21:24:06,787 [INFO] Successfully merged and saved POS tags for File Number: 41
+2024-10-16 21:24:06,787 [INFO] 
+Processing File Number: 42
+2024-10-16 21:24:06,790 [INFO] Loading POS-tagged data from: data\pos_tagged\document_42.pickle
+2024-10-16 21:24:06,818 [INFO] Loaded POS-tagged data from data\pos_tagged\document_42.pickle
+2024-10-16 21:24:06,818 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_42_dict_verb_comb.pkl
+2024-10-16 21:24:06,850 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_42_dict_verb_comb.pkl
+2024-10-16 21:24:06,850 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,898 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_42_verb.txt
+2024-10-16 21:24:06,899 [INFO] Successfully merged and saved POS tags for File Number: 42
+2024-10-16 21:24:06,899 [INFO] 
+Processing File Number: 43
+2024-10-16 21:24:06,899 [INFO] Loading POS-tagged data from: data\pos_tagged\document_43.pickle
+2024-10-16 21:24:06,922 [INFO] Loaded POS-tagged data from data\pos_tagged\document_43.pickle
+2024-10-16 21:24:06,922 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_43_dict_verb_comb.pkl
+2024-10-16 21:24:06,952 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_43_dict_verb_comb.pkl
+2024-10-16 21:24:06,952 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:06,993 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_43_verb.txt
+2024-10-16 21:24:06,993 [INFO] Successfully merged and saved POS tags for File Number: 43
+2024-10-16 21:24:06,993 [INFO] 
+Processing File Number: 44
+2024-10-16 21:24:06,993 [INFO] Loading POS-tagged data from: data\pos_tagged\document_44.pickle
+2024-10-16 21:24:07,018 [INFO] Loaded POS-tagged data from data\pos_tagged\document_44.pickle
+2024-10-16 21:24:07,018 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_44_dict_verb_comb.pkl
+2024-10-16 21:24:07,042 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_44_dict_verb_comb.pkl
+2024-10-16 21:24:07,042 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,074 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_44_verb.txt
+2024-10-16 21:24:07,090 [INFO] Successfully merged and saved POS tags for File Number: 44
+2024-10-16 21:24:07,090 [INFO] 
+Processing File Number: 45
+2024-10-16 21:24:07,090 [INFO] Loading POS-tagged data from: data\pos_tagged\document_45.pickle
+2024-10-16 21:24:07,106 [INFO] Loaded POS-tagged data from data\pos_tagged\document_45.pickle
+2024-10-16 21:24:07,106 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_45_dict_verb_comb.pkl
+2024-10-16 21:24:07,131 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_45_dict_verb_comb.pkl
+2024-10-16 21:24:07,131 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,170 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_45_verb.txt
+2024-10-16 21:24:07,170 [INFO] Successfully merged and saved POS tags for File Number: 45
+2024-10-16 21:24:07,170 [INFO] 
+Processing File Number: 46
+2024-10-16 21:24:07,170 [INFO] Loading POS-tagged data from: data\pos_tagged\document_46.pickle
+2024-10-16 21:24:07,216 [INFO] Loaded POS-tagged data from data\pos_tagged\document_46.pickle
+2024-10-16 21:24:07,216 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_46_dict_verb_comb.pkl
+2024-10-16 21:24:07,236 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_46_dict_verb_comb.pkl
+2024-10-16 21:24:07,236 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,280 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_46_verb.txt
+2024-10-16 21:24:07,280 [INFO] Successfully merged and saved POS tags for File Number: 46
+2024-10-16 21:24:07,280 [INFO] 
+Processing File Number: 47
+2024-10-16 21:24:07,280 [INFO] Loading POS-tagged data from: data\pos_tagged\document_47.pickle
+2024-10-16 21:24:07,302 [INFO] Loaded POS-tagged data from data\pos_tagged\document_47.pickle
+2024-10-16 21:24:07,302 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_47_dict_verb_comb.pkl
+2024-10-16 21:24:07,328 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_47_dict_verb_comb.pkl
+2024-10-16 21:24:07,328 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,360 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_47_verb.txt
+2024-10-16 21:24:07,360 [INFO] Successfully merged and saved POS tags for File Number: 47
+2024-10-16 21:24:07,360 [INFO] 
+Processing File Number: 48
+2024-10-16 21:24:07,360 [INFO] Loading POS-tagged data from: data\pos_tagged\document_48.pickle
+2024-10-16 21:24:07,392 [INFO] Loaded POS-tagged data from data\pos_tagged\document_48.pickle
+2024-10-16 21:24:07,392 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_48_dict_verb_comb.pkl
+2024-10-16 21:24:07,410 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_48_dict_verb_comb.pkl
+2024-10-16 21:24:07,423 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,455 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_48_verb.txt
+2024-10-16 21:24:07,455 [INFO] Successfully merged and saved POS tags for File Number: 48
+2024-10-16 21:24:07,455 [INFO] 
+Processing File Number: 49
+2024-10-16 21:24:07,455 [INFO] Loading POS-tagged data from: data\pos_tagged\document_49.pickle
+2024-10-16 21:24:07,487 [INFO] Loaded POS-tagged data from data\pos_tagged\document_49.pickle
+2024-10-16 21:24:07,487 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_49_dict_verb_comb.pkl
+2024-10-16 21:24:07,506 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_49_dict_verb_comb.pkl
+2024-10-16 21:24:07,506 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,549 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_49_verb.txt
+2024-10-16 21:24:07,549 [INFO] Successfully merged and saved POS tags for File Number: 49
+2024-10-16 21:24:07,549 [INFO] 
+Processing File Number: 50
+2024-10-16 21:24:07,549 [INFO] Loading POS-tagged data from: data\pos_tagged\document_50.pickle
+2024-10-16 21:24:07,573 [INFO] Loaded POS-tagged data from data\pos_tagged\document_50.pickle
+2024-10-16 21:24:07,573 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_50_dict_verb_comb.pkl
+2024-10-16 21:24:07,597 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_50_dict_verb_comb.pkl
+2024-10-16 21:24:07,597 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,631 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_50_verb.txt
+2024-10-16 21:24:07,631 [INFO] Successfully merged and saved POS tags for File Number: 50
+2024-10-16 21:24:07,631 [INFO] 
+Processing File Number: 51
+2024-10-16 21:24:07,631 [INFO] Loading POS-tagged data from: data\pos_tagged\document_51.pickle
+2024-10-16 21:24:07,666 [INFO] Loaded POS-tagged data from data\pos_tagged\document_51.pickle
+2024-10-16 21:24:07,666 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_51_dict_verb_comb.pkl
+2024-10-16 21:24:07,685 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_51_dict_verb_comb.pkl
+2024-10-16 21:24:07,685 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,726 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_51_verb.txt
+2024-10-16 21:24:07,726 [INFO] Successfully merged and saved POS tags for File Number: 51
+2024-10-16 21:24:07,726 [INFO] 
+Processing File Number: 52
+2024-10-16 21:24:07,726 [INFO] Loading POS-tagged data from: data\pos_tagged\document_52.pickle
+2024-10-16 21:24:07,751 [INFO] Loaded POS-tagged data from data\pos_tagged\document_52.pickle
+2024-10-16 21:24:07,751 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_52_dict_verb_comb.pkl
+2024-10-16 21:24:07,773 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_52_dict_verb_comb.pkl
+2024-10-16 21:24:07,773 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,805 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_52_verb.txt
+2024-10-16 21:24:07,805 [INFO] Successfully merged and saved POS tags for File Number: 52
+2024-10-16 21:24:07,805 [INFO] 
+Processing File Number: 53
+2024-10-16 21:24:07,805 [INFO] Loading POS-tagged data from: data\pos_tagged\document_53.pickle
+2024-10-16 21:24:07,838 [INFO] Loaded POS-tagged data from data\pos_tagged\document_53.pickle
+2024-10-16 21:24:07,838 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_53_dict_verb_comb.pkl
+2024-10-16 21:24:07,868 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_53_dict_verb_comb.pkl
+2024-10-16 21:24:07,868 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,900 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_53_verb.txt
+2024-10-16 21:24:07,900 [INFO] Successfully merged and saved POS tags for File Number: 53
+2024-10-16 21:24:07,900 [INFO] 
+Processing File Number: 54
+2024-10-16 21:24:07,916 [INFO] Loading POS-tagged data from: data\pos_tagged\document_54.pickle
+2024-10-16 21:24:07,932 [INFO] Loaded POS-tagged data from data\pos_tagged\document_54.pickle
+2024-10-16 21:24:07,932 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_54_dict_verb_comb.pkl
+2024-10-16 21:24:07,951 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_54_dict_verb_comb.pkl
+2024-10-16 21:24:07,951 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:07,996 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_54_verb.txt
+2024-10-16 21:24:07,996 [INFO] Successfully merged and saved POS tags for File Number: 54
+2024-10-16 21:24:07,996 [INFO] 
+Processing File Number: 55
+2024-10-16 21:24:07,996 [INFO] Loading POS-tagged data from: data\pos_tagged\document_55.pickle
+2024-10-16 21:24:08,028 [INFO] Loaded POS-tagged data from data\pos_tagged\document_55.pickle
+2024-10-16 21:24:08,028 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_55_dict_verb_comb.pkl
+2024-10-16 21:24:08,048 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_55_dict_verb_comb.pkl
+2024-10-16 21:24:08,048 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,076 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_55_verb.txt
+2024-10-16 21:24:08,076 [INFO] Successfully merged and saved POS tags for File Number: 55
+2024-10-16 21:24:08,076 [INFO] 
+Processing File Number: 56
+2024-10-16 21:24:08,092 [INFO] Loading POS-tagged data from: data\pos_tagged\document_56.pickle
+2024-10-16 21:24:08,107 [INFO] Loaded POS-tagged data from data\pos_tagged\document_56.pickle
+2024-10-16 21:24:08,107 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_56_dict_verb_comb.pkl
+2024-10-16 21:24:08,171 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_56_dict_verb_comb.pkl
+2024-10-16 21:24:08,171 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,205 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_56_verb.txt
+2024-10-16 21:24:08,205 [INFO] Successfully merged and saved POS tags for File Number: 56
+2024-10-16 21:24:08,205 [INFO] 
+Processing File Number: 57
+2024-10-16 21:24:08,219 [INFO] Loading POS-tagged data from: data\pos_tagged\document_57.pickle
+2024-10-16 21:24:08,238 [INFO] Loaded POS-tagged data from data\pos_tagged\document_57.pickle
+2024-10-16 21:24:08,238 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_57_dict_verb_comb.pkl
+2024-10-16 21:24:08,267 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_57_dict_verb_comb.pkl
+2024-10-16 21:24:08,267 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,299 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_57_verb.txt
+2024-10-16 21:24:08,299 [INFO] Successfully merged and saved POS tags for File Number: 57
+2024-10-16 21:24:08,299 [INFO] 
+Processing File Number: 58
+2024-10-16 21:24:08,316 [INFO] Loading POS-tagged data from: data\pos_tagged\document_58.pickle
+2024-10-16 21:24:08,331 [INFO] Loaded POS-tagged data from data\pos_tagged\document_58.pickle
+2024-10-16 21:24:08,331 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_58_dict_verb_comb.pkl
+2024-10-16 21:24:08,363 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_58_dict_verb_comb.pkl
+2024-10-16 21:24:08,363 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,410 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_58_verb.txt
+2024-10-16 21:24:08,410 [INFO] Successfully merged and saved POS tags for File Number: 58
+2024-10-16 21:24:08,410 [INFO] 
+Processing File Number: 59
+2024-10-16 21:24:08,410 [INFO] Loading POS-tagged data from: data\pos_tagged\document_59.pickle
+2024-10-16 21:24:08,426 [INFO] Loaded POS-tagged data from data\pos_tagged\document_59.pickle
+2024-10-16 21:24:08,426 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_59_dict_verb_comb.pkl
+2024-10-16 21:24:08,458 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_59_dict_verb_comb.pkl
+2024-10-16 21:24:08,458 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,490 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_59_verb.txt
+2024-10-16 21:24:08,490 [INFO] Successfully merged and saved POS tags for File Number: 59
+2024-10-16 21:24:08,490 [INFO] 
+Processing File Number: 60
+2024-10-16 21:24:08,506 [INFO] Loading POS-tagged data from: data\pos_tagged\document_60.pickle
+2024-10-16 21:24:08,522 [INFO] Loaded POS-tagged data from data\pos_tagged\document_60.pickle
+2024-10-16 21:24:08,522 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_60_dict_verb_comb.pkl
+2024-10-16 21:24:08,538 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_60_dict_verb_comb.pkl
+2024-10-16 21:24:08,538 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,587 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_60_verb.txt
+2024-10-16 21:24:08,587 [INFO] Successfully merged and saved POS tags for File Number: 60
+2024-10-16 21:24:08,587 [INFO] 
+Processing File Number: 61
+2024-10-16 21:24:08,587 [INFO] Loading POS-tagged data from: data\pos_tagged\document_61.pickle
+2024-10-16 21:24:08,603 [INFO] Loaded POS-tagged data from data\pos_tagged\document_61.pickle
+2024-10-16 21:24:08,603 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_61_dict_verb_comb.pkl
+2024-10-16 21:24:08,635 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_61_dict_verb_comb.pkl
+2024-10-16 21:24:08,635 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,667 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_61_verb.txt
+2024-10-16 21:24:08,683 [INFO] Successfully merged and saved POS tags for File Number: 61
+2024-10-16 21:24:08,683 [INFO] 
+Processing File Number: 62
+2024-10-16 21:24:08,686 [INFO] Loading POS-tagged data from: data\pos_tagged\document_62.pickle
+2024-10-16 21:24:08,715 [INFO] Loaded POS-tagged data from data\pos_tagged\document_62.pickle
+2024-10-16 21:24:08,715 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_62_dict_verb_comb.pkl
+2024-10-16 21:24:08,748 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_62_dict_verb_comb.pkl
+2024-10-16 21:24:08,748 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,781 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_62_verb.txt
+2024-10-16 21:24:08,781 [INFO] Successfully merged and saved POS tags for File Number: 62
+2024-10-16 21:24:08,781 [INFO] 
+Processing File Number: 63
+2024-10-16 21:24:08,792 [INFO] Loading POS-tagged data from: data\pos_tagged\document_63.pickle
+2024-10-16 21:24:08,815 [INFO] Loaded POS-tagged data from data\pos_tagged\document_63.pickle
+2024-10-16 21:24:08,815 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_63_dict_verb_comb.pkl
+2024-10-16 21:24:08,841 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_63_dict_verb_comb.pkl
+2024-10-16 21:24:08,841 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,889 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_63_verb.txt
+2024-10-16 21:24:08,889 [INFO] Successfully merged and saved POS tags for File Number: 63
+2024-10-16 21:24:08,903 [INFO] 
+Processing File Number: 64
+2024-10-16 21:24:08,905 [INFO] Loading POS-tagged data from: data\pos_tagged\document_64.pickle
+2024-10-16 21:24:08,923 [INFO] Loaded POS-tagged data from data\pos_tagged\document_64.pickle
+2024-10-16 21:24:08,923 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_64_dict_verb_comb.pkl
+2024-10-16 21:24:08,952 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_64_dict_verb_comb.pkl
+2024-10-16 21:24:08,954 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:08,984 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_64_verb.txt
+2024-10-16 21:24:08,984 [INFO] Successfully merged and saved POS tags for File Number: 64
+2024-10-16 21:24:09,000 [INFO] 
+Processing File Number: 65
+2024-10-16 21:24:09,000 [INFO] Loading POS-tagged data from: data\pos_tagged\document_65.pickle
+2024-10-16 21:24:09,022 [INFO] Loaded POS-tagged data from data\pos_tagged\document_65.pickle
+2024-10-16 21:24:09,022 [INFO] Loading GPT-tagged data from: data\gpt_tagged\verb\book_part_65_dict_verb_comb.pkl
+2024-10-16 21:24:09,050 [INFO] Loaded GPT-tagged data from data\gpt_tagged\verb\book_part_65_dict_verb_comb.pkl
+2024-10-16 21:24:09,050 [INFO] Merging SpaCy POS tags with GPT-generated classifications.
+2024-10-16 21:24:09,097 [INFO] Saved merged POS tags to data\final_pos\verb\book_part_65_verb.txt
+2024-10-16 21:24:09,097 [INFO] Successfully merged and saved POS tags for File Number: 65
+2024-10-16 21:24:09,097 [INFO] Starting dataset validation and preparation.
+2024-10-16 21:24:09,097 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_1_verb.txt
+2024-10-16 21:24:09,191 [INFO] Added document from data\final_pos\verb\book_part_1_verb.txt to DocBin.
+2024-10-16 21:24:09,191 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_2_verb.txt
+2024-10-16 21:24:09,239 [INFO] Added document from data\final_pos\verb\book_part_2_verb.txt to DocBin.
+2024-10-16 21:24:09,239 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_3_verb.txt
+2024-10-16 21:24:09,286 [INFO] Added document from data\final_pos\verb\book_part_3_verb.txt to DocBin.
+2024-10-16 21:24:09,286 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_4_verb.txt
+2024-10-16 21:24:09,351 [INFO] Added document from data\final_pos\verb\book_part_4_verb.txt to DocBin.
+2024-10-16 21:24:09,351 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_5_verb.txt
+2024-10-16 21:24:09,398 [INFO] Added document from data\final_pos\verb\book_part_5_verb.txt to DocBin.
+2024-10-16 21:24:09,398 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_6_verb.txt
+2024-10-16 21:24:09,462 [INFO] Added document from data\final_pos\verb\book_part_6_verb.txt to DocBin.
+2024-10-16 21:24:09,478 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_7_verb.txt
+2024-10-16 21:24:09,525 [INFO] Added document from data\final_pos\verb\book_part_7_verb.txt to DocBin.
+2024-10-16 21:24:09,541 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_8_verb.txt
+2024-10-16 21:24:09,605 [INFO] Added document from data\final_pos\verb\book_part_8_verb.txt to DocBin.
+2024-10-16 21:24:09,605 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_9_verb.txt
+2024-10-16 21:24:09,701 [INFO] Added document from data\final_pos\verb\book_part_9_verb.txt to DocBin.
+2024-10-16 21:24:09,701 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_10_verb.txt
+2024-10-16 21:24:09,814 [INFO] Added document from data\final_pos\verb\book_part_10_verb.txt to DocBin.
+2024-10-16 21:24:09,814 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_11_verb.txt
+2024-10-16 21:24:09,910 [INFO] Added document from data\final_pos\verb\book_part_11_verb.txt to DocBin.
+2024-10-16 21:24:09,910 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_12_verb.txt
+2024-10-16 21:24:09,989 [INFO] Added document from data\final_pos\verb\book_part_12_verb.txt to DocBin.
+2024-10-16 21:24:09,989 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_13_verb.txt
+2024-10-16 21:24:10,069 [INFO] Added document from data\final_pos\verb\book_part_13_verb.txt to DocBin.
+2024-10-16 21:24:10,069 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_14_verb.txt
+2024-10-16 21:24:10,150 [INFO] Added document from data\final_pos\verb\book_part_14_verb.txt to DocBin.
+2024-10-16 21:24:10,150 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_15_verb.txt
+2024-10-16 21:24:10,213 [INFO] Added document from data\final_pos\verb\book_part_15_verb.txt to DocBin.
+2024-10-16 21:24:10,213 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_16_verb.txt
+2024-10-16 21:24:10,276 [INFO] Added document from data\final_pos\verb\book_part_16_verb.txt to DocBin.
+2024-10-16 21:24:10,276 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_17_verb.txt
+2024-10-16 21:24:10,325 [INFO] Added document from data\final_pos\verb\book_part_17_verb.txt to DocBin.
+2024-10-16 21:24:10,325 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_18_verb.txt
+2024-10-16 21:24:10,373 [INFO] Added document from data\final_pos\verb\book_part_18_verb.txt to DocBin.
+2024-10-16 21:24:10,373 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_19_verb.txt
+2024-10-16 21:24:10,436 [INFO] Added document from data\final_pos\verb\book_part_19_verb.txt to DocBin.
+2024-10-16 21:24:10,436 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_20_verb.txt
+2024-10-16 21:24:10,484 [INFO] Added document from data\final_pos\verb\book_part_20_verb.txt to DocBin.
+2024-10-16 21:24:10,484 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_21_verb.txt
+2024-10-16 21:24:10,532 [INFO] Added document from data\final_pos\verb\book_part_21_verb.txt to DocBin.
+2024-10-16 21:24:10,532 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_22_verb.txt
+2024-10-16 21:24:10,594 [INFO] Added document from data\final_pos\verb\book_part_22_verb.txt to DocBin.
+2024-10-16 21:24:10,594 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_23_verb.txt
+2024-10-16 21:24:10,680 [INFO] Added document from data\final_pos\verb\book_part_23_verb.txt to DocBin.
+2024-10-16 21:24:10,680 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_24_verb.txt
+2024-10-16 21:24:10,722 [INFO] Added document from data\final_pos\verb\book_part_24_verb.txt to DocBin.
+2024-10-16 21:24:10,722 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_25_verb.txt
+2024-10-16 21:24:10,770 [INFO] Added document from data\final_pos\verb\book_part_25_verb.txt to DocBin.
+2024-10-16 21:24:10,770 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_26_verb.txt
+2024-10-16 21:24:10,833 [INFO] Added document from data\final_pos\verb\book_part_26_verb.txt to DocBin.
+2024-10-16 21:24:10,833 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_27_verb.txt
+2024-10-16 21:24:10,960 [INFO] Added document from data\final_pos\verb\book_part_27_verb.txt to DocBin.
+2024-10-16 21:24:10,960 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_28_verb.txt
+2024-10-16 21:24:11,024 [INFO] Added document from data\final_pos\verb\book_part_28_verb.txt to DocBin.
+2024-10-16 21:24:11,024 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_29_verb.txt
+2024-10-16 21:24:11,087 [INFO] Added document from data\final_pos\verb\book_part_29_verb.txt to DocBin.
+2024-10-16 21:24:11,087 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_30_verb.txt
+2024-10-16 21:24:11,152 [INFO] Added document from data\final_pos\verb\book_part_30_verb.txt to DocBin.
+2024-10-16 21:24:11,152 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_31_verb.txt
+2024-10-16 21:24:11,215 [INFO] Added document from data\final_pos\verb\book_part_31_verb.txt to DocBin.
+2024-10-16 21:24:11,215 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_32_verb.txt
+2024-10-16 21:24:11,279 [INFO] Added document from data\final_pos\verb\book_part_32_verb.txt to DocBin.
+2024-10-16 21:24:11,279 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_33_verb.txt
+2024-10-16 21:24:11,358 [INFO] Added document from data\final_pos\verb\book_part_33_verb.txt to DocBin.
+2024-10-16 21:24:11,361 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_34_verb.txt
+2024-10-16 21:24:11,422 [INFO] Added document from data\final_pos\verb\book_part_34_verb.txt to DocBin.
+2024-10-16 21:24:11,422 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_35_verb.txt
+2024-10-16 21:24:11,486 [INFO] Added document from data\final_pos\verb\book_part_35_verb.txt to DocBin.
+2024-10-16 21:24:11,486 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_36_verb.txt
+2024-10-16 21:24:11,566 [INFO] Added document from data\final_pos\verb\book_part_36_verb.txt to DocBin.
+2024-10-16 21:24:11,566 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_37_verb.txt
+2024-10-16 21:24:11,630 [INFO] Added document from data\final_pos\verb\book_part_37_verb.txt to DocBin.
+2024-10-16 21:24:11,630 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_38_verb.txt
+2024-10-16 21:24:11,693 [INFO] Added document from data\final_pos\verb\book_part_38_verb.txt to DocBin.
+2024-10-16 21:24:11,693 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_39_verb.txt
+2024-10-16 21:24:11,756 [INFO] Added document from data\final_pos\verb\book_part_39_verb.txt to DocBin.
+2024-10-16 21:24:11,756 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_40_verb.txt
+2024-10-16 21:24:11,836 [INFO] Added document from data\final_pos\verb\book_part_40_verb.txt to DocBin.
+2024-10-16 21:24:11,836 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_41_verb.txt
+2024-10-16 21:24:11,899 [INFO] Added document from data\final_pos\verb\book_part_41_verb.txt to DocBin.
+2024-10-16 21:24:11,915 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_42_verb.txt
+2024-10-16 21:24:11,978 [INFO] Added document from data\final_pos\verb\book_part_42_verb.txt to DocBin.
+2024-10-16 21:24:11,978 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_43_verb.txt
+2024-10-16 21:24:12,042 [INFO] Added document from data\final_pos\verb\book_part_43_verb.txt to DocBin.
+2024-10-16 21:24:12,042 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_44_verb.txt
+2024-10-16 21:24:12,106 [INFO] Added document from data\final_pos\verb\book_part_44_verb.txt to DocBin.
+2024-10-16 21:24:12,106 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_45_verb.txt
+2024-10-16 21:24:12,169 [INFO] Added document from data\final_pos\verb\book_part_45_verb.txt to DocBin.
+2024-10-16 21:24:12,169 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_46_verb.txt
+2024-10-16 21:24:12,250 [INFO] Added document from data\final_pos\verb\book_part_46_verb.txt to DocBin.
+2024-10-16 21:24:12,250 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_47_verb.txt
+2024-10-16 21:24:12,314 [INFO] Added document from data\final_pos\verb\book_part_47_verb.txt to DocBin.
+2024-10-16 21:24:12,314 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_48_verb.txt
+2024-10-16 21:24:12,378 [INFO] Added document from data\final_pos\verb\book_part_48_verb.txt to DocBin.
+2024-10-16 21:24:12,378 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_49_verb.txt
+2024-10-16 21:24:12,441 [INFO] Added document from data\final_pos\verb\book_part_49_verb.txt to DocBin.
+2024-10-16 21:24:12,441 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_50_verb.txt
+2024-10-16 21:24:12,504 [INFO] Added document from data\final_pos\verb\book_part_50_verb.txt to DocBin.
+2024-10-16 21:24:12,504 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_51_verb.txt
+2024-10-16 21:24:12,584 [INFO] Added document from data\final_pos\verb\book_part_51_verb.txt to DocBin.
+2024-10-16 21:24:12,584 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_52_verb.txt
+2024-10-16 21:24:12,648 [INFO] Added document from data\final_pos\verb\book_part_52_verb.txt to DocBin.
+2024-10-16 21:24:12,648 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_53_verb.txt
+2024-10-16 21:24:12,712 [INFO] Added document from data\final_pos\verb\book_part_53_verb.txt to DocBin.
+2024-10-16 21:24:12,712 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_54_verb.txt
+2024-10-16 21:24:12,776 [INFO] Added document from data\final_pos\verb\book_part_54_verb.txt to DocBin.
+2024-10-16 21:24:12,776 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_55_verb.txt
+2024-10-16 21:24:12,840 [INFO] Added document from data\final_pos\verb\book_part_55_verb.txt to DocBin.
+2024-10-16 21:24:12,840 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_56_verb.txt
+2024-10-16 21:24:12,919 [INFO] Added document from data\final_pos\verb\book_part_56_verb.txt to DocBin.
+2024-10-16 21:24:12,919 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_57_verb.txt
+2024-10-16 21:24:13,015 [INFO] Added document from data\final_pos\verb\book_part_57_verb.txt to DocBin.
+2024-10-16 21:24:13,015 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_58_verb.txt
+2024-10-16 21:24:13,081 [INFO] Added document from data\final_pos\verb\book_part_58_verb.txt to DocBin.
+2024-10-16 21:24:13,095 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_59_verb.txt
+2024-10-16 21:24:13,159 [INFO] Added document from data\final_pos\verb\book_part_59_verb.txt to DocBin.
+2024-10-16 21:24:13,159 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_60_verb.txt
+2024-10-16 21:24:13,253 [INFO] Added document from data\final_pos\verb\book_part_60_verb.txt to DocBin.
+2024-10-16 21:24:13,254 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_61_verb.txt
+2024-10-16 21:24:13,337 [INFO] Added document from data\final_pos\verb\book_part_61_verb.txt to DocBin.
+2024-10-16 21:24:13,339 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_62_verb.txt
+2024-10-16 21:24:13,402 [INFO] Added document from data\final_pos\verb\book_part_62_verb.txt to DocBin.
+2024-10-16 21:24:13,413 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_63_verb.txt
+2024-10-16 21:24:13,483 [INFO] Added document from data\final_pos\verb\book_part_63_verb.txt to DocBin.
+2024-10-16 21:24:13,487 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_64_verb.txt
+2024-10-16 21:24:13,554 [INFO] Added document from data\final_pos\verb\book_part_64_verb.txt to DocBin.
+2024-10-16 21:24:13,554 [INFO] Processing merged POS-tagged file: data\final_pos\verb\book_part_65_verb.txt
+2024-10-16 21:24:13,597 [INFO] Added document from data\final_pos\verb\book_part_65_verb.txt to DocBin.
+2024-10-16 21:24:13,597 [INFO] No invalid tags encountered.
+2024-10-16 21:24:13,857 [INFO] Total documents collected: 65
+2024-10-16 21:24:13,857 [INFO] Training documents: 58
+2024-10-16 21:24:13,857 [INFO] Development documents: 7
+2024-10-16 21:24:15,187 [INFO] Saved training data to data\final_pos\verb\train.spacy
+2024-10-16 21:24:15,187 [INFO] Saved development data to data\final_pos\verb\dev.spacy
+2024-10-16 21:24:15,187 [INFO] Dataset Preparation Pipeline completed successfully.

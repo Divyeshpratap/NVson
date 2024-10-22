@@ -47,7 +47,7 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 DEFAULT_INPUT_DIR = Path('data/separated/')
-DEFAULT_OUTPUT_DIR = Path('data/gpt_tagged/')
+DEFAULT_OUTPUT_DIR = Path('data/gpt_tagged/noun/')
 DEFAULT_LOG_DIR = Path('logs/')
 
 DEFAULT_START_BOOK = 1
@@ -199,8 +199,8 @@ def main():
         
         # Construct Input and Output File Paths
         input_file = args.input_dir / f'document_{book_num}_sep.pkl'
-        output_pickle_file = args.output_dir / f'book_part_{book_num}_dict_shape_comb.pkl'
-        output_text_file = args.output_dir / f'book_part_{book_num}_dict_shape_comb.txt'  # New Text File Path
+        output_pickle_file = args.output_dir / f'book_part_{book_num}_dict_noun_comb.pkl'
+        output_text_file = args.output_dir / f'book_part_{book_num}_dict_noun_comb.txt'  # New Text File Path
         
         # Check if Input File Exists
         if not input_file.exists():
